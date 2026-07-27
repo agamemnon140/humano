@@ -9,6 +9,7 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "test": "vitest run",
+    "toque": "node scripts/toque.mjs",
     "icones": "node scripts/gerar-icones.mjs"
   },
   "dependencies": {
@@ -22,6 +23,7 @@
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.3",
     "oxlint": "^1.71.0",
+    "puppeteer-core": "^25.3.0",
     "sharp": "^0.34.4",
     "tailwindcss": "^4.3.2",
     "typescript": "~6.0.2",

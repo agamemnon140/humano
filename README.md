@@ -7,9 +7,10 @@ cobertura de vários exercícios sobre o mesmo corpo.
 ```bash
 npm install
 npm run dev        # localhost:5173/humano/
-npm test           # 80 testes, todos de lógica pura
+npm test           # 107 testes, todos de lógica pura
 npm run lint       # oxlint
 npm run build      # tsc -b && vite build
+npm run toque      # dirige a app num Chrome real (precisa de build feito)
 npm run preview    # serve dist/ — é aqui que se testa PWA e offline, nunca em dev
 npm run icones     # regenera os PNGs a partir de public/icon.svg
 ```
@@ -22,7 +23,7 @@ precisa ser validado numa app mobile-first com músculos pequenos.
 
 | | |
 |---|---|
-| **Corpo** | Frente e costas, camada superficial e profunda. Toque num músculo para identificá-lo e ver os melhores exercícios para ele, em três seções separadas. |
+| **Corpo** | Frente e costas, camada superficial e profunda. O cursor sobre um músculo nomeia-o na hora, com o nível se ele estiver pintado; o toque abre a ficha com os melhores exercícios para ele, em três seções separadas. |
 | **Exercícios** | 59 atividades com filtro por tipo, padrão de movimento e equipamento. Busca aceita português, inglês e sinônimos. Selecionar um exercício pinta o corpo. |
 | **Queixas** | 9 queixas comuns com sinais de alarme, músculos a fortalecer, o que evitar na fase aguda, e um selo de força de evidência por afirmação. |
 | **Sessão** | Monte uma lista e o corpo acende com a cobertura somada: lacunas por região, músculos sobrecarregados e conflitos com uma queixa marcada como ativa. |
@@ -54,6 +55,21 @@ de quem usa.
 pontos de estabilizador contassem para o limiar, o transverso do abdômen apareceria
 sobrecarregado em toda sessão. O limiar olha só primário e secundário (`pontosDiretos`).
 
+**O que pinta o corpo é estado separado do que está aberto.** Vale para exercício, queixa e
+músculo: fechar a ficha mantém a coloração, e uma faixa acima do corpo narra o que está
+pintado, com um ✕ para sair. Sem essa separação, fechar a ficha — que tapa a tela inteira e o
+seletor de vista — apagava exatamente o que se queria ver depois de fechá-la, e tornava
+inalcançável trocar de vista com um músculo selecionado.
+
+**No hit-test, conter ganha de estar perto.** O toque no corpo não é resolvido pela árvore do
+DOM, e sim por geometria: `resolver()` em `CorpoSVG.tsx` testa o ponto contra os `Path2D` dos
+músculos da camada visível, primeiro por conter, depois por proximidade em anéis crescentes.
+Empate resolve-se pela ordem de desenho — ganha quem está por cima, que é quem se vê. Isso
+substituiu um traço largo e invisível sobre cada forma, que media mal nas duas pontas: dava
+~3px de folga e ao mesmo tempo roubava o interior dos vizinhos. `npm run toque` defende a
+afirmação que interessa: **o toque responde o músculo que está pintado sob o ponto**, em 84
+pontos das duas vistas.
+
 **A camada de dados não conhece o renderizador.** Toda a lógica produz `MapaDeRealce`
 (`Map<MusculoId, EstadoRealce>`) com tons *semânticos* — sem cores, sem coordenadas, sem
 geometria. As cores vivem em CSS, seletores `.musculo[data-tom=...]`. Trocar o mapa 2D por
@@ -68,8 +84,9 @@ nada mais. Um único `<CorpoSVG>` renderiza tudo.
 
 - `viewBox="0 0 480 1000"` partilhado pelas duas vistas, linha média em `x = 240`.
 - **Desenha-se só a metade `x >= 240`.** Cada músculo tem um `<path>` em `<defs>` e dois
-  `<use>`, um com `translate(480,0) scale(-1,1)`. O `d` existe uma vez, a simetria é
-  garantida, e ambas as instâncias são nós DOM reais e clicáveis.
+  `<use>`, um com `translate(480,0) scale(-1,1)`. O `d` existe uma vez e a simetria é
+  garantida. No hit-test o espelho não precisa de existir: um ponto com `x < 240` é refletido
+  para `480 - x` antes de ser testado, contra a única metade que tem geometria.
 - O `<path>` em `<defs>` **não pode ter `fill`**, senão a instância espelhada deixa de herdar
   a cor. Isso é estruturalmente impossível de quebrar porque o JSON só guarda `d`.
 - Comandos absolutos apenas (`M`, `L`, `C`, `Z`): um path relativo não é revisável.
@@ -119,14 +136,31 @@ src/
   hooks/                   useAbaHash, useArmazenado
   components/corpo/        renderizador + index.ts ← ponto único de troca 2D→3D
   components/{mapa,exercicios,lesoes,sessao,shell}/
+scripts/toque.mjs          verificação da interação num Chrome real
 ```
+
+`CorpoComLeitura` envolve `Corpo` (nunca `CorpoSVG`) e acrescenta a linha que nomeia o músculo
+sob o cursor. Um renderizador 3D herda-a de graça: só precisa de chamar `onDestacar`.
 
 Convenções herdadas dos projetos vizinhos: Vite + React 19 + TS, oxlint, aspas simples, sem
 ponto-e-vírgula, Vitest em `environment: 'node'` com testes apenas de lógica pura.
 
-## Lacuna conhecida
+## Lacunas conhecidas
 
 Com `environment: 'node'`, a interação do `CorpoSVG` não tem teste unitário — é a regra da
-casa e fica. Isso torna a verificação manual carga real, não cerimônia: tocar num músculo e
-no seu espelho deve dar o mesmo id; trocar de vista deve manter a seleção se o músculo
-existir lá; e o PWA offline só se testa em `preview` com modo avião, nunca em `dev`.
+casa e fica. O que era verificação manual passou a ser `npm run toque`, que dirige a app num
+Chrome real e defende oito afirmações: toque igual ao pintado nas duas vistas, espelho com o
+mesmo músculo, toque de dedo abrindo a ficha certa, realce sobrevivendo ao fechar, aviso ao
+trocar para uma vista onde o músculo não existe, clique no vazio limpando, e nenhum erro de
+JavaScript. Usa o Chrome instalado via `puppeteer-core`, sem descarregar navegador; defina
+`CHROME_PATH` se ele não estiver num caminho comum.
+
+**Músculos finos exigem precisão.** Medido em viewport de 390px: o tensor da fáscia lata tem
+12px de largura na tela, o tibial anterior 13px — abaixo dos 24px mínimos da WCAG 2.2. A
+proximidade em anéis só alcança espaço vazio (a borda do corpo, o pescoço, o vão entre as
+pernas), porque conter ganha primeiro; entre dois músculos vizinhos o toque continua a ter de
+ser certeiro. A lista de músculos é o caminho preciso e existe para isso. A correção de fundo
+é zoom e arrasto no mapa, que ainda não existe.
+
+Fora do alcance do `npm run toque`: proporção e legibilidade num telefone físico, e o PWA
+offline, que só se testa em `preview` com modo avião — nunca em `dev`.
