@@ -1,4 +1,4 @@
-import { useEffect, type ReactNode } from 'react'
+import { useEffect, useId, type ReactNode } from 'react'
 
 /** Bottom sheet no telemovel, painel lateral no desktop. E o recipiente de
  *  todas as fichas de detalhe. */
@@ -13,6 +13,8 @@ export function Folha({
   onFechar: () => void
   children: ReactNode
 }) {
+  const idTitulo = useId()
+
   useEffect(() => {
     if (!aberta) return
     const aoTeclar = (e: KeyboardEvent) => {
@@ -32,9 +34,19 @@ export function Folha({
         className="absolute inset-0 bg-black/50"
         onClick={onFechar}
       />
-      <div className="relative flex max-h-[85dvh] w-full flex-col rounded-t-2xl border border-hairline bg-surface shadow-2xl md:max-h-[85dvh] md:max-w-2xl md:rounded-2xl">
+      {/* Um leitor de ecra tem de saber que isto e uma camada por cima da
+          pagina, e nao mais conteudo no fim dela. O nome vem do proprio
+          titulo da ficha, que ja diz de que musculo ou exercicio se trata. */}
+      <div
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby={idTitulo}
+        className="relative flex max-h-[85dvh] w-full flex-col rounded-t-2xl border border-hairline bg-surface shadow-2xl md:max-h-[85dvh] md:max-w-2xl md:rounded-2xl"
+      >
         <header className="flex items-start justify-between gap-3 border-b border-hairline p-4">
-          <div className="min-w-0 flex-1">{titulo}</div>
+          <div id={idTitulo} className="min-w-0 flex-1">
+            {titulo}
+          </div>
           <button
             type="button"
             onClick={onFechar}

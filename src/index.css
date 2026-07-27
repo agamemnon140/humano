@@ -116,6 +116,18 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Nada do que se vê recebe eventos: o toque é resolvido em CorpoSVG.tsx, por
+   geometria, e chega pelo retângulo de captura. */
+.corpo .silhueta,
+.corpo .musculos,
+.corpo .contornos {
+  pointer-events: none;
+}
+
+.corpo .captura {
+  fill: transparent;
+}
+
 .corpo .silhueta {
   fill: var(--corpo-base);
   stroke: var(--corpo-contorno);
@@ -135,7 +147,6 @@ body {
   fill: var(--corpo-base);
   stroke: var(--corpo-contorno);
   stroke-width: 0.8;
-  cursor: pointer;
   transition:
     fill 120ms ease-out,
     opacity 120ms ease-out;
@@ -156,31 +167,20 @@ body {
   stroke-width: 2.4;
 }
 
-@media (hover: hover) {
-  .corpo .musculo:hover {
-    stroke: var(--ink);
-    stroke-width: 2;
-  }
+/* Realce do músculo sob o cursor. Não é `:hover`: o cursor está sempre sobre o
+   retângulo de captura, nunca sobre a forma. */
+.corpo .musculo[data-sobre='true'] {
+  stroke: var(--ink);
+  stroke-width: 2;
 }
 
-/* Alvo de toque alargado para músculos pequenos (redondo menor, romboides).
-   Invisível, fica sob os visíveis, mas captura o toque. */
-.corpo .alvo {
-  fill: none;
-  stroke: transparent;
-  stroke-width: 12;
-  cursor: pointer;
-}
-
-/* Camada profunda: superficiais esbatidos e inertes */
-.corpo[data-camada='profunda'] .musculo[data-camada-musculo='superficial'],
-.corpo[data-camada='profunda'] .alvo[data-camada-musculo='superficial'] {
+/* Camada profunda: superficiais esbatidos. Quem é inerte ao toque decide-se em
+   CorpoSVG.tsx, filtrando as candidatas do hit-test pela camada. */
+.corpo[data-camada='profunda'] .musculo[data-camada-musculo='superficial'] {
   opacity: 0.18;
-  pointer-events: none;
 }
 
-.corpo[data-camada='superficial'] .musculo[data-camada-musculo='profunda'],
-.corpo[data-camada='superficial'] .alvo[data-camada-musculo='profunda'] {
+.corpo[data-camada='superficial'] .musculo[data-camada-musculo='profunda'] {
   display: none;
 }
 

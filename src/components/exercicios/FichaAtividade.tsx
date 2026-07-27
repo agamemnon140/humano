@@ -11,7 +11,7 @@ import {
   type MusculoId,
   type Vista,
 } from '../../types'
-import { Corpo } from '../corpo'
+import { CorpoComLeitura } from '../corpo/CorpoComLeitura'
 import { Legenda } from '../corpo/Legenda'
 import { Folha } from '../shell/Folha'
 import { ListaSimples, NomeBilingue, Secao, SeloEvidencia } from '../shell/Comuns'
@@ -66,8 +66,8 @@ export function FichaAtividade({
       }
     >
       <div className="mb-4 flex flex-col gap-2">
-        <div className="flex h-56 items-center justify-center rounded-xl border border-hairline bg-page">
-          <Corpo
+        <div className="flex h-60 flex-col rounded-xl border border-hairline bg-page p-1">
+          <CorpoComLeitura
             vista={vista}
             camada="superficial"
             realces={realces}

@@ -5,7 +5,7 @@ import { useArmazenado } from './hooks/useArmazenado'
 import { fundirRealces, realceDeAtividade, realceDeLesao, realceDeMusculo } from './lib/realce'
 import { analisarSessao, realceDeSessao } from './lib/sessao'
 import type { AtividadeId, Camada, LesaoId, MapaDeRealce, MusculoId, Vista } from './types'
-import { Corpo } from './components/corpo'
+import { CorpoComLeitura } from './components/corpo/CorpoComLeitura'
 import { Legenda } from './components/corpo/Legenda'
 import { SeletorVista } from './components/corpo/SeletorVista'
 import { MapaAba } from './components/mapa/MapaAba'
@@ -27,6 +27,7 @@ export default function App() {
   // que se quer ver depois de fechar a ficha.
   const [atividadeRealcada, setAtividadeRealcada] = useState<AtividadeId | null>(null)
   const [lesaoRealcada, setLesaoRealcada] = useState<LesaoId | null>(null)
+  const [musculoRealcado, setMusculoRealcado] = useState<MusculoId | null>(null)
 
   const [musculoAberto, setMusculoAberto] = useState<MusculoId | null>(null)
   const [atividadeAberta, setAtividadeAberta] = useState<AtividadeId | null>(null)
@@ -80,24 +81,32 @@ export default function App() {
   const realces: MapaDeRealce = useMemo(() => {
     const fontes: MapaDeRealce[] = []
     if (fonte) fontes.push(fonte.mapa)
-    if (musculoAberto) fontes.push(realceDeMusculo(musculoAberto))
+    if (musculoRealcado) fontes.push(realceDeMusculo(musculoRealcado))
     return fundirRealces(...fontes)
-  }, [fonte, musculoAberto])
+  }, [fonte, musculoRealcado])
 
+  // Pelo mesmo motivo que a atividade: o musculo realcado sobrevive ao fechar
+  // da ficha. Sem isto, trocar de vista para procurar o musculo do outro lado
+  // era impossivel — a ficha tapa o seletor de vista, e fecha-la apagava a
+  // selecao. Fechar por engano tambem deixava de custar o lugar onde se estava.
   const abrirMusculo = useCallback((id: MusculoId | null) => {
     setMusculoAberto(id)
+    setMusculoRealcado(id)
     if (id) {
       setAtividadeAberta(null)
       setLesaoAberta(null)
     }
   }, [])
 
+  // Abrir um exercicio ou uma queixa larga o dourado do musculo: e a cor de
+  // nivel desse musculo que se veio ver, e o dourado ficaria por cima dela.
   const abrirAtividade = useCallback((id: AtividadeId | null) => {
     setAtividadeAberta(id)
     if (id) {
       setAtividadeRealcada(id)
       setLesaoRealcada(null)
       setMusculoAberto(null)
+      setMusculoRealcado(null)
       setLesaoAberta(null)
     }
   }, [])
@@ -108,6 +117,7 @@ export default function App() {
       setLesaoRealcada(id)
       setAtividadeRealcada(null)
       setMusculoAberto(null)
+      setMusculoRealcado(null)
       setAtividadeAberta(null)
     }
   }, [])
@@ -115,8 +125,16 @@ export default function App() {
   const limparRealce = useCallback(() => {
     setAtividadeRealcada(null)
     setLesaoRealcada(null)
-    setMusculoAberto(null)
+    setMusculoRealcado(null)
   }, [])
+
+  // O que a faixa narra. Se nada mais pinta o corpo, narra o musculo — que de
+  // outro modo ficaria dourado sem nada dizendo como sair dali.
+  const narrativa = useMemo(() => {
+    if (fonte) return { rotulo: fonte.rotulo, detalhe: fonte.detalhe }
+    const m = musculoRealcado ? musculoPorId.get(musculoRealcado) : undefined
+    return m ? { rotulo: m.nome, detalhe: 'músculo selecionado' } : null
+  }, [fonte, musculoRealcado])
 
   const tons = useMemo(() => [...new Set([...realces.values()].map((e) => e.tom))], [realces])
 
@@ -124,15 +142,15 @@ export default function App() {
   // e o que faz a coloracao por exercicio e por sessao ser util.
   const painelCorpo = aba !== 'mapa' && (
     <div className="mb-4 flex flex-col gap-2">
-      {fonte && (
-        <FaixaRealce rotulo={fonte.rotulo} detalhe={fonte.detalhe} onLimpar={limparRealce} />
+      {narrativa && (
+        <FaixaRealce rotulo={narrativa.rotulo} detalhe={narrativa.detalhe} onLimpar={limparRealce} />
       )}
       <div className="h-64 md:h-80">
-        <Corpo
+        <CorpoComLeitura
           vista={vista}
           camada={camada}
           realces={realces}
-          selecionado={musculoAberto}
+          selecionado={musculoRealcado}
           onSelecionar={abrirMusculo}
         />
       </div>
@@ -158,14 +176,14 @@ export default function App() {
                 camada={camada}
                 onVista={setVista}
                 onCamada={setCamada}
-                selecionado={musculoAberto}
+                selecionado={musculoRealcado}
                 onSelecionar={abrirMusculo}
                 realces={realces}
                 faixa={
-                  fonte && (
+                  narrativa && (
                     <FaixaRealce
-                      rotulo={fonte.rotulo}
-                      detalhe={fonte.detalhe}
+                      rotulo={narrativa.rotulo}
+                      detalhe={narrativa.detalhe}
                       onLimpar={limparRealce}
                     />
                   )

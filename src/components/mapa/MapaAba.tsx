@@ -2,7 +2,7 @@ import { useMemo, useState, type ReactNode } from 'react'
 import { musculos, musculoPorId } from '../../data'
 import { filtrarMusculos } from '../../lib/filtros'
 import { ROTULO_REGIAO, REGIOES, type Camada, type MapaDeRealce, type MusculoId, type Vista } from '../../types'
-import { Corpo } from '../corpo'
+import { CorpoComLeitura } from '../corpo/CorpoComLeitura'
 import { Legenda } from '../corpo/Legenda'
 import { SeletorVista } from '../corpo/SeletorVista'
 import { Vazio } from '../shell/Comuns'
@@ -41,7 +41,7 @@ export function MapaAba({
       <SeletorVista vista={vista} camada={camada} onVista={onVista} onCamada={onCamada} />
 
       <div className="min-h-0 flex-1">
-        <Corpo
+        <CorpoComLeitura
           vista={vista}
           camada={camada}
           realces={realces}
