@@ -98,3 +98,39 @@ export function ListaSimples({ itens, marcador = '·' }: { itens: string[]; marc
 export function Vazio({ children }: { children: ReactNode }) {
   return <p className="py-8 text-center text-sm text-muted">{children}</p>
 }
+
+/** Narra o que está pintando o corpo neste momento. Sem isto, fechar a ficha
+ *  de um exercício deixava a coloração na tela sem nada explicando de onde
+ *  veio nem como sair dela. */
+export function FaixaRealce({
+  rotulo,
+  detalhe,
+  onLimpar,
+}: {
+  rotulo: string
+  detalhe?: string
+  onLimpar?: () => void
+}) {
+  return (
+    <div className="flex items-center gap-2 rounded-lg border border-hairline bg-surface2 px-3 py-1.5">
+      <span aria-hidden className="text-accent">
+        ◍
+      </span>
+      <p className="min-w-0 flex-1 truncate text-xs">
+        <span className="text-muted">no corpo: </span>
+        <span className="font-medium text-ink">{rotulo}</span>
+        {detalhe && <span className="text-muted"> · {detalhe}</span>}
+      </p>
+      {onLimpar && (
+        <button
+          type="button"
+          onClick={onLimpar}
+          aria-label="Limpar realce"
+          className="shrink-0 rounded px-1.5 text-base leading-none text-muted hover:text-ink"
+        >
+          ×
+        </button>
+      )}
+    </div>
+  )
+}

@@ -20,12 +20,13 @@ const EQUIPAMENTOS: Equipamento[] = [
 ]
 
 export function ExerciciosAba({
-  selecionada,
+  realcada,
   sessao,
   onSelecionar,
   onAlternarSessao,
 }: {
-  selecionada: AtividadeId | null
+  /** A que esta pintando o corpo agora — nao a que tem ficha aberta. */
+  realcada: AtividadeId | null
   sessao: AtividadeId[]
   onSelecionar: (id: AtividadeId | null) => void
   onAlternarSessao: (id: AtividadeId) => void
@@ -111,7 +112,7 @@ export function ExerciciosAba({
               <li key={a.id}>
                 <CartaoAtividade
                   atividade={a}
-                  ativo={a.id === selecionada}
+                  ativo={a.id === realcada}
                   naSessao={sessao.includes(a.id)}
                   onAbrir={() => onSelecionar(a.id)}
                   onAlternarSessao={() => onAlternarSessao(a.id)}

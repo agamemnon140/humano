@@ -1,4 +1,6 @@
+import { useMemo, useState } from 'react'
 import { atividadePorId, musculoPorId } from '../../data'
+import { realceDeAtividade } from '../../lib/realce'
 import {
   NIVEIS,
   ROTULO_NIVEL,
@@ -7,7 +9,10 @@ import {
   type Atividade,
   type AtividadeId,
   type MusculoId,
+  type Vista,
 } from '../../types'
+import { Corpo } from '../corpo'
+import { Legenda } from '../corpo/Legenda'
 import { Folha } from '../shell/Folha'
 import { ListaSimples, NomeBilingue, Secao, SeloEvidencia } from '../shell/Comuns'
 
@@ -26,6 +31,16 @@ export function FichaAtividade({
   onAbrirAtividade: (id: AtividadeId) => void
   onAbrirMusculo: (id: MusculoId) => void
 }) {
+  const [vista, setVista] = useState<Vista>('frente')
+
+  // Realce proprio da ficha: mostra os musculos deste exercicio sem depender
+  // do corpo que esta atras da folha.
+  const realces = useMemo(
+    () => (atividade ? realceDeAtividade(atividade) : new Map()),
+    [atividade],
+  )
+  const tons = useMemo(() => [...new Set([...realces.values()].map((e) => e.tom))], [realces])
+
   if (!atividade) return null
 
   const porNivel: Record<string, MusculoId[]> = {
@@ -50,6 +65,36 @@ export function FichaAtividade({
         </>
       }
     >
+      <div className="mb-4 flex flex-col gap-2">
+        <div className="flex h-56 items-center justify-center rounded-xl border border-hairline bg-page">
+          <Corpo
+            vista={vista}
+            camada="superficial"
+            realces={realces}
+            selecionado={null}
+            onSelecionar={(id) => id && onAbrirMusculo(id)}
+          />
+        </div>
+        <div className="flex items-center justify-center gap-2">
+          <div className="flex rounded-lg border border-hairline bg-surface p-0.5">
+            {(['frente', 'costas'] as Vista[]).map((v) => (
+              <button
+                key={v}
+                type="button"
+                onClick={() => setVista(v)}
+                aria-pressed={vista === v}
+                className={`rounded-md px-3 py-1 text-xs font-medium transition-colors ${
+                  vista === v ? 'bg-accent text-white' : 'text-ink2 hover:text-ink'
+                }`}
+              >
+                {v === 'frente' ? 'Frente' : 'Costas'}
+              </button>
+            ))}
+          </div>
+        </div>
+        <Legenda tons={tons} />
+      </div>
+
       <button
         type="button"
         onClick={() => onAlternarSessao(atividade.id)}
