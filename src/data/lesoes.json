@@ -1,0 +1,610 @@
+[
+  {
+    "id": "dor-lombar-inespecifica",
+    "nome": "Dor lombar inespecífica",
+    "outrosNomes": ["lombalgia", "dor nas costas", "dor lombar", "low back pain", "dor na lombar"],
+    "regiao": "core",
+    "resumo": "Dor na região lombar sem causa estrutural identificável. É de longe a apresentação mais comum e, na larga maioria dos casos, melhora com movimento e retomada gradual da atividade.",
+    "sinaisDeAlarme": [
+      "Perda de força ou dormência numa ou nas duas pernas",
+      "Perda de controle da bexiga ou do intestino, ou dormência na região da sela",
+      "Febre, calafrios ou perda de peso sem explicação",
+      "Dor após queda, acidente ou trauma direto",
+      "Dor noturna que não alivia em nenhuma posição",
+      "Histórico de câncer, osteoporose ou uso prolongado de corticoides"
+    ],
+    "fortalecer": {
+      "valor": ["gluteo-maximo", "gluteo-medio", "transverso-do-abdomen", "multifidos", "eretores-da-espinha", "quadrado-lombar", "obliquo-externo"],
+      "evidencia": "consenso-fraco",
+      "nota": "Que exercício em geral ajuda é consenso forte. Que estes músculos específicos sejam a chave, e que um programa direcionado ao core supere outros tipos de exercício, é bem mais frágil."
+    },
+    "alongarOuMobilizar": {
+      "valor": ["psoas-iliaco", "biceps-femoral", "semitendinoso", "piriforme", "reto-femoral"],
+      "evidencia": "consenso-fraco"
+    },
+    "priorizar": {
+      "valor": ["caminhada", "prancha", "bird-dog", "dead-bug", "ponte-de-gluteo", "pallof-press", "prancha-lateral", "natacao-costas", "pilates-solo"],
+      "evidencia": "consenso-forte",
+      "nota": "Manter-se ativo supera repouso na cama em praticamente todos os protocolos estudados. O tipo específico de exercício importa menos do que fazer algum."
+    },
+    "regras": [
+      {
+        "padrao": "dobradica-de-quadril",
+        "gravidade": "cautela",
+        "fase": "aguda",
+        "condicao": "com carga externa elevada",
+        "porque": "Flexão de quadril sob carga com a coluna próxima do limite é o gesto que mais frequentemente reproduz a dor na fase irritável.",
+        "evidencia": "consenso-forte"
+      },
+      {
+        "atividadeId": "levantamento-terra",
+        "gravidade": "evitar",
+        "fase": "aguda",
+        "porque": "Exigência máxima e simultânea sobre extensores lombares e quadril, com pouca margem para erro técnico sob fadiga.",
+        "evidencia": "consenso-forte"
+      },
+      {
+        "atividadeId": "bom-dia",
+        "gravidade": "evitar",
+        "fase": "aguda",
+        "porque": "O maior braço de alavanca sobre a lombar entre os exercícios comuns.",
+        "evidencia": "consenso-forte"
+      },
+      {
+        "atividadeId": "abdominal-tradicional",
+        "gravidade": "evitar",
+        "fase": "aguda",
+        "porque": "Flexão lombar repetida sob compressão, mal tolerada por boa parte das lombares sensíveis.",
+        "evidencia": "consenso-fraco"
+      },
+      {
+        "atividadeId": "remada-curvada",
+        "gravidade": "cautela",
+        "fase": "aguda",
+        "condicao": "com carga elevada",
+        "porque": "Embora seja classificada como puxada, o tronco fica inclinado sob carga durante toda a série, exigindo dos extensores lombares em isometria prolongada. A versão apoiada no banco resolve.",
+        "evidencia": "consenso-fraco"
+      },
+      {
+        "padrao": "rotacao",
+        "gravidade": "cautela",
+        "fase": "aguda",
+        "condicao": "com carga ou velocidade",
+        "porque": "Rotação lombar carregada costuma ser mal tolerada enquanto o quadro está irritável.",
+        "evidencia": "consenso-fraco"
+      },
+      {
+        "atividadeId": "ficar-sentado",
+        "gravidade": "cautela",
+        "fase": "geral",
+        "condicao": "por períodos longos e ininterruptos",
+        "porque": "Postura sentada prolongada é o gatilho mais relatado por quem tem dor lombar recorrente.",
+        "evidencia": "consenso-fraco"
+      }
+    ],
+    "notasGerais": [
+      "Dor não é sinônimo de dano. A maioria dos episódios resolve em semanas.",
+      "Reduzir carga temporariamente é diferente de parar de treinar: a inatividade prolongada piora o prognóstico.",
+      "Exames de imagem quase nunca mudam a conduta na ausência de sinais de alarme, e achados como protrusão discal são comuns em pessoas sem dor nenhuma."
+    ],
+    "fontes": [
+      { "titulo": "NICE NG59 — Low back pain and sciatica in over 16s: assessment and management", "ano": 2020 },
+      { "titulo": "Lancet Low Back Pain Series — prevention and treatment of low back pain", "ano": 2018 },
+      { "titulo": "McGill, S. — Low Back Disorders (protocolo dos três exercícios básicos)", "ano": 2015 }
+    ]
+  },
+  {
+    "id": "dor-cervical",
+    "nome": "Dor cervical",
+    "outrosNomes": ["dor no pescoco", "cervicalgia", "neck pain", "torcicolo", "pescoco travado"],
+    "regiao": "pescoco",
+    "resumo": "Dor e rigidez na região do pescoço e ombros, muito associada a posturas mantidas e carga de trabalho. Costuma ser autolimitada.",
+    "sinaisDeAlarme": [
+      "Dormência, formigamento ou perda de força nos braços ou nas mãos",
+      "Alteração de marcha, equilíbrio ou coordenação fina",
+      "Dor após trauma, queda ou acidente de carro",
+      "Febre, rigidez de nuca intensa ou mal-estar geral",
+      "Dor de cabeça súbita e diferente de tudo que você já teve",
+      "Perda de peso inexplicada ou histórico de câncer"
+    ],
+    "fortalecer": {
+      "valor": ["trapezio-inferior", "trapezio-medio", "romboides", "serratil-anterior", "infraespinhoso"],
+      "evidencia": "consenso-fraco",
+      "nota": "Programas de fortalecimento da musculatura cervical e escapular reduzem dor em trabalhadores de escritório; qual músculo é decisivo, não se sabe."
+    },
+    "alongarOuMobilizar": {
+      "valor": ["trapezio-superior", "elevador-da-escapula", "esternocleidomastoideo", "peitoral-menor"],
+      "evidencia": "consenso-fraco"
+    },
+    "priorizar": {
+      "valor": ["face-pull", "remada-baixa-cabo", "remada-unilateral-halter", "caminhada", "gato-camelo", "pilates-solo"],
+      "evidencia": "consenso-forte",
+      "nota": "Exercício supervisionado, incluindo treino de força do pescoço e das escápulas, é a intervenção com melhor suporte."
+    },
+    "regras": [
+      {
+        "padrao": "empurrar-vertical",
+        "gravidade": "cautela",
+        "fase": "aguda",
+        "condicao": "com carga elevada",
+        "porque": "Empurrar acima da cabeça exige muito do trapézio superior e tende a reproduzir a dor enquanto o quadro está irritável.",
+        "evidencia": "consenso-fraco"
+      },
+      {
+        "atividadeId": "carregar-mochila-um-ombro",
+        "gravidade": "evitar",
+        "fase": "aguda",
+        "porque": "Carga assimétrica mantida sobre o trapézio superior e o elevador da escápula.",
+        "evidencia": "consenso-fraco"
+      },
+      {
+        "atividadeId": "ficar-sentado",
+        "gravidade": "cautela",
+        "fase": "geral",
+        "condicao": "com a cabeça projetada à frente por horas",
+        "porque": "É o contexto mais comum em que a dor cervical ocupacional aparece e recidiva.",
+        "evidencia": "consenso-fraco"
+      },
+      {
+        "atividadeId": "abdominal-tradicional",
+        "gravidade": "cautela",
+        "fase": "aguda",
+        "porque": "Muita gente puxa a cabeça com as mãos, carregando exatamente a região dolorida.",
+        "evidencia": "consenso-fraco"
+      }
+    ],
+    "notasGerais": [
+      "A relação entre postura e dor cervical é bem mais fraca do que se costuma afirmar: pessoas com a mesma postura têm desfechos muito diferentes.",
+      "Variar de posição com frequência tem mais suporte do que perseguir a postura ideal."
+    ],
+    "fontes": [
+      { "titulo": "JOSPT Clinical Practice Guidelines — Neck Pain, revisão 2017", "ano": 2017 },
+      { "titulo": "Cochrane — Exercises for mechanical neck disorders", "ano": 2015 }
+    ]
+  },
+  {
+    "id": "dor-ombro-manguito",
+    "nome": "Dor no ombro relacionada ao manguito rotador",
+    "outrosNomes": ["tendinite do ombro", "impacto do ombro", "sindrome do impacto", "rotator cuff", "bursite do ombro", "ombro do nadador"],
+    "regiao": "ombros",
+    "resumo": "Dor na face lateral ou anterior do ombro, tipicamente ao elevar o braço ou deitar sobre ele. Termo guarda-chuva para irritação dos tendões do manguito e estruturas vizinhas.",
+    "sinaisDeAlarme": [
+      "Incapacidade súbita de levantar o braço após um trauma, que pode indicar ruptura",
+      "Deformidade visível do ombro ou sensação de que a articulação saiu do lugar",
+      "Dormência ou fraqueza que desce pelo braço até a mão",
+      "Febre, vermelhidão e calor sobre a articulação",
+      "Dor no ombro esquerdo acompanhada de aperto no peito, falta de ar ou suor frio — procure emergência"
+    ],
+    "fortalecer": {
+      "valor": ["infraespinhoso", "redondo-menor", "supraespinhoso", "subescapular", "serratil-anterior", "trapezio-inferior", "trapezio-medio"],
+      "evidencia": "consenso-forte",
+      "nota": "Exercício progressivo para manguito e estabilizadores escapulares tem resultados equivalentes à cirurgia em vários ensaios de dor subacromial."
+    },
+    "alongarOuMobilizar": {
+      "valor": ["peitoral-menor", "peitoral-maior-esternal", "grande-dorsal", "trapezio-superior"],
+      "evidencia": "consenso-fraco"
+    },
+    "priorizar": {
+      "valor": ["face-pull", "remada-baixa-cabo", "remada-unilateral-halter", "natacao-costas", "flexao-de-bracos"],
+      "evidencia": "consenso-forte"
+    },
+    "regras": [
+      {
+        "padrao": "empurrar-vertical",
+        "gravidade": "evitar",
+        "fase": "aguda",
+        "porque": "Elevação acima da cabeça sob carga é o gesto que mais consistentemente reproduz a dor subacromial.",
+        "evidencia": "consenso-forte"
+      },
+      {
+        "atividadeId": "elevacao-lateral",
+        "gravidade": "cautela",
+        "fase": "aguda",
+        "condicao": "acima da linha do ombro",
+        "porque": "O arco de 60° a 120° de abdução é justamente onde a dor costuma aparecer.",
+        "evidencia": "consenso-fraco"
+      },
+      {
+        "atividadeId": "crucifixo",
+        "gravidade": "cautela",
+        "fase": "aguda",
+        "condicao": "em amplitude final",
+        "porque": "Abertura máxima estressa a cápsula anterior num ombro já irritado.",
+        "evidencia": "consenso-fraco"
+      },
+      {
+        "atividadeId": "natacao-crawl",
+        "gravidade": "cautela",
+        "fase": "aguda",
+        "condicao": "em volume alto",
+        "porque": "Milhares de braçadas em rotação interna repetida são o contexto clássico do ombro do nadador.",
+        "evidencia": "consenso-fraco"
+      },
+      {
+        "atividadeId": "barra-fixa",
+        "gravidade": "cautela",
+        "fase": "aguda",
+        "porque": "Amplitude completa em suspensão pode ser mal tolerada enquanto o tendão está irritável.",
+        "evidencia": "consenso-fraco"
+      }
+    ],
+    "notasGerais": [
+      "Achados de imagem no manguito são comuns em ombros sem nenhuma dor, então uma ressonância alterada não explica sozinha o sintoma.",
+      "Carregar o tendão progressivamente costuma funcionar melhor do que repousar até a dor sumir."
+    ],
+    "fontes": [
+      { "titulo": "JOSPT Clinical Practice Guidelines — Shoulder Pain and Mobility Deficits", "ano": 2013 },
+      { "titulo": "BMJ — Subacromial decompression versus placebo surgery (CSAW trial)", "ano": 2018 }
+    ]
+  },
+  {
+    "id": "dor-femoropatelar",
+    "nome": "Dor femoropatelar",
+    "outrosNomes": ["dor no joelho", "condromalacia", "joelho de corredor", "runners knee", "dor anterior no joelho", "pfps"],
+    "regiao": "coxas",
+    "resumo": "Dor difusa em volta ou atrás da patela, pior ao agachar, descer escadas ou ficar muito tempo sentado com o joelho dobrado.",
+    "sinaisDeAlarme": [
+      "Joelho que trava, falseia ou dá a sensação de sair do lugar",
+      "Inchaço grande e rápido, especialmente após um trauma",
+      "Incapacidade de apoiar o peso sobre a perna",
+      "Vermelhidão, calor e febre, que podem indicar infecção articular",
+      "Dor localizada num ponto ósseo específico após queda"
+    ],
+    "fortalecer": {
+      "valor": ["gluteo-medio", "gluteo-maximo", "gluteo-minimo", "vasto-medial", "vasto-lateral", "reto-femoral"],
+      "evidencia": "consenso-forte",
+      "nota": "Combinar fortalecimento de quadril com o de joelho tem resultado melhor do que treinar só o joelho."
+    },
+    "alongarOuMobilizar": {
+      "valor": ["tensor-fascia-lata", "reto-femoral", "biceps-femoral", "gastrocnemio-medial", "soleo"],
+      "evidencia": "consenso-fraco"
+    },
+    "priorizar": {
+      "valor": ["ponte-de-gluteo", "agachamento-bulgaro", "subida-no-banco", "leg-press", "caminhada", "bicicleta"],
+      "evidencia": "consenso-forte"
+    },
+    "regras": [
+      {
+        "padrao": "agachamento",
+        "gravidade": "cautela",
+        "fase": "aguda",
+        "condicao": "em amplitude profunda",
+        "porque": "A compressão femoropatelar cresce muito com a flexão do joelho, e é no fundo do agachamento que a dor costuma aparecer.",
+        "evidencia": "consenso-forte"
+      },
+      {
+        "atividadeId": "cadeira-extensora",
+        "gravidade": "cautela",
+        "fase": "aguda",
+        "condicao": "nos últimos graus de extensão sob carga",
+        "porque": "Cadeia aberta com carga concentra pressão na articulação femoropatelar num arco pequeno.",
+        "evidencia": "consenso-fraco"
+      },
+      {
+        "atividadeId": "pular-corda",
+        "gravidade": "cautela",
+        "fase": "aguda",
+        "porque": "Impacto repetido com absorção pelo joelho, num volume alto por minuto.",
+        "evidencia": "consenso-fraco"
+      },
+      {
+        "atividadeId": "corrida",
+        "gravidade": "cautela",
+        "fase": "aguda",
+        "condicao": "em descidas ou volume alto",
+        "porque": "Correr em declive aumenta bastante a carga excêntrica sobre o quadríceps e a patela.",
+        "evidencia": "consenso-fraco"
+      }
+    ],
+    "notasGerais": [
+      "Condromalacia é um achado de cartilagem que frequentemente aparece em joelhos sem dor; o termo não explica o sintoma sozinho.",
+      "Reduzir amplitude e volume costuma permitir continuar treinando, o que é melhor do que parar."
+    ],
+    "fontes": [
+      { "titulo": "JOSPT Clinical Practice Guidelines — Patellofemoral Pain", "ano": 2019 },
+      { "titulo": "British Journal of Sports Medicine — Patellofemoral pain consensus statement, Manchester", "ano": 2016 }
+    ]
+  },
+  {
+    "id": "tendinopatia-aquiles",
+    "nome": "Tendinopatia do Aquiles",
+    "outrosNomes": ["tendinite de aquiles", "achilles tendinopathy", "dor no tendao de aquiles", "tendao calcaneo"],
+    "regiao": "pernas",
+    "resumo": "Dor e espessamento no tendão de Aquiles, tipicamente rígido ao acordar e que aquece durante a atividade para piorar depois. Quase sempre ligada a aumento rápido de carga.",
+    "sinaisDeAlarme": [
+      "Estalo audível seguido de incapacidade de ficar na ponta do pé — suspeita de ruptura, procure atendimento",
+      "Vazio palpável no trajeto do tendão",
+      "Vermelhidão, calor e febre",
+      "Dor que surgiu durante uso de antibiótico da classe das quinolonas",
+      "Inchaço importante e súbito da panturrilha com dor, que pode ser trombose"
+    ],
+    "fortalecer": {
+      "valor": ["soleo", "gastrocnemio-medial", "gastrocnemio-lateral", "tibial-anterior", "gluteo-medio"],
+      "evidencia": "consenso-forte",
+      "nota": "Carga progressiva do tríceps sural, com ênfase na fase excêntrica ou em isometria pesada, é o tratamento com melhor suporte."
+    },
+    "alongarOuMobilizar": {
+      "valor": ["gastrocnemio-medial", "gastrocnemio-lateral", "soleo"],
+      "evidencia": "consenso-fraco"
+    },
+    "priorizar": {
+      "valor": ["panturrilha-em-pe", "bicicleta", "caminhada", "leg-press"],
+      "evidencia": "consenso-forte",
+      "nota": "O tendão precisa de carga para se reorganizar. Repouso completo costuma piorar o quadro a médio prazo."
+    },
+    "regras": [
+      {
+        "atividadeId": "pular-corda",
+        "gravidade": "evitar",
+        "fase": "aguda",
+        "porque": "Ciclos de estiramento e encurtamento rápidos e repetidos são o estímulo que mais irrita um tendão reativo.",
+        "evidencia": "consenso-forte"
+      },
+      {
+        "atividadeId": "corrida",
+        "gravidade": "cautela",
+        "fase": "aguda",
+        "condicao": "em subidas, tiros ou volume alto",
+        "porque": "Correr rápido ou em aclive multiplica a carga sobre o Aquiles.",
+        "evidencia": "consenso-forte"
+      },
+      {
+        "padrao": "marcha",
+        "gravidade": "cautela",
+        "fase": "aguda",
+        "condicao": "com impacto e volume alto",
+        "porque": "O tendão reage ao volume acumulado, não só à intensidade de uma sessão.",
+        "evidencia": "consenso-fraco"
+      }
+    ],
+    "notasGerais": [
+      "Dor de até cerca de 3 numa escala de 0 a 10 durante o exercício, que não piora no dia seguinte, é geralmente considerada aceitável na reabilitação de tendão.",
+      "A resposta é lenta: pense em meses, não semanas."
+    ],
+    "fontes": [
+      { "titulo": "JOSPT Clinical Practice Guidelines — Achilles Pain, Stiffness, and Muscle Power Deficits", "ano": 2018 },
+      { "titulo": "Cook & Purdam — Is tendon pathology a continuum?", "ano": 2009 },
+      { "titulo": "Alfredson et al. — Heavy-load eccentric calf muscle training", "ano": 1998 }
+    ]
+  },
+  {
+    "id": "epicondilite-lateral",
+    "nome": "Dor lateral no cotovelo",
+    "outrosNomes": ["epicondilite", "cotovelo de tenista", "tennis elbow", "epicondilalgia lateral"],
+    "regiao": "antebracos",
+    "resumo": "Dor na parte externa do cotovelo, no ponto onde os extensores do punho se inserem. Piora ao pegar objetos e ao estender o punho contra resistência.",
+    "sinaisDeAlarme": [
+      "Dormência ou formigamento na mão, que sugere envolvimento de nervo",
+      "Perda importante de força de preensão de instalação rápida",
+      "Inchaço, vermelhidão e calor sobre a articulação",
+      "Dor após trauma direto ou queda sobre o braço",
+      "Dor que não muda com nenhum movimento nem posição"
+    ],
+    "fortalecer": {
+      "valor": ["extensores-antebraco", "flexores-antebraco", "trapezio-medio", "infraespinhoso", "deltoide-posterior"],
+      "evidencia": "consenso-forte",
+      "nota": "Carga progressiva dos extensores do punho supera repouso e supera injeção de corticoide no médio prazo."
+    },
+    "alongarOuMobilizar": {
+      "valor": ["extensores-antebraco"],
+      "evidencia": "consenso-fraco"
+    },
+    "priorizar": {
+      "valor": ["farmer-walk", "remada-baixa-cabo", "face-pull"],
+      "evidencia": "consenso-fraco"
+    },
+    "regras": [
+      {
+        "atividadeId": "barra-fixa",
+        "gravidade": "cautela",
+        "fase": "aguda",
+        "porque": "Suspensão prolongada exige muito dos flexores e extensores do antebraço num cotovelo irritado.",
+        "evidencia": "consenso-fraco"
+      },
+      {
+        "atividadeId": "rosca-direta",
+        "gravidade": "cautela",
+        "fase": "aguda",
+        "condicao": "com barra reta",
+        "porque": "A pegada supinada fixa tensiona o tendão comum dos extensores; barra W ou pegada neutra costuma incomodar menos.",
+        "evidencia": "consenso-fraco"
+      },
+      {
+        "padrao": "transporte",
+        "gravidade": "cautela",
+        "fase": "aguda",
+        "condicao": "com carga elevada",
+        "porque": "Preensão forte e mantida é justamente o gesto que reproduz o sintoma.",
+        "evidencia": "consenso-fraco"
+      }
+    ],
+    "notasGerais": [
+      "Apesar do nome, o quadro é degenerativo do tendão e não inflamatório, o que explica por que anti-inflamatório resolve pouco.",
+      "A grande maioria melhora em 6 a 12 meses mesmo sem tratamento, mas a reabilitação com carga encurta esse tempo."
+    ],
+    "fontes": [
+      { "titulo": "Coombes et al., JAMA — Corticosteroid injection and physiotherapy for tennis elbow", "ano": 2013 },
+      { "titulo": "BMJ Best Practice — Lateral epicondylitis", "ano": 2022 }
+    ]
+  },
+  {
+    "id": "sindrome-banda-iliotibial",
+    "nome": "Síndrome da banda iliotibial",
+    "outrosNomes": ["banda iliotibial", "it band", "sindrome do trato iliotibial", "dor lateral no joelho", "itbs"],
+    "regiao": "coxas",
+    "resumo": "Dor bem localizada na face lateral do joelho, típica de corredores e ciclistas, que aparece de forma previsível depois de certa distância.",
+    "sinaisDeAlarme": [
+      "Inchaço importante dentro da articulação do joelho",
+      "Joelho que trava ou falseia",
+      "Dor após trauma direto na lateral do joelho",
+      "Vermelhidão, calor e febre",
+      "Dormência ou fraqueza que desce pela perna"
+    ],
+    "fortalecer": {
+      "valor": ["gluteo-medio", "gluteo-minimo", "gluteo-maximo", "obliquo-externo", "quadrado-lombar"],
+      "evidencia": "consenso-fraco",
+      "nota": "Fraqueza de abdutores de quadril é o achado mais citado, mas se ela é causa ou consequência ainda não está resolvido."
+    },
+    "alongarOuMobilizar": {
+      "valor": ["tensor-fascia-lata", "gluteo-maximo", "piriforme", "vasto-lateral"],
+      "evidencia": "consenso-fraco"
+    },
+    "priorizar": {
+      "valor": ["prancha-lateral", "ponte-de-gluteo", "agachamento-bulgaro", "subida-no-banco", "natacao-crawl"],
+      "evidencia": "consenso-fraco"
+    },
+    "regras": [
+      {
+        "atividadeId": "corrida",
+        "gravidade": "evitar",
+        "fase": "aguda",
+        "condicao": "em descidas e distâncias longas",
+        "porque": "A compressão lateral do joelho ocorre num ângulo de flexão próximo de 30°, exatamente o da fase de apoio na descida.",
+        "evidencia": "consenso-forte"
+      },
+      {
+        "padrao": "marcha",
+        "gravidade": "cautela",
+        "fase": "aguda",
+        "condicao": "em volume alto",
+        "porque": "O quadro é dose-dependente: aparece de forma previsível a partir de certa distância.",
+        "evidencia": "consenso-fraco"
+      },
+      {
+        "atividadeId": "bicicleta",
+        "gravidade": "cautela",
+        "fase": "aguda",
+        "porque": "Pedalada mantém o joelho justamente na faixa de flexão em que a dor é reproduzida.",
+        "evidencia": "consenso-fraco"
+      }
+    ],
+    "notasGerais": [
+      "A ideia de que a banda iliotibial fica atritando sobre o côndilo foi substituída pelo modelo de compressão do tecido gorduroso subjacente.",
+      "Rolar a banda com rolo de espuma não a alonga; se ajuda, é por efeito sobre a sensibilidade, não sobre o tecido."
+    ],
+    "fontes": [
+      { "titulo": "Fairclough et al., Journal of Anatomy — The functional anatomy of the iliotibial band", "ano": 2006 },
+      { "titulo": "British Journal of Sports Medicine — Iliotibial band syndrome in runners", "ano": 2012 }
+    ]
+  },
+  {
+    "id": "distensao-isquiotibiais",
+    "nome": "Distensão dos isquiotibiais",
+    "outrosNomes": ["lesao de posterior de coxa", "hamstring strain", "estiramento de posterior", "puxou a posterior"],
+    "regiao": "coxas",
+    "resumo": "Lesão muscular na parte de trás da coxa, quase sempre durante corrida em velocidade máxima ou num alongamento brusco. A recidiva é comum quando o retorno é precoce.",
+    "sinaisDeAlarme": [
+      "Estalo audível no momento da lesão seguido de incapacidade de andar",
+      "Hematoma extenso descendo pela perna",
+      "Dor forte bem no osso do ísquio, junto ao glúteo, que pode indicar avulsão do tendão",
+      "Dormência ou formigamento descendo pela perna",
+      "Inchaço importante e endurecido da panturrilha, que pode ser trombose"
+    ],
+    "fortalecer": {
+      "valor": ["biceps-femoral", "semitendinoso", "semimembranoso", "gluteo-maximo", "eretores-da-espinha", "multifidos"],
+      "evidencia": "consenso-forte",
+      "nota": "Treino excêntrico em comprimento longo reduz de forma consistente a incidência e a recidiva."
+    },
+    "alongarOuMobilizar": {
+      "valor": ["psoas-iliaco", "reto-femoral"],
+      "evidencia": "consenso-fraco",
+      "nota": "Alongar agressivamente o próprio isquiotibial lesionado na fase aguda não é recomendado."
+    },
+    "priorizar": {
+      "valor": ["levantamento-terra-romeno", "ponte-de-gluteo", "mesa-flexora", "caminhada", "bird-dog"],
+      "evidencia": "consenso-forte"
+    },
+    "regras": [
+      {
+        "atividadeId": "corrida",
+        "gravidade": "evitar",
+        "fase": "aguda",
+        "condicao": "em velocidade alta ou tiros",
+        "porque": "A lesão ocorre no fim da fase de balanço em velocidade máxima; é exatamente o gesto que a reproduz.",
+        "evidencia": "consenso-forte"
+      },
+      {
+        "padrao": "dobradica-de-quadril",
+        "gravidade": "cautela",
+        "fase": "aguda",
+        "condicao": "em amplitude alongada com carga",
+        "porque": "Carregar o músculo em comprimento longo é a base da reabilitação, mas cedo demais e pesado demais causa recidiva.",
+        "evidencia": "consenso-forte"
+      },
+      {
+        "atividadeId": "bom-dia",
+        "gravidade": "evitar",
+        "fase": "aguda",
+        "porque": "Alongamento carregado do isquiotibial com pouco controle de amplitude.",
+        "evidencia": "consenso-fraco"
+      }
+    ],
+    "notasGerais": [
+      "A taxa de recidiva é alta e concentra-se nas primeiras semanas após o retorno, o que faz da progressão paciente a parte mais importante.",
+      "Voltar a correr sem ter recuperado força em amplitude alongada é o erro mais comum."
+    ],
+    "fontes": [
+      { "titulo": "Askling et al. — Acute hamstring injuries, lengthening versus conventional protocol", "ano": 2013 },
+      { "titulo": "British Journal of Sports Medicine — Nordic hamstring exercise and injury prevention meta-analysis", "ano": 2019 }
+    ]
+  },
+  {
+    "id": "canelite",
+    "nome": "Dor na canela",
+    "outrosNomes": ["canelite", "shin splints", "periostite tibial", "sindrome do estresse tibial medial"],
+    "regiao": "pernas",
+    "resumo": "Dor difusa ao longo da borda interna da tíbia, típica de quem aumentou volume de corrida ou impacto rápido demais.",
+    "sinaisDeAlarme": [
+      "Dor num ponto ósseo bem específico, do tamanho de uma moeda, que piora progressivamente — pode ser fratura por estresse",
+      "Dor que persiste em repouso ou acorda você à noite",
+      "Dor forte, inchaço tenso e dormência no pé após o exercício, que pode ser síndrome compartimental",
+      "Incapacidade de apoiar o peso na perna",
+      "Vermelhidão, calor e febre"
+    ],
+    "fortalecer": {
+      "valor": ["tibial-anterior", "soleo", "gastrocnemio-medial", "gluteo-medio", "gluteo-maximo"],
+      "evidencia": "consenso-fraco"
+    },
+    "alongarOuMobilizar": {
+      "valor": ["gastrocnemio-medial", "gastrocnemio-lateral", "soleo"],
+      "evidencia": "consenso-fraco"
+    },
+    "priorizar": {
+      "valor": ["bicicleta", "natacao-crawl", "caminhada", "panturrilha-em-pe", "ponte-de-gluteo"],
+      "evidencia": "consenso-fraco",
+      "nota": "Trocar temporariamente o impacto por modalidades sem impacto mantém o condicionamento enquanto o osso se adapta."
+    },
+    "regras": [
+      {
+        "padrao": "marcha",
+        "gravidade": "evitar",
+        "fase": "aguda",
+        "condicao": "com impacto",
+        "porque": "O quadro é de sobrecarga óssea acumulada; manter o impacto impede a adaptação.",
+        "evidencia": "consenso-forte"
+      },
+      {
+        "atividadeId": "pular-corda",
+        "gravidade": "evitar",
+        "fase": "aguda",
+        "porque": "Densidade de impactos por minuto muito alta sobre a tíbia.",
+        "evidencia": "consenso-forte"
+      },
+      {
+        "atividadeId": "corrida",
+        "gravidade": "evitar",
+        "fase": "aguda",
+        "porque": "É a causa mais frequente do quadro e o principal obstáculo à recuperação.",
+        "evidencia": "consenso-forte"
+      }
+    ],
+    "notasGerais": [
+      "A causa quase sempre é erro de progressão de treino, não o tênis nem a pisada.",
+      "Se a dor está num ponto bem localizado do osso e piora a cada semana, investigue fratura por estresse antes de continuar treinando."
+    ],
+    "fontes": [
+      { "titulo": "Winters et al. — Treatment of medial tibial stress syndrome, systematic review", "ano": 2013 },
+      { "titulo": "British Journal of Sports Medicine — Running injuries and training load", "ano": 2016 }
+    ]
+  }
+]

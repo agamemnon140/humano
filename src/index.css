@@ -1,0 +1,206 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ── Tokens ───────────────────────────────────────────────────────────── */
+:root {
+  --page: #f9f9f7;
+  --surface: #fcfcfb;
+  --surface-2: #f1f0ec;
+  --ink: #0b0b0b;
+  --ink-2: #52514e;
+  --muted: #898781;
+  --hairline: rgba(11, 11, 11, 0.12);
+  --accent: #2a78d6;
+  --bad: #d03b3b;
+  --warn: #b87500;
+  --good: #006300;
+
+  /* Corpo: pele e contorno */
+  --corpo-base: #ded9d0;
+  --corpo-contorno: #b0a99c;
+
+  /* Tons de realce — a lógica nunca conhece estas cores, só o nome do tom */
+  --tom-primario: #d03b3b;
+  --tom-secundario: #eb8a34;
+  --tom-estabilizador: #2a78d6;
+  --tom-encurta: #7a5af0;
+  --tom-inibe: #0f9b8e;
+  --tom-alerta: #d03b3b;
+  --tom-fortalecer: #1a9c4e;
+  --tom-lacuna: #a3a099;
+  --tom-selecionado: #eda100;
+}
+
+.dark {
+  --page: #0d0d0d;
+  --surface: #1a1a19;
+  --surface-2: #242423;
+  --ink: #ffffff;
+  --ink-2: #c3c2b7;
+  --muted: #898781;
+  --hairline: rgba(255, 255, 255, 0.12);
+  --accent: #3987e5;
+  --bad: #e66767;
+  --warn: #d9a021;
+  --good: #0ca30c;
+
+  --corpo-base: #3a3936;
+  --corpo-contorno: #56544e;
+
+  --tom-primario: #e05252;
+  --tom-secundario: #ef9a4e;
+  --tom-estabilizador: #4a93ea;
+  --tom-encurta: #9784f5;
+  --tom-inibe: #2bbfaf;
+  --tom-alerta: #e66767;
+  --tom-fortalecer: #35b968;
+  --tom-lacuna: #6d6b66;
+  --tom-selecionado: #eda100;
+}
+
+@theme inline {
+  --color-page: var(--page);
+  --color-surface: var(--surface);
+  --color-surface2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink2: var(--ink-2);
+  --color-muted: var(--muted);
+  --color-hairline: var(--hairline);
+  --color-accent: var(--accent);
+  --color-bad: var(--bad);
+  --color-warn: var(--warn);
+  --color-good: var(--good);
+  --color-primario: var(--tom-primario);
+  --color-secundario: var(--tom-secundario);
+  --color-estabilizador: var(--tom-estabilizador);
+  --color-encurta: var(--tom-encurta);
+  --color-inibe: var(--tom-inibe);
+  --color-fortalecer: var(--tom-fortalecer);
+  --font-sans: system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* dvh acompanha as barras do Safari no iOS */
+#root {
+  height: 100%;
+  height: 100dvh;
+}
+
+body {
+  background: var(--page);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  /* mobile-first: nada de zoom acidental ao tocar rápido num músculo */
+  touch-action: manipulation;
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* ── Corpo (SVG) ──────────────────────────────────────────────────────── */
+.corpo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.corpo .silhueta {
+  fill: var(--corpo-base);
+  stroke: var(--corpo-contorno);
+  stroke-width: 1.5;
+}
+
+.corpo .contornos {
+  fill: none;
+  stroke: var(--corpo-contorno);
+  stroke-width: 1.2;
+  opacity: 0.7;
+}
+
+/* O <path> em <defs> nunca tem fill: é o <use> que pinta, e a instância
+   espelhada herda daqui. Ver src/data/geometria-*.json — só guardam `d`. */
+.corpo .musculo {
+  fill: var(--corpo-base);
+  stroke: var(--corpo-contorno);
+  stroke-width: 0.8;
+  cursor: pointer;
+  transition:
+    fill 120ms ease-out,
+    opacity 120ms ease-out;
+}
+
+.corpo .musculo[data-tom='primario'] { fill: var(--tom-primario) }
+.corpo .musculo[data-tom='secundario'] { fill: var(--tom-secundario) }
+.corpo .musculo[data-tom='estabilizador'] { fill: var(--tom-estabilizador) }
+.corpo .musculo[data-tom='encurta'] { fill: var(--tom-encurta) }
+.corpo .musculo[data-tom='inibe'] { fill: var(--tom-inibe) }
+.corpo .musculo[data-tom='alerta'] { fill: var(--tom-alerta) }
+.corpo .musculo[data-tom='fortalecer'] { fill: var(--tom-fortalecer) }
+.corpo .musculo[data-tom='lacuna'] { fill: var(--tom-lacuna) }
+.corpo .musculo[data-tom='selecionado'] { fill: var(--tom-selecionado) }
+
+.corpo .musculo[data-selecionado='true'] {
+  stroke: var(--ink);
+  stroke-width: 2.4;
+}
+
+@media (hover: hover) {
+  .corpo .musculo:hover {
+    stroke: var(--ink);
+    stroke-width: 2;
+  }
+}
+
+/* Alvo de toque alargado para músculos pequenos (redondo menor, romboides).
+   Invisível, fica sob os visíveis, mas captura o toque. */
+.corpo .alvo {
+  fill: none;
+  stroke: transparent;
+  stroke-width: 12;
+  cursor: pointer;
+}
+
+/* Camada profunda: superficiais esbatidos e inertes */
+.corpo[data-camada='profunda'] .musculo[data-camada-musculo='superficial'],
+.corpo[data-camada='profunda'] .alvo[data-camada-musculo='superficial'] {
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+.corpo[data-camada='superficial'] .musculo[data-camada-musculo='profunda'],
+.corpo[data-camada='superficial'] .alvo[data-camada-musculo='profunda'] {
+  display: none;
+}
+
+/* ── Componentes ──────────────────────────────────────────────────────── */
+.cartao {
+  @apply rounded-xl border border-hairline bg-surface;
+}
+
+.chip {
+  @apply inline-flex items-center gap-1 rounded-full border border-hairline bg-surface2 px-2 py-0.5 text-xs text-ink2;
+}
+
+.botao {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-white transition-opacity hover:opacity-90 disabled:opacity-50;
+}
+
+.botao-2 {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg border border-hairline bg-surface px-3 py-2 text-sm font-medium text-ink transition-colors hover:border-accent disabled:opacity-50;
+}
+
+.campo {
+  @apply w-full rounded-lg border border-hairline bg-surface px-3 py-2 text-sm text-ink outline-none focus:border-accent;
+}

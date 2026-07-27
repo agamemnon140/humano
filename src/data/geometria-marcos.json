@@ -1,0 +1,22 @@
+[
+  { "nome": "vértice", "x": 240, "y": 45 },
+  { "nome": "mento", "x": 240, "y": 158 },
+  { "nome": "base do pescoço", "x": 240, "y": 205 },
+  { "nome": "manúbrio", "x": 240, "y": 240 },
+  { "nome": "acrômio", "x": 358, "y": 235 },
+  { "nome": "mamilo", "x": 300, "y": 310 },
+  { "nome": "axila", "x": 318, "y": 312 },
+  { "nome": "apêndice xifoide", "x": 240, "y": 352 },
+  { "nome": "umbigo", "x": 240, "y": 450 },
+  { "nome": "crista ilíaca", "x": 316, "y": 478 },
+  { "nome": "epicôndilo lateral", "x": 396, "y": 480 },
+  { "nome": "olécrano", "x": 392, "y": 486 },
+  { "nome": "sínfise púbica", "x": 240, "y": 532 },
+  { "nome": "grande trocanter", "x": 326, "y": 532 },
+  { "nome": "punho", "x": 410, "y": 610 },
+  { "nome": "ponta dos dedos", "x": 414, "y": 712 },
+  { "nome": "côndilo femoral", "x": 306, "y": 735 },
+  { "nome": "cabeça da fíbula", "x": 322, "y": 756 },
+  { "nome": "maléolo", "x": 288, "y": 922 },
+  { "nome": "calcâneo", "x": 280, "y": 962 }
+]
