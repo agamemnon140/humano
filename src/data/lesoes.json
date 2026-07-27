@@ -260,7 +260,7 @@
       "evidencia": "consenso-fraco"
     },
     "priorizar": {
-      "valor": ["ponte-de-gluteo", "agachamento-bulgaro", "subida-no-banco", "leg-press", "caminhada", "bicicleta"],
+      "valor": ["ponte-de-gluteo", "agachamento-bulgaro", "subida-no-banco", "leg-press", "caminhada", "bicicleta", "caminhada-lateral-elastico", "ponte-de-gluteo-unilateral"],
       "evidencia": "consenso-forte"
     },
     "regras": [
@@ -450,7 +450,7 @@
       "evidencia": "consenso-fraco"
     },
     "priorizar": {
-      "valor": ["prancha-lateral", "ponte-de-gluteo", "agachamento-bulgaro", "subida-no-banco", "natacao-crawl"],
+      "valor": ["prancha-lateral", "ponte-de-gluteo", "agachamento-bulgaro", "subida-no-banco", "natacao-crawl", "caminhada-lateral-elastico", "concha", "abducao-de-quadril-em-pe"],
       "evidencia": "consenso-fraco"
     },
     "regras": [
@@ -570,7 +570,7 @@
       "evidencia": "consenso-fraco"
     },
     "priorizar": {
-      "valor": ["bicicleta", "natacao-crawl", "caminhada", "panturrilha-em-pe", "ponte-de-gluteo"],
+      "valor": ["bicicleta", "natacao-crawl", "caminhada", "panturrilha-em-pe", "ponte-de-gluteo", "caminhada-nos-calcanhares", "elevacao-de-pontas-na-parede", "caminhada-lateral-elastico"],
       "evidencia": "consenso-fraco",
       "nota": "Trocar temporariamente o impacto por modalidades sem impacto mantém o condicionamento enquanto o osso se adapta."
     },

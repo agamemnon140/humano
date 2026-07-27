@@ -38,3 +38,20 @@ jobs:
           path: dist
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # Em job separado, de proposito: e uma verificacao de navegador e depende de
+  # um Chrome no runner. Se algum dia o ambiente mudar, quero ver a falha sem
+  # que ela impeca de publicar.
+  toque:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - run: npm run toque
+        env:
+          CHROME_PATH: /usr/bin/google-chrome

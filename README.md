@@ -24,7 +24,7 @@ precisa ser validado numa app mobile-first com músculos pequenos.
 | | |
 |---|---|
 | **Corpo** | Frente e costas, camada superficial e profunda. O cursor sobre um músculo nomeia-o na hora, com o nível se ele estiver pintado; o toque abre a ficha com os melhores exercícios para ele, em três seções separadas. |
-| **Exercícios** | 59 atividades com filtro por tipo, padrão de movimento e equipamento. Busca aceita português, inglês e sinônimos. Selecionar um exercício pinta o corpo. |
+| **Exercícios** | 68 atividades com filtro por tipo, padrão de movimento e equipamento. Busca aceita português, inglês e sinônimos. Selecionar um exercício pinta o corpo. |
 | **Queixas** | 9 queixas comuns com sinais de alarme, músculos a fortalecer, o que evitar na fase aguda, e um selo de força de evidência por afirmação. |
 | **Sessão** | Monte uma lista e o corpo acende com a cobertura somada: lacunas por região, músculos sobrecarregados e conflitos com uma queixa marcada como ativa. |
 
@@ -123,6 +123,11 @@ Exige também que **todo músculo que uma queixa manda fortalecer tenha algum ex
 treine**. Sem isso o usuário toca no chip e recebe lista vazia — foi justamente esse teste
 que revelou que o catálogo prescrevia fortalecer extensores do antebraço, tibial anterior e
 subescapular sem ter um único exercício para nenhum deles.
+
+E, desde a mesma lógica aplicada ao corpo inteiro, que **todo músculo do mapa tenha pelo menos
+um exercício que o treine**, primário ou secundário. A promessa do mapa é "toque num músculo e
+veja os melhores exercícios"; um músculo órfão abre a ficha com a lista vazia. O peitoral menor
+estava exatamente assim — zero exercícios — até a asserção existir.
 
 Nada disto substitui avaliação profissional.
 

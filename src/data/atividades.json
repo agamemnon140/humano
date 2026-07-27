@@ -2726,7 +2726,8 @@
     ],
     "secundarios": [
       "peitoral-maior-esternal",
-      "triceps-cabeca-lateral"
+      "triceps-cabeca-lateral",
+      "peitoral-menor"
     ],
     "estabilizadores": [
       "reto-abdominal",
@@ -2851,7 +2852,6 @@
     "outrosNomes": [
       "abducao",
       "hip abduction",
-      "clamshell",
       "elevacao lateral de perna"
     ],
     "plano": "frontal",
@@ -3072,6 +3072,471 @@
     "cuidados": [],
     "substituicoes": [
       "rotacao-externa-ombro"
+    ]
+  },
+  {
+    "id": "caminhada-lateral-elastico",
+    "nome": "Caminhada lateral com elástico",
+    "nomeEn": "Lateral band walk",
+    "outrosNomes": [
+      "monster walk",
+      "band walk",
+      "caminhada do monstro",
+      "lateral walk",
+      "passo lateral"
+    ],
+    "tipo": "forca",
+    "padrao": "isolamento",
+    "plano": "frontal",
+    "equipamento": [
+      "elastico"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 1,
+    "unilateral": false,
+    "primarios": [
+      "gluteo-medio",
+      "gluteo-minimo"
+    ],
+    "secundarios": [
+      "tensor-fascia-lata",
+      "gluteo-maximo"
+    ],
+    "estabilizadores": [
+      "transverso-do-abdomen",
+      "obliquo-externo",
+      "quadrado-lombar",
+      "vasto-lateral"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Elástico acima dos joelhos, semiagachado, dá passos laterais mantendo tensão o tempo todo. Carrega o abdutor no plano em que a maioria dos treinos nunca entra.",
+    "dicas": [
+      "Pés apontados para a frente: girá-los para fora troca o glúteo médio pelos rotadores",
+      "O pé que volta não encosta no outro, senão a tensão alivia a cada passo"
+    ],
+    "erros": [
+      "Inclinar o tronco para o lado do passo",
+      "Elástico tão forte que os joelhos caem para dentro"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "abducao-de-quadril",
+      "concha",
+      "abducao-de-quadril-em-pe"
+    ]
+  },
+  {
+    "id": "concha",
+    "nome": "Concha",
+    "nomeEn": "Clamshell",
+    "outrosNomes": [
+      "clamshell",
+      "ostra",
+      "abducao com joelhos flexionados",
+      "concha deitado"
+    ],
+    "tipo": "forca",
+    "padrao": "isolamento",
+    "plano": "transverso",
+    "equipamento": [
+      "peso-corporal",
+      "elastico",
+      "tapete"
+    ],
+    "cadeia": "aberta",
+    "dificuldade": 1,
+    "unilateral": true,
+    "notaUnilateral": "Trabalha o quadril de cima, o que está livre. Faça os dois lados.",
+    "primarios": [
+      "gluteo-medio"
+    ],
+    "secundarios": [
+      "gluteo-minimo",
+      "piriforme",
+      "gluteo-maximo"
+    ],
+    "estabilizadores": [
+      "obliquo-externo",
+      "transverso-do-abdomen",
+      "quadrado-lombar"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Deitado de lado, joelhos dobrados e pés juntos, abre o joelho de cima sem deixar a pelve rolar para trás. Chega nas fibras posteriores do glúteo médio, que a abdução pura pega pouco.",
+    "dicas": [
+      "Empilhe a pelve e mantenha-a imóvel: rolar para trás transforma o exercício em nada",
+      "Uma mão no osso do quadril avisa quando a pelve girou"
+    ],
+    "erros": [
+      "Girar o tronco em vez de abrir o quadril",
+      "Subir o joelho tão alto que a pelve acompanha"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "abducao-de-quadril",
+      "caminhada-lateral-elastico"
+    ]
+  },
+  {
+    "id": "abducao-de-quadril-em-pe",
+    "nome": "Abdução de quadril em pé",
+    "nomeEn": "Standing hip abduction",
+    "outrosNomes": [
+      "abducao em pe",
+      "cable hip abduction",
+      "abducao no cabo",
+      "elevacao lateral de perna em pe"
+    ],
+    "tipo": "forca",
+    "padrao": "isolamento",
+    "plano": "frontal",
+    "equipamento": [
+      "cabos",
+      "elastico",
+      "peso-corporal"
+    ],
+    "cadeia": "mista",
+    "dificuldade": 1,
+    "unilateral": true,
+    "notaUnilateral": "A perna que se afasta trabalha em movimento; a de apoio trabalha parada, segurando a pelve, e costuma cansar primeiro. Faça os dois lados.",
+    "primarios": [
+      "gluteo-medio",
+      "gluteo-minimo"
+    ],
+    "secundarios": [
+      "tensor-fascia-lata"
+    ],
+    "estabilizadores": [
+      "quadrado-lombar",
+      "obliquo-externo",
+      "transverso-do-abdomen",
+      "tibial-anterior",
+      "soleo"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Em pé, afasta uma perna da linha média contra resistência. Treina o abdutor de pé, que é a posição em que ele de facto trabalha, e cobra da perna de apoio o mesmo controle.",
+    "dicas": [
+      "Quadril nivelado: se a pelve cai do lado solto, a perna de apoio é o elo fraco e é ela que precisa do exercício",
+      "Amplitude curta já basta — passar de 30 graus vira flexão lateral de tronco"
+    ],
+    "erros": [
+      "Inclinar o tronco para o lado oposto para ganhar amplitude"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "abducao-de-quadril",
+      "caminhada-lateral-elastico"
+    ]
+  },
+  {
+    "id": "ponte-de-gluteo-unilateral",
+    "nome": "Ponte de glúteo unilateral",
+    "nomeEn": "Single-leg glute bridge",
+    "outrosNomes": [
+      "ponte unilateral",
+      "single leg hip thrust",
+      "elevacao pelvica unilateral",
+      "ponte numa perna"
+    ],
+    "tipo": "forca",
+    "padrao": "dobradica-de-quadril",
+    "plano": "sagital",
+    "equipamento": [
+      "peso-corporal",
+      "tapete",
+      "banco"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 2,
+    "unilateral": true,
+    "notaUnilateral": "Trabalha o quadril da perna apoiada no chão. Faça os dois lados.",
+    "primarios": [
+      "gluteo-maximo"
+    ],
+    "secundarios": [
+      "gluteo-medio",
+      "biceps-femoral",
+      "semitendinoso"
+    ],
+    "estabilizadores": [
+      "transverso-do-abdomen",
+      "obliquo-externo",
+      "quadrado-lombar",
+      "eretores-da-espinha",
+      "gluteo-minimo"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Ponte com um pé só no chão e a pelve nivelada. A carga no glúteo máximo dobra sem nenhum peso, e o controle lateral do quadril passa a ser a parte difícil.",
+    "dicas": [
+      "A pelve não pode cair do lado da perna solta: é isso que faz o glúteo médio entrar",
+      "Joelho da perna solta puxado ao peito trava a lombar de compensar"
+    ],
+    "erros": [
+      "Arquear a lombar em vez de estender o quadril",
+      "Empurrar com a ponta do pé em vez do calcanhar"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "ponte-de-gluteo",
+      "agachamento-bulgaro"
+    ]
+  },
+  {
+    "id": "agachamento-monopodal",
+    "nome": "Agachamento unipodal",
+    "nomeEn": "Single-leg squat",
+    "outrosNomes": [
+      "agachamento com uma perna",
+      "single leg squat",
+      "agachamento no banco",
+      "pistol"
+    ],
+    "tipo": "forca",
+    "padrao": "agachamento",
+    "plano": "multiplanar",
+    "equipamento": [
+      "peso-corporal",
+      "banco"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 3,
+    "unilateral": true,
+    "notaUnilateral": "A perna de apoio faz todo o trabalho. Faça os dois lados.",
+    "primarios": [
+      "gluteo-maximo",
+      "vasto-lateral",
+      "vasto-medial"
+    ],
+    "secundarios": [
+      "gluteo-medio",
+      "gluteo-minimo",
+      "reto-femoral",
+      "biceps-femoral",
+      "soleo"
+    ],
+    "estabilizadores": [
+      "transverso-do-abdomen",
+      "quadrado-lombar",
+      "tibial-anterior",
+      "sartorio",
+      "tensor-fascia-lata"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Agacha numa perna só, sentando num banco atrás e levantando sem impulso. É o teste onde a fraqueza de abdutor aparece sozinha: o joelho cai para dentro.",
+    "dicas": [
+      "Comece num banco alto e baixe a altura só quando o joelho parar de colapsar",
+      "Braços à frente ajudam a equilibrar sem tirar carga"
+    ],
+    "erros": [
+      "Deixar o joelho entrar para dentro do pé",
+      "Sentar de queda em vez de descer controlado"
+    ],
+    "cuidados": [
+      "Se o joelho colapsa mesmo no banco alto, volte à subida no banco e ao trabalho de abdutor"
+    ],
+    "substituicoes": [
+      "subida-no-banco",
+      "agachamento-bulgaro",
+      "afundo"
+    ]
+  },
+  {
+    "id": "caminhada-nos-calcanhares",
+    "nome": "Caminhada nos calcanhares",
+    "nomeEn": "Heel walk",
+    "outrosNomes": [
+      "heel walk",
+      "andar nos calcanhares",
+      "marcha nos calcanhares",
+      "caminhada de calcanhar"
+    ],
+    "tipo": "forca",
+    "padrao": "marcha",
+    "plano": "sagital",
+    "equipamento": [
+      "nenhum",
+      "peso-corporal"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 1,
+    "unilateral": false,
+    "primarios": [
+      "tibial-anterior"
+    ],
+    "secundarios": [],
+    "estabilizadores": [
+      "gluteo-medio",
+      "gluteo-maximo",
+      "transverso-do-abdomen",
+      "reto-femoral"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Anda alguns metros apoiado só nos calcanhares, pontas dos pés levantadas. Carga direta no tibial anterior sem nenhum impacto, o que a torna utilizável quando correr está fora de questão.",
+    "dicas": [
+      "20 a 30 metros já ardem: pare quando a ponta do pé começar a cair, não depois",
+      "Piso plano e olhar à frente — o desequilíbrio vem de olhar para os pés"
+    ],
+    "erros": [
+      "Inclinar o tronco para trás para manter as pontas no ar"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "dorsiflexao-de-tornozelo",
+      "elevacao-de-pontas-na-parede"
+    ]
+  },
+  {
+    "id": "elevacao-de-pontas-na-parede",
+    "nome": "Elevação de pontas na parede",
+    "nomeEn": "Tibialis raise",
+    "outrosNomes": [
+      "tibialis raise",
+      "tib raise",
+      "elevacao de ponta do pe",
+      "levantar as pontas"
+    ],
+    "tipo": "forca",
+    "padrao": "isolamento",
+    "plano": "sagital",
+    "equipamento": [
+      "peso-corporal",
+      "nenhum"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 1,
+    "unilateral": false,
+    "primarios": [
+      "tibial-anterior"
+    ],
+    "secundarios": [],
+    "estabilizadores": [
+      "reto-femoral",
+      "gluteo-maximo",
+      "transverso-do-abdomen"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Costas na parede, pés um palmo à frente, levanta as pontas dos pés o mais alto que conseguir e desce devagar. É a dorsiflexão em pé, com o peso do corpo como resistência.",
+    "dicas": [
+      "A descida lenta é metade do exercício",
+      "Quanto mais longe da parede os pés, mais difícil — é assim que se progride, sem carga externa"
+    ],
+    "erros": [
+      "Dobrar os joelhos para ganhar altura"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "dorsiflexao-de-tornozelo",
+      "caminhada-nos-calcanhares"
+    ]
+  },
+  {
+    "id": "equilibrio-em-um-pe",
+    "nome": "Equilíbrio em um pé",
+    "nomeEn": "Single-leg balance",
+    "outrosNomes": [
+      "equilibrio unipodal",
+      "single leg stance",
+      "apoio num pe",
+      "ficar num pe so"
+    ],
+    "tipo": "mobilidade",
+    "padrao": "postura-mantida",
+    "plano": "frontal",
+    "equipamento": [
+      "nenhum",
+      "peso-corporal"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 1,
+    "unilateral": true,
+    "notaUnilateral": "Trabalha a perna de apoio. Faça os dois lados e compare — a diferença entre eles é a informação.",
+    "primarios": [],
+    "secundarios": [
+      "gluteo-medio",
+      "gluteo-minimo"
+    ],
+    "estabilizadores": [
+      "tibial-anterior",
+      "soleo",
+      "gastrocnemio-medial",
+      "quadrado-lombar",
+      "obliquo-externo",
+      "transverso-do-abdomen",
+      "tensor-fascia-lata"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Fica 30 segundos apoiado num pé só, com o quadril nivelado. Mede e treina ao mesmo tempo: se a pelve cai do lado solto, o abdutor do lado apoiado é o elo fraco.",
+    "dicas": [
+      "Olhe para um ponto fixo à altura dos olhos",
+      "Para progredir, feche os olhos em vez de aumentar o tempo — tirar a visão é o salto de dificuldade"
+    ],
+    "erros": [
+      "Segurar-se com o dedo numa parede e chamar isso de equilíbrio"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "caminhada-lateral-elastico",
+      "prancha-lateral"
+    ]
+  },
+  {
+    "id": "elevacao-de-joelhos-suspenso",
+    "nome": "Elevação de joelhos suspenso",
+    "nomeEn": "Hanging knee raise",
+    "outrosNomes": [
+      "hanging knee raise",
+      "elevacao de pernas na barra",
+      "abdominal na barra",
+      "elevacao de joelhos"
+    ],
+    "tipo": "forca",
+    "padrao": "isolamento",
+    "plano": "sagital",
+    "equipamento": [
+      "barra-fixa"
+    ],
+    "cadeia": "aberta",
+    "dificuldade": 2,
+    "unilateral": false,
+    "primarios": [
+      "psoas-iliaco",
+      "reto-abdominal"
+    ],
+    "secundarios": [
+      "obliquo-externo",
+      "reto-femoral",
+      "flexores-antebraco"
+    ],
+    "estabilizadores": [
+      "grande-dorsal",
+      "transverso-do-abdomen",
+      "sartorio",
+      "braquiorradial"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Pendurado na barra, leva os joelhos ao peito e deixa a pelve girar no fim do movimento. É dos poucos exercícios que carregam o psoas em vez de só o alongarem.",
+    "dicas": [
+      "A parte final, em que a pelve gira para trás, é o que separa flexão de quadril de abdominal",
+      "Pare o balanço entre repetições: o pêndulo faz o trabalho no seu lugar"
+    ],
+    "erros": [
+      "Usar impulso e transformar num pêndulo",
+      "Parar nos 90 graus, onde o abdômen ainda nem entrou"
+    ],
+    "cuidados": [
+      "Se a lombar arqueia ou incomoda, faça dead bug até controlar a pelve deitado"
+    ],
+    "substituicoes": [
+      "dead-bug",
+      "abdominal-tradicional"
     ]
   }
 ]
