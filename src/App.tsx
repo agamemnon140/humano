@@ -15,11 +15,18 @@ import { FichaAtividade } from './components/exercicios/FichaAtividade'
 import { FichaLesao, LesoesAba } from './components/lesoes/LesoesAba'
 import { SessaoAba } from './components/sessao/SessaoAba'
 import { BarraAbas } from './components/shell/BarraAbas'
+import { FaixaRealce } from './components/shell/Comuns'
 
 export default function App() {
   const [aba, navegar] = useAbaHash()
   const [vista, setVista] = useState<Vista>('frente')
   const [camada, setCamada] = useState<Camada>('superficial')
+
+  // O que PINTA o corpo e o que ABRE a ficha sao coisas diferentes. Antes eram
+  // o mesmo estado, e fechar a ficha apagava a coloracao — que e justamente o
+  // que se quer ver depois de fechar a ficha.
+  const [atividadeRealcada, setAtividadeRealcada] = useState<AtividadeId | null>(null)
+  const [lesaoRealcada, setLesaoRealcada] = useState<LesaoId | null>(null)
 
   const [musculoAberto, setMusculoAberto] = useState<MusculoId | null>(null)
   const [atividadeAberta, setAtividadeAberta] = useState<AtividadeId | null>(null)
@@ -47,22 +54,35 @@ export default function App() {
     [sessao, lesoesAtivas, camada],
   )
 
-  // Toda a coloração do corpo sai daqui: funções puras que devolvem tons
-  // semânticos. O renderizador nunca sabe de onde veio.
+  // Uma fonte de cada vez, com precedencia explicita, para a FaixaRealce
+  // conseguir sempre dizer em uma linha o que esta na tela.
+  const fonte = useMemo(() => {
+    if (atividadeRealcada) {
+      const a = atividadePorId.get(atividadeRealcada)
+      if (a) return { rotulo: a.nome, detalhe: 'músculos trabalhados', mapa: realceDeAtividade(a) }
+    }
+    if (lesaoRealcada) {
+      const l = lesaoPorId.get(lesaoRealcada)
+      if (l) return { rotulo: l.nome, detalhe: 'o que fortalecer e alongar', mapa: realceDeLesao(l) }
+    }
+    if (sessao.length > 0) {
+      return {
+        rotulo: 'Cobertura da sessão',
+        detalhe: `${sessao.length} ${sessao.length === 1 ? 'exercício' : 'exercícios'}`,
+        mapa: realceDeSessao(resultado),
+      }
+    }
+    return null
+  }, [atividadeRealcada, lesaoRealcada, sessao.length, resultado])
+
+  // O musculo tocado vai por cima em dourado (precedencia 'selecionado'), sem
+  // apagar as cores de nivel do que estava pintado.
   const realces: MapaDeRealce = useMemo(() => {
     const fontes: MapaDeRealce[] = []
-    if (atividadeAberta) {
-      const a = atividadePorId.get(atividadeAberta)
-      if (a) fontes.push(realceDeAtividade(a))
-    } else if (lesaoAberta) {
-      const l = lesaoPorId.get(lesaoAberta)
-      if (l) fontes.push(realceDeLesao(l))
-    } else if (aba === 'sessao' && sessao.length > 0) {
-      fontes.push(realceDeSessao(resultado))
-    }
+    if (fonte) fontes.push(fonte.mapa)
     if (musculoAberto) fontes.push(realceDeMusculo(musculoAberto))
     return fundirRealces(...fontes)
-  }, [atividadeAberta, lesaoAberta, musculoAberto, aba, sessao.length, resultado])
+  }, [fonte, musculoAberto])
 
   const abrirMusculo = useCallback((id: MusculoId | null) => {
     setMusculoAberto(id)
@@ -75,14 +95,51 @@ export default function App() {
   const abrirAtividade = useCallback((id: AtividadeId | null) => {
     setAtividadeAberta(id)
     if (id) {
+      setAtividadeRealcada(id)
+      setLesaoRealcada(null)
       setMusculoAberto(null)
       setLesaoAberta(null)
     }
   }, [])
 
-  // Fora da aba do mapa, o corpo continua visível como painel de contexto —
-  // é o que faz a coloração por exercício e por sessão ser útil.
-  const mostraCorpoAuxiliar = aba !== 'mapa'
+  const abrirLesao = useCallback((id: LesaoId | null) => {
+    setLesaoAberta(id)
+    if (id) {
+      setLesaoRealcada(id)
+      setAtividadeRealcada(null)
+      setMusculoAberto(null)
+      setAtividadeAberta(null)
+    }
+  }, [])
+
+  const limparRealce = useCallback(() => {
+    setAtividadeRealcada(null)
+    setLesaoRealcada(null)
+    setMusculoAberto(null)
+  }, [])
+
+  const tons = useMemo(() => [...new Set([...realces.values()].map((e) => e.tom))], [realces])
+
+  // Fora da aba do mapa, o corpo continua visivel como painel de contexto —
+  // e o que faz a coloracao por exercicio e por sessao ser util.
+  const painelCorpo = aba !== 'mapa' && (
+    <div className="mb-4 flex flex-col gap-2">
+      {fonte && (
+        <FaixaRealce rotulo={fonte.rotulo} detalhe={fonte.detalhe} onLimpar={limparRealce} />
+      )}
+      <div className="h-64 md:h-80">
+        <Corpo
+          vista={vista}
+          camada={camada}
+          realces={realces}
+          selecionado={musculoAberto}
+          onSelecionar={abrirMusculo}
+        />
+      </div>
+      <SeletorVista vista={vista} camada={camada} onVista={setVista} onCamada={setCamada} />
+      <Legenda tons={tons} />
+    </div>
+  )
 
   return (
     <div className="flex h-full flex-col md:flex-row">
@@ -104,29 +161,24 @@ export default function App() {
                 selecionado={musculoAberto}
                 onSelecionar={abrirMusculo}
                 realces={realces}
+                faixa={
+                  fonte && (
+                    <FaixaRealce
+                      rotulo={fonte.rotulo}
+                      detalhe={fonte.detalhe}
+                      onLimpar={limparRealce}
+                    />
+                  )
+                }
               />
             </div>
           )}
 
-          {mostraCorpoAuxiliar && (
-            <div className="mb-4 flex flex-col gap-2">
-              <div className="h-56 md:h-72">
-                <Corpo
-                  vista={vista}
-                  camada={camada}
-                  realces={realces}
-                  selecionado={musculoAberto}
-                  onSelecionar={abrirMusculo}
-                />
-              </div>
-              <SeletorVista vista={vista} camada={camada} onVista={setVista} onCamada={setCamada} />
-              <Legenda tons={[...new Set([...realces.values()].map((e) => e.tom))]} />
-            </div>
-          )}
+          {painelCorpo}
 
           {aba === 'exercicios' && (
             <ExerciciosAba
-              selecionada={atividadeAberta}
+              realcada={atividadeRealcada}
               sessao={sessao}
               onSelecionar={abrirAtividade}
               onAlternarSessao={alternarSessao}
@@ -134,11 +186,7 @@ export default function App() {
           )}
 
           {aba === 'queixas' && (
-            <LesoesAba
-              ativas={lesoesAtivas}
-              onSelecionar={setLesaoAberta}
-              onAlternarAtiva={alternarLesao}
-            />
+            <LesoesAba ativas={lesoesAtivas} onSelecionar={abrirLesao} onAlternarAtiva={alternarLesao} />
           )}
 
           {aba === 'sessao' && (

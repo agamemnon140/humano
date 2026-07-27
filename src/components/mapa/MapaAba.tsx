@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useMemo, useState, type ReactNode } from 'react'
 import { musculos, musculoPorId } from '../../data'
 import { filtrarMusculos } from '../../lib/filtros'
 import { ROTULO_REGIAO, REGIOES, type Camada, type MapaDeRealce, type MusculoId, type Vista } from '../../types'
@@ -15,6 +15,7 @@ export function MapaAba({
   selecionado,
   onSelecionar,
   realces,
+  faixa,
 }: {
   vista: Vista
   camada: Camada
@@ -23,6 +24,7 @@ export function MapaAba({
   selecionado: MusculoId | null
   onSelecionar: (id: MusculoId | null) => void
   realces: MapaDeRealce
+  faixa?: ReactNode
 }) {
   const [busca, setBusca] = useState('')
   const [mostrarLista, setMostrarLista] = useState(false)
@@ -35,6 +37,7 @@ export function MapaAba({
 
   return (
     <div className="flex h-full flex-col gap-3">
+      {faixa}
       <SeletorVista vista={vista} camada={camada} onVista={onVista} onCamada={onCamada} />
 
       <div className="min-h-0 flex-1">
