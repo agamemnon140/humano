@@ -1,0 +1,3077 @@
+[
+  {
+    "id": "supino-com-barra",
+    "nome": "Supino reto com barra",
+    "nomeEn": "Barbell bench press",
+    "outrosNomes": [
+      "supino",
+      "bench press",
+      "press de banca",
+      "supino reto"
+    ],
+    "tipo": "forca",
+    "padrao": "empurrar-horizontal",
+    "plano": "transverso",
+    "equipamento": [
+      "barra",
+      "banco"
+    ],
+    "cadeia": "aberta",
+    "dificuldade": 2,
+    "unilateral": false,
+    "primarios": [
+      "peitoral-maior-esternal",
+      "peitoral-maior-clavicular"
+    ],
+    "secundarios": [
+      "triceps-cabeca-lateral",
+      "triceps-cabeca-medial",
+      "deltoide-anterior"
+    ],
+    "estabilizadores": [
+      "serratil-anterior",
+      "romboides",
+      "trapezio-medio",
+      "infraespinhoso",
+      "redondo-menor",
+      "reto-abdominal"
+    ],
+    "encurta": [
+      "peitoral-menor"
+    ],
+    "inibe": [],
+    "notaPostural": "Volume alto de empurrar sem puxar equivalente costuma acompanhar peitoral menor encurtado e ombros projetados à frente.",
+    "evidenciaPostural": "consenso-fraco",
+    "descricao": "Deitado no banco, desce a barra até o peito e empurra até estender os cotovelos.",
+    "dicas": [
+      "Escápulas retraídas e deprimidas contra o banco",
+      "Pés firmes no chão, arco lombar natural",
+      "Cotovelos a 45–60° do tronco, não abertos a 90°"
+    ],
+    "erros": [
+      "Quicar a barra no peito",
+      "Levantar os glúteos do banco",
+      "Descer a barra no pescoço"
+    ],
+    "cuidados": [
+      "Dor na frente do ombro no fim da amplitude: reduza a amplitude ou troque por halteres"
+    ],
+    "substituicoes": [
+      "supino-com-halteres",
+      "flexao-de-bracos"
+    ]
+  },
+  {
+    "id": "supino-com-halteres",
+    "nome": "Supino com halteres",
+    "nomeEn": "Dumbbell bench press",
+    "outrosNomes": [
+      "supino halteres",
+      "dumbbell press"
+    ],
+    "tipo": "forca",
+    "padrao": "empurrar-horizontal",
+    "plano": "transverso",
+    "equipamento": [
+      "halteres",
+      "banco"
+    ],
+    "cadeia": "aberta",
+    "dificuldade": 2,
+    "unilateral": false,
+    "primarios": [
+      "peitoral-maior-esternal"
+    ],
+    "secundarios": [
+      "triceps-cabeca-lateral",
+      "deltoide-anterior",
+      "peitoral-maior-clavicular"
+    ],
+    "estabilizadores": [
+      "serratil-anterior",
+      "infraespinhoso",
+      "redondo-menor",
+      "subescapular",
+      "reto-abdominal"
+    ],
+    "encurta": [
+      "peitoral-menor"
+    ],
+    "inibe": [],
+    "notaPostural": "Como qualquer empurrão horizontal de volume alto, tende a acompanhar peitoral menor encurtado quando não há puxada equivalente no programa.",
+    "evidenciaPostural": "consenso-fraco",
+    "descricao": "Igual ao supino com barra, mas cada mão controla um peso, o que exige mais dos estabilizadores do ombro.",
+    "dicas": [
+      "Amplitude um pouco maior que com barra",
+      "Não deixe os halteres baterem no topo"
+    ],
+    "erros": [
+      "Perder o controle na descida"
+    ],
+    "cuidados": [
+      "Suba os halteres com apoio das coxas, não do chão"
+    ],
+    "substituicoes": [
+      "supino-com-barra",
+      "flexao-de-bracos"
+    ]
+  },
+  {
+    "id": "supino-inclinado",
+    "nome": "Supino inclinado",
+    "nomeEn": "Incline bench press",
+    "outrosNomes": [
+      "inclinado",
+      "incline press",
+      "supino 30 graus"
+    ],
+    "tipo": "forca",
+    "padrao": "empurrar-horizontal",
+    "plano": "transverso",
+    "equipamento": [
+      "barra",
+      "halteres",
+      "banco"
+    ],
+    "cadeia": "aberta",
+    "dificuldade": 2,
+    "unilateral": false,
+    "primarios": [
+      "peitoral-maior-clavicular"
+    ],
+    "secundarios": [
+      "deltoide-anterior",
+      "peitoral-maior-esternal",
+      "triceps-cabeca-lateral"
+    ],
+    "estabilizadores": [
+      "serratil-anterior",
+      "trapezio-medio",
+      "infraespinhoso",
+      "reto-abdominal"
+    ],
+    "encurta": [
+      "peitoral-menor"
+    ],
+    "inibe": [],
+    "notaPostural": "Mesmo padrão dos demais empurrões horizontais: volume alto sem puxada equivalente acompanha peitoral menor encurtado.",
+    "evidenciaPostural": "consenso-fraco",
+    "descricao": "Banco a 30–45°: o vetor de empurrão sobe e transfere carga para as fibras claviculares do peitoral.",
+    "dicas": [
+      "Acima de 45° o exercício vira desenvolvimento",
+      "Barra desce na altura da clavícula"
+    ],
+    "erros": [
+      "Inclinação exagerada, que só transfere tudo para o deltoide"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "supino-com-barra",
+      "flexao-de-bracos"
+    ]
+  },
+  {
+    "id": "flexao-de-bracos",
+    "nome": "Flexão de braços",
+    "nomeEn": "Push-up",
+    "outrosNomes": [
+      "flexao",
+      "push up",
+      "apoio",
+      "flexao de braco"
+    ],
+    "tipo": "forca",
+    "padrao": "empurrar-horizontal",
+    "plano": "transverso",
+    "equipamento": [
+      "peso-corporal"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 1,
+    "unilateral": false,
+    "primarios": [
+      "peitoral-maior-esternal"
+    ],
+    "secundarios": [
+      "triceps-cabeca-lateral",
+      "triceps-cabeca-medial",
+      "deltoide-anterior",
+      "serratil-anterior"
+    ],
+    "estabilizadores": [
+      "reto-abdominal",
+      "transverso-do-abdomen",
+      "obliquo-externo",
+      "gluteo-maximo",
+      "eretores-da-espinha"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Empurrão horizontal em cadeia fechada. Por a escápula ficar livre, o serrátil trabalha muito mais que no supino.",
+    "dicas": [
+      "Corpo em prancha, glúteos ativos",
+      "Empurre o chão para longe no topo, deixando as escápulas abrirem"
+    ],
+    "erros": [
+      "Quadril caindo",
+      "Cabeça descendo antes do peito"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "supino-com-halteres",
+      "supino-com-barra"
+    ]
+  },
+  {
+    "id": "crucifixo",
+    "nome": "Crucifixo",
+    "nomeEn": "Chest fly",
+    "outrosNomes": [
+      "fly",
+      "voador",
+      "peck deck",
+      "crucifixo reto"
+    ],
+    "tipo": "forca",
+    "padrao": "isolamento",
+    "plano": "transverso",
+    "equipamento": [
+      "halteres",
+      "cabos",
+      "banco"
+    ],
+    "cadeia": "aberta",
+    "dificuldade": 2,
+    "unilateral": false,
+    "primarios": [
+      "peitoral-maior-esternal"
+    ],
+    "secundarios": [
+      "peitoral-maior-clavicular",
+      "deltoide-anterior"
+    ],
+    "estabilizadores": [
+      "infraespinhoso",
+      "redondo-menor",
+      "serratil-anterior"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Adução horizontal com cotovelos quase fixos: isola o peitoral sem envolver o tríceps.",
+    "dicas": [
+      "Cotovelos levemente flexionados e travados",
+      "Amplitude confortável, sem forçar o fim"
+    ],
+    "erros": [
+      "Transformar em supino dobrando os cotovelos"
+    ],
+    "cuidados": [
+      "Abrir demais estressa a cápsula anterior do ombro"
+    ],
+    "substituicoes": [
+      "supino-com-halteres"
+    ]
+  },
+  {
+    "id": "desenvolvimento-com-barra",
+    "nome": "Desenvolvimento com barra",
+    "nomeEn": "Overhead press",
+    "outrosNomes": [
+      "desenvolvimento militar",
+      "overhead press",
+      "ohp",
+      "militar",
+      "press militar"
+    ],
+    "tipo": "forca",
+    "padrao": "empurrar-vertical",
+    "plano": "frontal",
+    "equipamento": [
+      "barra"
+    ],
+    "cadeia": "aberta",
+    "dificuldade": 2,
+    "unilateral": false,
+    "primarios": [
+      "deltoide-anterior"
+    ],
+    "secundarios": [
+      "deltoide-medial",
+      "triceps-cabeca-lateral",
+      "triceps-cabeca-medial",
+      "peitoral-maior-clavicular",
+      "serratil-anterior",
+      "trapezio-superior"
+    ],
+    "estabilizadores": [
+      "reto-abdominal",
+      "transverso-do-abdomen",
+      "eretores-da-espinha",
+      "gluteo-maximo",
+      "infraespinhoso",
+      "supraespinhoso"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Em pé, empurra a barra do queixo até acima da cabeça. O core trabalha muito para impedir a lombar de arquear.",
+    "dicas": [
+      "Aperte glúteos e abdômen antes de subir",
+      "Passe a cabeça à frente da barra no topo",
+      "Punhos empilhados sobre os cotovelos"
+    ],
+    "erros": [
+      "Arquear a lombar para compensar falta de mobilidade de ombro",
+      "Terminar com a barra à frente da cabeça"
+    ],
+    "cuidados": [
+      "Sem mobilidade de ombro suficiente, prefira halteres em pegada neutra"
+    ],
+    "substituicoes": [
+      "desenvolvimento-com-halteres"
+    ]
+  },
+  {
+    "id": "desenvolvimento-com-halteres",
+    "nome": "Desenvolvimento com halteres",
+    "nomeEn": "Dumbbell shoulder press",
+    "outrosNomes": [
+      "desenvolvimento halteres",
+      "shoulder press",
+      "arnold press"
+    ],
+    "tipo": "forca",
+    "padrao": "empurrar-vertical",
+    "plano": "frontal",
+    "equipamento": [
+      "halteres",
+      "banco"
+    ],
+    "cadeia": "aberta",
+    "dificuldade": 2,
+    "unilateral": false,
+    "primarios": [
+      "deltoide-anterior"
+    ],
+    "secundarios": [
+      "deltoide-medial",
+      "triceps-cabeca-lateral",
+      "serratil-anterior",
+      "trapezio-superior"
+    ],
+    "estabilizadores": [
+      "infraespinhoso",
+      "supraespinhoso",
+      "subescapular",
+      "reto-abdominal",
+      "transverso-do-abdomen"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Mesma direção do desenvolvimento com barra, com trajetória livre e pegada neutra possível.",
+    "dicas": [
+      "Pegada neutra costuma ser mais tolerada por ombros sensíveis"
+    ],
+    "erros": [
+      "Bater os halteres no topo"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "desenvolvimento-com-barra"
+    ]
+  },
+  {
+    "id": "elevacao-lateral",
+    "nome": "Elevação lateral",
+    "nomeEn": "Lateral raise",
+    "outrosNomes": [
+      "elevacao lateral",
+      "lateral raise",
+      "abducao de ombro"
+    ],
+    "tipo": "forca",
+    "padrao": "isolamento",
+    "plano": "frontal",
+    "equipamento": [
+      "halteres",
+      "cabos",
+      "elastico"
+    ],
+    "cadeia": "aberta",
+    "dificuldade": 1,
+    "unilateral": false,
+    "primarios": [
+      "deltoide-medial"
+    ],
+    "secundarios": [
+      "supraespinhoso",
+      "trapezio-superior"
+    ],
+    "estabilizadores": [
+      "trapezio-inferior",
+      "serratil-anterior"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Abduz o braço até a altura do ombro. É o único jeito prático de carregar a porção medial do deltoide isoladamente.",
+    "dicas": [
+      "Suba até a linha do ombro, não além",
+      "Carga leve: é um músculo pequeno"
+    ],
+    "erros": [
+      "Usar impulso do tronco",
+      "Elevar os ombros junto com os braços"
+    ],
+    "cuidados": [
+      "Dor no topo da amplitude pode indicar irritação do supraespinhoso"
+    ],
+    "substituicoes": []
+  },
+  {
+    "id": "remada-curvada",
+    "nome": "Remada curvada",
+    "nomeEn": "Bent-over row",
+    "outrosNomes": [
+      "remada",
+      "barbell row",
+      "remada com barra"
+    ],
+    "tipo": "forca",
+    "padrao": "puxar-horizontal",
+    "plano": "sagital",
+    "equipamento": [
+      "barra"
+    ],
+    "cadeia": "aberta",
+    "dificuldade": 3,
+    "unilateral": false,
+    "primarios": [
+      "grande-dorsal",
+      "trapezio-medio"
+    ],
+    "secundarios": [
+      "romboides",
+      "deltoide-posterior",
+      "redondo-maior",
+      "biceps-braquial",
+      "braquiorradial",
+      "trapezio-inferior"
+    ],
+    "estabilizadores": [
+      "eretores-da-espinha",
+      "multifidos",
+      "biceps-femoral",
+      "gluteo-maximo",
+      "transverso-do-abdomen",
+      "flexores-antebraco"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Tronco inclinado à frente e barra puxada até o abdômen. A posição inclinada exige muito dos extensores lombares como estabilizadores isométricos.",
+    "dicas": [
+      "Quadril para trás, coluna neutra",
+      "Puxe com os cotovelos, não com as mãos"
+    ],
+    "erros": [
+      "Arredondar a lombar",
+      "Levantar o tronco a cada repetição"
+    ],
+    "cuidados": [
+      "Com lombar sensível, prefira remada apoiada no banco ou remada baixa sentada"
+    ],
+    "substituicoes": [
+      "remada-unilateral-halter",
+      "remada-baixa-cabo"
+    ]
+  },
+  {
+    "id": "remada-unilateral-halter",
+    "nome": "Remada unilateral com halter",
+    "nomeEn": "One-arm dumbbell row",
+    "outrosNomes": [
+      "remada serrote",
+      "one arm row",
+      "remada apoiada"
+    ],
+    "tipo": "forca",
+    "padrao": "puxar-horizontal",
+    "plano": "sagital",
+    "equipamento": [
+      "halteres",
+      "banco"
+    ],
+    "cadeia": "aberta",
+    "dificuldade": 1,
+    "unilateral": true,
+    "notaUnilateral": "Trabalha o lado do braço que puxa. O apoio no banco tira a carga da lombar, o que a torna a versão mais segura da remada.",
+    "primarios": [
+      "grande-dorsal"
+    ],
+    "secundarios": [
+      "trapezio-medio",
+      "romboides",
+      "deltoide-posterior",
+      "redondo-maior",
+      "biceps-braquial"
+    ],
+    "estabilizadores": [
+      "obliquo-externo",
+      "quadrado-lombar",
+      "transverso-do-abdomen",
+      "flexores-antebraco"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Um joelho e uma mão no banco, puxa o halter até a lateral do tronco.",
+    "dicas": [
+      "Tronco paralelo ao chão e parado",
+      "Deixe a escápula descer no fim da descida"
+    ],
+    "erros": [
+      "Girar o tronco para ganhar amplitude"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "remada-curvada",
+      "remada-baixa-cabo"
+    ]
+  },
+  {
+    "id": "remada-baixa-cabo",
+    "nome": "Remada baixa sentada",
+    "nomeEn": "Seated cable row",
+    "outrosNomes": [
+      "remada sentada",
+      "seated row",
+      "remada no cabo"
+    ],
+    "tipo": "forca",
+    "padrao": "puxar-horizontal",
+    "plano": "transverso",
+    "equipamento": [
+      "cabos",
+      "maquina"
+    ],
+    "cadeia": "aberta",
+    "dificuldade": 1,
+    "unilateral": false,
+    "primarios": [
+      "grande-dorsal",
+      "trapezio-medio"
+    ],
+    "secundarios": [
+      "romboides",
+      "deltoide-posterior",
+      "biceps-braquial",
+      "trapezio-inferior"
+    ],
+    "estabilizadores": [
+      "eretores-da-espinha",
+      "transverso-do-abdomen"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Sentado, puxa o cabo até o abdômen com o tronco ereto. Carga na lombar bem menor que na remada curvada.",
+    "dicas": [
+      "Tronco quase parado: o movimento é dos braços e escápulas"
+    ],
+    "erros": [
+      "Balançar o tronco para trás em cada repetição"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "remada-curvada",
+      "remada-unilateral-halter"
+    ]
+  },
+  {
+    "id": "face-pull",
+    "nome": "Face pull",
+    "nomeEn": "Face pull",
+    "outrosNomes": [
+      "face pull",
+      "puxada para o rosto",
+      "remada alta no cabo"
+    ],
+    "tipo": "forca",
+    "padrao": "puxar-horizontal",
+    "plano": "transverso",
+    "equipamento": [
+      "cabos",
+      "elastico"
+    ],
+    "cadeia": "aberta",
+    "dificuldade": 1,
+    "unilateral": false,
+    "primarios": [
+      "deltoide-posterior"
+    ],
+    "secundarios": [
+      "infraespinhoso",
+      "redondo-menor",
+      "trapezio-medio",
+      "trapezio-inferior",
+      "romboides"
+    ],
+    "estabilizadores": [
+      "serratil-anterior",
+      "reto-abdominal"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Puxa a corda até a altura do rosto com os cotovelos altos, combinando abdução horizontal e rotação externa.",
+    "dicas": [
+      "Termine com as mãos acima dos cotovelos",
+      "Carga leve, controle total"
+    ],
+    "erros": [
+      "Usar carga que force o tronco a se jogar para trás"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "remada-baixa-cabo"
+    ]
+  },
+  {
+    "id": "barra-fixa",
+    "nome": "Barra fixa",
+    "nomeEn": "Pull-up",
+    "outrosNomes": [
+      "pull up",
+      "chin up",
+      "barra",
+      "puxada na barra"
+    ],
+    "tipo": "forca",
+    "padrao": "puxar-vertical",
+    "plano": "frontal",
+    "equipamento": [
+      "barra-fixa",
+      "peso-corporal"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 3,
+    "unilateral": false,
+    "primarios": [
+      "grande-dorsal"
+    ],
+    "secundarios": [
+      "redondo-maior",
+      "biceps-braquial",
+      "braquiorradial",
+      "trapezio-inferior",
+      "romboides",
+      "deltoide-posterior"
+    ],
+    "estabilizadores": [
+      "reto-abdominal",
+      "transverso-do-abdomen",
+      "obliquo-externo",
+      "flexores-antebraco",
+      "serratil-anterior"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Pendurado na barra, puxa o corpo até o queixo passar a barra. O padrão de puxada vertical mais completo que existe.",
+    "dicas": [
+      "Comece deprimindo as escápulas antes de dobrar os cotovelos",
+      "Evite balanço se o objetivo é força"
+    ],
+    "erros": [
+      "Amplitude parcial crônica",
+      "Encolher os ombros no fim da descida"
+    ],
+    "cuidados": [
+      "Dor no cotovelo em pegada supinada: troque para pegada neutra"
+    ],
+    "substituicoes": [
+      "puxada-alta"
+    ]
+  },
+  {
+    "id": "puxada-alta",
+    "nome": "Puxada alta na polia",
+    "nomeEn": "Lat pulldown",
+    "outrosNomes": [
+      "pulldown",
+      "puxada frontal",
+      "lat pulldown",
+      "puxador"
+    ],
+    "tipo": "forca",
+    "padrao": "puxar-vertical",
+    "plano": "frontal",
+    "equipamento": [
+      "maquina",
+      "cabos"
+    ],
+    "cadeia": "aberta",
+    "dificuldade": 1,
+    "unilateral": false,
+    "primarios": [
+      "grande-dorsal"
+    ],
+    "secundarios": [
+      "redondo-maior",
+      "biceps-braquial",
+      "trapezio-inferior",
+      "romboides"
+    ],
+    "estabilizadores": [
+      "reto-abdominal",
+      "eretores-da-espinha",
+      "flexores-antebraco"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Versão com carga ajustável da barra fixa, útil para quem ainda não faz barra ou quer volume alto.",
+    "dicas": [
+      "Puxe até a clavícula, tronco levemente inclinado",
+      "Não puxe atrás da nuca"
+    ],
+    "erros": [
+      "Deitar o tronco para trás e virar uma remada"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "barra-fixa"
+    ]
+  },
+  {
+    "id": "agachamento-livre",
+    "nome": "Agachamento livre",
+    "nomeEn": "Back squat",
+    "outrosNomes": [
+      "squat",
+      "agachamento",
+      "back squat",
+      "agachamento com barra"
+    ],
+    "tipo": "forca",
+    "padrao": "agachamento",
+    "plano": "sagital",
+    "equipamento": [
+      "barra"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 3,
+    "unilateral": false,
+    "primarios": [
+      "vasto-lateral",
+      "vasto-medial",
+      "reto-femoral",
+      "gluteo-maximo"
+    ],
+    "secundarios": [
+      "adutores",
+      "biceps-femoral",
+      "semitendinoso",
+      "soleo",
+      "eretores-da-espinha"
+    ],
+    "estabilizadores": [
+      "transverso-do-abdomen",
+      "reto-abdominal",
+      "obliquo-externo",
+      "multifidos",
+      "gluteo-medio",
+      "quadrado-lombar",
+      "trapezio-medio"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Barra nas costas, desce dobrando quadril e joelhos e sobe empurrando o chão. O exercício mais completo de membro inferior.",
+    "dicas": [
+      "Joelhos acompanham a direção dos pés",
+      "Desça o máximo que a coluna se mantiver neutra",
+      "Respire fundo e trave o core antes de descer"
+    ],
+    "erros": [
+      "Joelhos colapsando para dentro",
+      "Perder a neutralidade da lombar no fundo"
+    ],
+    "cuidados": [
+      "Com dor lombar em fase aguda, reduza carga e amplitude ou troque por leg press"
+    ],
+    "substituicoes": [
+      "agachamento-frontal",
+      "leg-press",
+      "agachamento-bulgaro"
+    ]
+  },
+  {
+    "id": "agachamento-frontal",
+    "nome": "Agachamento frontal",
+    "nomeEn": "Front squat",
+    "outrosNomes": [
+      "front squat",
+      "agachamento a frente"
+    ],
+    "tipo": "forca",
+    "padrao": "agachamento",
+    "plano": "sagital",
+    "equipamento": [
+      "barra"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 3,
+    "unilateral": false,
+    "primarios": [
+      "vasto-lateral",
+      "vasto-medial",
+      "reto-femoral"
+    ],
+    "secundarios": [
+      "gluteo-maximo",
+      "adutores",
+      "eretores-da-espinha",
+      "soleo"
+    ],
+    "estabilizadores": [
+      "transverso-do-abdomen",
+      "reto-abdominal",
+      "multifidos",
+      "trapezio-superior",
+      "serratil-anterior",
+      "gluteo-medio"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Barra apoiada à frente, sobre os deltoides. O tronco fica mais vertical e a carga migra do quadril para o joelho.",
+    "dicas": [
+      "Cotovelos altos o tempo todo",
+      "Exige mais mobilidade de tornozelo e punho que o agachamento livre"
+    ],
+    "erros": [
+      "Cotovelos caindo, o que joga a barra à frente"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "agachamento-livre",
+      "leg-press"
+    ]
+  },
+  {
+    "id": "leg-press",
+    "nome": "Leg press",
+    "nomeEn": "Leg press",
+    "outrosNomes": [
+      "leg press",
+      "prensa de pernas"
+    ],
+    "tipo": "forca",
+    "padrao": "agachamento",
+    "plano": "sagital",
+    "equipamento": [
+      "maquina"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 1,
+    "unilateral": false,
+    "primarios": [
+      "vasto-lateral",
+      "vasto-medial",
+      "reto-femoral",
+      "gluteo-maximo"
+    ],
+    "secundarios": [
+      "adutores",
+      "biceps-femoral",
+      "soleo"
+    ],
+    "estabilizadores": [
+      "transverso-do-abdomen"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Empurra a plataforma com as pernas a partir de um assento. Carrega o quadríceps com pouquíssima exigência do tronco.",
+    "dicas": [
+      "Não deixe a lombar descolar do encosto no fundo",
+      "Não trave os joelhos no topo"
+    ],
+    "erros": [
+      "Amplitude excessiva que faz a pelve rodar e arredondar a lombar"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "agachamento-livre",
+      "agachamento-frontal"
+    ]
+  },
+  {
+    "id": "agachamento-bulgaro",
+    "nome": "Agachamento búlgaro",
+    "nomeEn": "Bulgarian split squat",
+    "outrosNomes": [
+      "bulgaro",
+      "bulgarian split squat",
+      "afundo bulgaro",
+      "agachamento unilateral"
+    ],
+    "tipo": "forca",
+    "padrao": "avanco",
+    "plano": "sagital",
+    "equipamento": [
+      "halteres",
+      "banco",
+      "peso-corporal"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 2,
+    "unilateral": true,
+    "notaUnilateral": "A perna da frente faz todo o trabalho de força. A de trás, apoiada no banco, fica com o flexor do quadril alongado — é por isso que o exercício também serve como mobilização do psoas.",
+    "primarios": [
+      "gluteo-maximo",
+      "vasto-lateral",
+      "vasto-medial"
+    ],
+    "secundarios": [
+      "reto-femoral",
+      "adutores",
+      "biceps-femoral",
+      "semitendinoso",
+      "soleo",
+      "sartorio"
+    ],
+    "estabilizadores": [
+      "gluteo-medio",
+      "gluteo-minimo",
+      "transverso-do-abdomen",
+      "obliquo-externo",
+      "quadrado-lombar",
+      "tensor-fascia-lata"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "notaPostural": "Costuma ser indicado justamente por alongar o flexor do quadril da perna de trás enquanto fortalece o glúteo da frente.",
+    "evidenciaPostural": "consenso-fraco",
+    "descricao": "Pé de trás elevado no banco, desce até o joelho da frente formar cerca de 90°. Carrega bastante o glúteo com pouca carga absoluta na coluna.",
+    "dicas": [
+      "Tronco levemente inclinado à frente enfatiza o glúteo",
+      "Distância do banco define quanto vai para quadríceps ou glúteo"
+    ],
+    "erros": [
+      "Apoiar peso demais na perna de trás",
+      "Joelho da frente colapsando para dentro"
+    ],
+    "cuidados": [
+      "Exige equilíbrio: comece sem carga"
+    ],
+    "substituicoes": [
+      "afundo",
+      "subida-no-banco",
+      "agachamento-livre"
+    ]
+  },
+  {
+    "id": "afundo",
+    "nome": "Afundo",
+    "nomeEn": "Lunge",
+    "outrosNomes": [
+      "lunge",
+      "passada",
+      "avanco",
+      "afundo com halteres"
+    ],
+    "tipo": "forca",
+    "padrao": "avanco",
+    "plano": "sagital",
+    "equipamento": [
+      "halteres",
+      "peso-corporal",
+      "barra"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 2,
+    "unilateral": true,
+    "notaUnilateral": "Alterna as pernas; cada repetição carrega a perna da frente. Faça o mesmo número dos dois lados.",
+    "primarios": [
+      "gluteo-maximo",
+      "vasto-lateral",
+      "vasto-medial"
+    ],
+    "secundarios": [
+      "reto-femoral",
+      "biceps-femoral",
+      "adutores",
+      "soleo",
+      "sartorio"
+    ],
+    "estabilizadores": [
+      "gluteo-medio",
+      "gluteo-minimo",
+      "transverso-do-abdomen",
+      "obliquo-externo",
+      "eretores-da-espinha"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Dá um passo à frente ou atrás e desce até o joelho de trás quase tocar o chão.",
+    "dicas": [
+      "Passo mais longo enfatiza glúteo; mais curto, quadríceps",
+      "Tronco ereto"
+    ],
+    "erros": [
+      "Joelho da frente muito à frente do pé com tronco jogado"
+    ],
+    "cuidados": [
+      "Com dor femoropatelar, encurte a amplitude"
+    ],
+    "substituicoes": [
+      "agachamento-bulgaro",
+      "subida-no-banco"
+    ]
+  },
+  {
+    "id": "subida-no-banco",
+    "nome": "Subida no banco",
+    "nomeEn": "Step-up",
+    "outrosNomes": [
+      "step up",
+      "subida no caixote",
+      "step"
+    ],
+    "tipo": "forca",
+    "padrao": "avanco",
+    "plano": "sagital",
+    "equipamento": [
+      "banco",
+      "halteres",
+      "peso-corporal"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 1,
+    "unilateral": true,
+    "notaUnilateral": "A perna que sobe faz o trabalho; a de baixo só dá o impulso inicial, que deve ser mínimo.",
+    "primarios": [
+      "gluteo-maximo",
+      "vasto-lateral"
+    ],
+    "secundarios": [
+      "vasto-medial",
+      "reto-femoral",
+      "biceps-femoral",
+      "soleo",
+      "gastrocnemio-medial",
+      "sartorio"
+    ],
+    "estabilizadores": [
+      "gluteo-medio",
+      "gluteo-minimo",
+      "transverso-do-abdomen",
+      "quadrado-lombar"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Sobe num banco com uma perna e desce controlado. Muito próximo do gesto de subir escadas, com carga ajustável.",
+    "dicas": [
+      "Descida lenta é onde está boa parte do estímulo",
+      "Banco na altura do joelho ou pouco abaixo"
+    ],
+    "erros": [
+      "Impulsionar com a perna de baixo"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "agachamento-bulgaro",
+      "afundo",
+      "subir-escadas"
+    ]
+  },
+  {
+    "id": "levantamento-terra",
+    "nome": "Levantamento terra",
+    "nomeEn": "Deadlift",
+    "outrosNomes": [
+      "deadlift",
+      "terra",
+      "levantamento-terra convencional"
+    ],
+    "tipo": "forca",
+    "padrao": "dobradica-de-quadril",
+    "plano": "sagital",
+    "equipamento": [
+      "barra"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 3,
+    "unilateral": false,
+    "primarios": [
+      "gluteo-maximo",
+      "eretores-da-espinha"
+    ],
+    "secundarios": [
+      "biceps-femoral",
+      "semitendinoso",
+      "semimembranoso",
+      "vasto-lateral",
+      "vasto-medial",
+      "grande-dorsal",
+      "trapezio-medio",
+      "adutores"
+    ],
+    "estabilizadores": [
+      "transverso-do-abdomen",
+      "multifidos",
+      "quadrado-lombar",
+      "obliquo-externo",
+      "reto-abdominal",
+      "flexores-antebraco",
+      "trapezio-superior"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Levanta a barra do chão estendendo quadril e joelhos com a coluna neutra. Máxima exigência simultânea de quadril e extensores lombares.",
+    "dicas": [
+      "Barra colada às pernas o tempo todo",
+      "Trave o core antes de tirar a barra do chão",
+      "Termine em pé, sem hiperestender a lombar"
+    ],
+    "erros": [
+      "Lombar arredondando na saída do chão",
+      "Quadril subindo antes do peito"
+    ],
+    "cuidados": [
+      "Na fase aguda de dor lombar, este costuma ser o primeiro exercício a sair do programa"
+    ],
+    "substituicoes": [
+      "levantamento-terra-romeno",
+      "ponte-de-gluteo",
+      "bom-dia"
+    ]
+  },
+  {
+    "id": "levantamento-terra-romeno",
+    "nome": "Levantamento terra romeno",
+    "nomeEn": "Romanian deadlift",
+    "outrosNomes": [
+      "rdl",
+      "romeno",
+      "romanian deadlift",
+      "stiff"
+    ],
+    "tipo": "forca",
+    "padrao": "dobradica-de-quadril",
+    "plano": "sagital",
+    "equipamento": [
+      "barra",
+      "halteres"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 2,
+    "unilateral": false,
+    "primarios": [
+      "biceps-femoral",
+      "semitendinoso",
+      "semimembranoso"
+    ],
+    "secundarios": [
+      "gluteo-maximo",
+      "eretores-da-espinha",
+      "adutores"
+    ],
+    "estabilizadores": [
+      "transverso-do-abdomen",
+      "multifidos",
+      "quadrado-lombar",
+      "grande-dorsal",
+      "trapezio-medio",
+      "flexores-antebraco"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Joelhos quase fixos, empurra o quadril para trás até sentir os isquiotibiais esticarem, e volta. É o exercício que mais carrega o posterior de coxa alongado.",
+    "dicas": [
+      "O movimento é do quadril, não da coluna",
+      "Pare quando a lombar começar a ceder"
+    ],
+    "erros": [
+      "Agachar em vez de empurrar o quadril para trás",
+      "Descer até o chão à custa da coluna"
+    ],
+    "cuidados": [
+      "Sensação de alongamento é esperada; dor aguda no ísquio não é"
+    ],
+    "substituicoes": [
+      "bom-dia",
+      "mesa-flexora",
+      "levantamento-terra"
+    ]
+  },
+  {
+    "id": "bom-dia",
+    "nome": "Bom dia",
+    "nomeEn": "Good morning",
+    "outrosNomes": [
+      "good morning",
+      "bom dia com barra"
+    ],
+    "tipo": "forca",
+    "padrao": "dobradica-de-quadril",
+    "plano": "sagital",
+    "equipamento": [
+      "barra"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 3,
+    "unilateral": false,
+    "primarios": [
+      "biceps-femoral",
+      "semitendinoso",
+      "eretores-da-espinha"
+    ],
+    "secundarios": [
+      "gluteo-maximo",
+      "semimembranoso",
+      "adutores"
+    ],
+    "estabilizadores": [
+      "transverso-do-abdomen",
+      "multifidos",
+      "quadrado-lombar",
+      "trapezio-medio"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Barra nas costas, inclina o tronco à frente pelo quadril. O braço de alavanca sobre a lombar é o maior de todos os exercícios comuns.",
+    "dicas": [
+      "Carga bem menor do que você imagina",
+      "Amplitude curta já é suficiente"
+    ],
+    "erros": [
+      "Tratar como agachamento inclinado"
+    ],
+    "cuidados": [
+      "Alto estresse lombar: evite com histórico recente de dor nas costas"
+    ],
+    "substituicoes": [
+      "levantamento-terra-romeno",
+      "ponte-de-gluteo"
+    ]
+  },
+  {
+    "id": "ponte-de-gluteo",
+    "nome": "Ponte de glúteo",
+    "nomeEn": "Hip thrust",
+    "outrosNomes": [
+      "hip thrust",
+      "elevacao pelvica",
+      "ponte",
+      "glute bridge"
+    ],
+    "tipo": "forca",
+    "padrao": "dobradica-de-quadril",
+    "plano": "sagital",
+    "equipamento": [
+      "barra",
+      "banco",
+      "peso-corporal",
+      "elastico"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 1,
+    "unilateral": false,
+    "primarios": [
+      "gluteo-maximo"
+    ],
+    "secundarios": [
+      "biceps-femoral",
+      "semitendinoso",
+      "adutores",
+      "vasto-lateral"
+    ],
+    "estabilizadores": [
+      "transverso-do-abdomen",
+      "reto-abdominal",
+      "gluteo-medio",
+      "eretores-da-espinha"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Costas apoiadas no banco, estende o quadril até o tronco ficar paralelo ao chão. Carrega o glúteo com quase nenhuma compressão na coluna.",
+    "dicas": [
+      "Queixo para dentro e costelas para baixo evitam arquear a lombar no topo",
+      "Pause um segundo no topo"
+    ],
+    "erros": [
+      "Hiperestender a lombar em vez de estender o quadril"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "levantamento-terra-romeno",
+      "agachamento-bulgaro"
+    ]
+  },
+  {
+    "id": "cadeira-extensora",
+    "nome": "Cadeira extensora",
+    "nomeEn": "Leg extension",
+    "outrosNomes": [
+      "extensora",
+      "leg extension",
+      "extensao de joelho"
+    ],
+    "tipo": "forca",
+    "padrao": "isolamento",
+    "plano": "sagital",
+    "equipamento": [
+      "maquina"
+    ],
+    "cadeia": "aberta",
+    "dificuldade": 1,
+    "unilateral": false,
+    "primarios": [
+      "vasto-lateral",
+      "vasto-medial",
+      "reto-femoral"
+    ],
+    "secundarios": [],
+    "estabilizadores": [
+      "reto-abdominal"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Estende o joelho contra resistência, sentado. Isola o quadríceps sem envolver quadril nem coluna.",
+    "dicas": [
+      "Útil quando a coluna precisa ficar poupada",
+      "Pausa breve no topo"
+    ],
+    "erros": [
+      "Carga que faça o quadril sair do assento"
+    ],
+    "cuidados": [
+      "Pode incomodar em dor femoropatelar; limite a amplitude final"
+    ],
+    "substituicoes": [
+      "leg-press",
+      "agachamento-livre"
+    ]
+  },
+  {
+    "id": "mesa-flexora",
+    "nome": "Mesa flexora",
+    "nomeEn": "Leg curl",
+    "outrosNomes": [
+      "flexora",
+      "leg curl",
+      "flexao de joelho"
+    ],
+    "tipo": "forca",
+    "padrao": "isolamento",
+    "plano": "sagital",
+    "equipamento": [
+      "maquina"
+    ],
+    "cadeia": "aberta",
+    "dificuldade": 1,
+    "unilateral": false,
+    "primarios": [
+      "biceps-femoral",
+      "semitendinoso",
+      "semimembranoso"
+    ],
+    "secundarios": [
+      "gastrocnemio-medial",
+      "gastrocnemio-lateral"
+    ],
+    "estabilizadores": [
+      "eretores-da-espinha"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Flexiona o joelho contra resistência. Trabalha os isquiotibiais na função de joelho, complementar ao romeno.",
+    "dicas": [
+      "Complementa o romeno: um treina extensão de quadril, o outro flexão de joelho"
+    ],
+    "erros": [
+      "Levantar o quadril da almofada"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "levantamento-terra-romeno"
+    ]
+  },
+  {
+    "id": "panturrilha-em-pe",
+    "nome": "Panturrilha em pé",
+    "nomeEn": "Standing calf raise",
+    "outrosNomes": [
+      "panturrilha",
+      "calf raise",
+      "gemeos em pe"
+    ],
+    "tipo": "forca",
+    "padrao": "isolamento",
+    "plano": "sagital",
+    "equipamento": [
+      "maquina",
+      "halteres",
+      "peso-corporal"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 1,
+    "unilateral": false,
+    "primarios": [
+      "gastrocnemio-medial",
+      "gastrocnemio-lateral"
+    ],
+    "secundarios": [
+      "soleo"
+    ],
+    "estabilizadores": [
+      "tibial-anterior"
+    ],
+    "encurta": [
+      "gastrocnemio-medial",
+      "gastrocnemio-lateral"
+    ],
+    "inibe": [],
+    "notaPostural": "Sempre treinado em amplitude curta, contribui para encurtar a panturrilha e reduzir a dorsiflexão do tornozelo.",
+    "evidenciaPostural": "consenso-fraco",
+    "descricao": "Sobe na ponta dos pés com o joelho estendido, o que privilegia o gastrocnêmio sobre o sóleo.",
+    "dicas": [
+      "Amplitude completa: desça o calcanhar abaixo do degrau",
+      "Pause em cima e embaixo"
+    ],
+    "erros": [
+      "Repetições rápidas usando o ricochete do tendão"
+    ],
+    "cuidados": [],
+    "substituicoes": []
+  },
+  {
+    "id": "rosca-direta",
+    "nome": "Rosca direta",
+    "nomeEn": "Biceps curl",
+    "outrosNomes": [
+      "rosca",
+      "biceps curl",
+      "curl",
+      "rosca com barra"
+    ],
+    "tipo": "forca",
+    "padrao": "isolamento",
+    "plano": "sagital",
+    "equipamento": [
+      "halteres",
+      "barra",
+      "cabos",
+      "elastico"
+    ],
+    "cadeia": "aberta",
+    "dificuldade": 1,
+    "unilateral": false,
+    "primarios": [
+      "biceps-braquial"
+    ],
+    "secundarios": [
+      "braquiorradial",
+      "flexores-antebraco"
+    ],
+    "estabilizadores": [
+      "deltoide-anterior",
+      "trapezio-medio",
+      "reto-abdominal"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Flexiona o cotovelo com o braço junto ao corpo, isolando o bíceps.",
+    "dicas": [
+      "Cotovelos parados ao lado do tronco",
+      "Supine bem a mão no topo"
+    ],
+    "erros": [
+      "Balançar o tronco",
+      "Levar o cotovelo à frente e virar elevação frontal"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "barra-fixa"
+    ]
+  },
+  {
+    "id": "triceps-testa",
+    "nome": "Tríceps testa",
+    "nomeEn": "Skull crusher",
+    "outrosNomes": [
+      "triceps frances",
+      "skull crusher",
+      "triceps na testa"
+    ],
+    "tipo": "forca",
+    "padrao": "isolamento",
+    "plano": "sagital",
+    "equipamento": [
+      "barra",
+      "halteres",
+      "banco"
+    ],
+    "cadeia": "aberta",
+    "dificuldade": 2,
+    "unilateral": false,
+    "primarios": [
+      "triceps-cabeca-longa",
+      "triceps-cabeca-lateral",
+      "triceps-cabeca-medial"
+    ],
+    "secundarios": [],
+    "estabilizadores": [
+      "deltoide-anterior",
+      "serratil-anterior",
+      "reto-abdominal"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Deitado, flexiona e estende o cotovelo com o braço apontado para cima. Com o ombro fletido, a cabeça longa fica alongada.",
+    "dicas": [
+      "Cotovelos apontando para o teto, sem abrir",
+      "Desça até atrás da testa, não até a testa"
+    ],
+    "erros": [
+      "Transformar em supino fechado quando a carga fica pesada"
+    ],
+    "cuidados": [
+      "Desconforto na ponta do cotovelo: reduza carga e amplitude"
+    ],
+    "substituicoes": [
+      "flexao-de-bracos"
+    ]
+  },
+  {
+    "id": "farmer-walk",
+    "nome": "Caminhada do fazendeiro",
+    "nomeEn": "Farmer's walk",
+    "outrosNomes": [
+      "farmer walk",
+      "farmers carry",
+      "transporte de carga"
+    ],
+    "tipo": "forca",
+    "padrao": "transporte",
+    "plano": "frontal",
+    "equipamento": [
+      "halteres",
+      "kettlebell"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 1,
+    "unilateral": false,
+    "primarios": [
+      "flexores-antebraco",
+      "trapezio-superior"
+    ],
+    "secundarios": [
+      "quadrado-lombar",
+      "obliquo-externo",
+      "gluteo-medio",
+      "eretores-da-espinha"
+    ],
+    "estabilizadores": [
+      "transverso-do-abdomen",
+      "multifidos",
+      "trapezio-medio",
+      "serratil-anterior",
+      "soleo"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Anda segurando peso nas duas mãos. Treina pegada, postura e estabilidade do tronco em pé, tudo ao mesmo tempo.",
+    "dicas": [
+      "Peito aberto, ombros para trás",
+      "Passos curtos e controlados"
+    ],
+    "erros": [
+      "Inclinar o tronco para o lado"
+    ],
+    "cuidados": [],
+    "substituicoes": []
+  },
+  {
+    "id": "prancha",
+    "nome": "Prancha",
+    "nomeEn": "Plank",
+    "outrosNomes": [
+      "plank",
+      "prancha frontal",
+      "prancha isometrica"
+    ],
+    "tipo": "forca",
+    "padrao": "anti-extensao",
+    "plano": "sagital",
+    "equipamento": [
+      "peso-corporal",
+      "tapete"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 1,
+    "unilateral": false,
+    "primarios": [
+      "transverso-do-abdomen",
+      "reto-abdominal"
+    ],
+    "secundarios": [
+      "obliquo-externo",
+      "gluteo-maximo",
+      "serratil-anterior",
+      "multifidos"
+    ],
+    "estabilizadores": [
+      "deltoide-anterior",
+      "trapezio-medio",
+      "reto-femoral",
+      "eretores-da-espinha"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Apoiado nos antebraços e pontas dos pés, sustenta o corpo em linha reta resistindo à extensão da lombar.",
+    "dicas": [
+      "Costelas para baixo e glúteos apertados",
+      "Se dá para segurar mais de um minuto, o exercício ficou fácil demais"
+    ],
+    "erros": [
+      "Quadril alto demais, o que tira toda a exigência",
+      "Lombar cedendo"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "dead-bug",
+      "bird-dog"
+    ]
+  },
+  {
+    "id": "prancha-lateral",
+    "nome": "Prancha lateral",
+    "nomeEn": "Side plank",
+    "outrosNomes": [
+      "side plank",
+      "prancha de lado"
+    ],
+    "tipo": "forca",
+    "padrao": "anti-flexao-lateral",
+    "plano": "frontal",
+    "equipamento": [
+      "peso-corporal",
+      "tapete"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 2,
+    "unilateral": true,
+    "notaUnilateral": "Trabalha o lado apoiado no chão. Faça os dois lados pelo mesmo tempo.",
+    "primarios": [
+      "obliquo-externo",
+      "quadrado-lombar"
+    ],
+    "secundarios": [
+      "gluteo-medio",
+      "gluteo-minimo",
+      "transverso-do-abdomen",
+      "deltoide-medial"
+    ],
+    "estabilizadores": [
+      "serratil-anterior",
+      "multifidos",
+      "adutores"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "De lado, apoiado num antebraço, sustenta o quadril elevado resistindo à queda lateral.",
+    "dicas": [
+      "Corpo numa linha só, quadril bem alto",
+      "Versão com joelhos apoiados para começar"
+    ],
+    "erros": [
+      "Quadril caindo aos poucos sem perceber"
+    ],
+    "cuidados": [
+      "Desconforto no ombro de apoio: use a versão com joelhos"
+    ],
+    "substituicoes": [
+      "pallof-press",
+      "farmer-walk"
+    ]
+  },
+  {
+    "id": "bird-dog",
+    "nome": "Bird dog",
+    "nomeEn": "Bird dog",
+    "outrosNomes": [
+      "bird dog",
+      "cao passaro",
+      "quatro apoios alternado"
+    ],
+    "tipo": "forca",
+    "padrao": "anti-rotacao",
+    "plano": "multiplanar",
+    "equipamento": [
+      "peso-corporal",
+      "tapete"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 1,
+    "unilateral": true,
+    "notaUnilateral": "Estende braço e perna opostos. Alterne os lados mantendo o quadril nivelado.",
+    "primarios": [
+      "multifidos",
+      "eretores-da-espinha"
+    ],
+    "secundarios": [
+      "gluteo-maximo",
+      "transverso-do-abdomen",
+      "obliquo-externo",
+      "deltoide-anterior"
+    ],
+    "estabilizadores": [
+      "quadrado-lombar",
+      "serratil-anterior",
+      "trapezio-inferior",
+      "gluteo-medio"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Em quatro apoios, estende braço e perna opostos sem deixar o tronco girar. Um dos três exercícios do núcleo do protocolo de McGill.",
+    "dicas": [
+      "Um copo d'água nas costas não pode virar",
+      "Movimento lento, pausa de alguns segundos"
+    ],
+    "erros": [
+      "Levantar a perna acima da linha do tronco arqueando a lombar"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "dead-bug",
+      "prancha"
+    ]
+  },
+  {
+    "id": "dead-bug",
+    "nome": "Dead bug",
+    "nomeEn": "Dead bug",
+    "outrosNomes": [
+      "dead bug",
+      "inseto morto",
+      "barata morta"
+    ],
+    "tipo": "forca",
+    "padrao": "anti-extensao",
+    "plano": "sagital",
+    "equipamento": [
+      "peso-corporal",
+      "tapete"
+    ],
+    "cadeia": "aberta",
+    "dificuldade": 1,
+    "unilateral": true,
+    "notaUnilateral": "Estende braço e perna opostos a partir da posição de barriga para cima, alternando os lados.",
+    "primarios": [
+      "transverso-do-abdomen",
+      "reto-abdominal"
+    ],
+    "secundarios": [
+      "obliquo-externo",
+      "multifidos"
+    ],
+    "estabilizadores": [
+      "psoas-iliaco",
+      "deltoide-anterior"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "De barriga para cima, estende braço e perna opostos mantendo a lombar colada no chão.",
+    "dicas": [
+      "A lombar não pode descolar do chão em nenhum momento",
+      "Expire ao estender"
+    ],
+    "erros": [
+      "Amplitude grande demais, que faz a lombar arquear"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "bird-dog",
+      "prancha"
+    ]
+  },
+  {
+    "id": "pallof-press",
+    "nome": "Pallof press",
+    "nomeEn": "Pallof press",
+    "outrosNomes": [
+      "pallof",
+      "pallof press",
+      "anti-rotacao no cabo"
+    ],
+    "tipo": "forca",
+    "padrao": "anti-rotacao",
+    "plano": "transverso",
+    "equipamento": [
+      "cabos",
+      "elastico"
+    ],
+    "cadeia": "aberta",
+    "dificuldade": 1,
+    "unilateral": true,
+    "notaUnilateral": "A resistência vem de um lado só. Trabalhe os dois lados, virando o corpo entre as séries.",
+    "primarios": [
+      "obliquo-externo",
+      "transverso-do-abdomen"
+    ],
+    "secundarios": [
+      "quadrado-lombar",
+      "multifidos",
+      "reto-abdominal",
+      "gluteo-medio"
+    ],
+    "estabilizadores": [
+      "deltoide-anterior",
+      "serratil-anterior",
+      "gluteo-maximo"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "De lado para a polia, empurra as mãos à frente do peito resistindo à rotação do tronco.",
+    "dicas": [
+      "Quanto mais longe as mãos, maior a exigência",
+      "Respire normalmente durante a sustentação"
+    ],
+    "erros": [
+      "Deixar o tronco girar em direção à polia"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "prancha-lateral",
+      "bird-dog"
+    ]
+  },
+  {
+    "id": "abdominal-tradicional",
+    "nome": "Abdominal tradicional",
+    "nomeEn": "Sit-up",
+    "outrosNomes": [
+      "abdominal",
+      "sit up",
+      "crunch",
+      "flexao de tronco"
+    ],
+    "tipo": "forca",
+    "padrao": "isolamento",
+    "plano": "sagital",
+    "equipamento": [
+      "peso-corporal",
+      "tapete"
+    ],
+    "cadeia": "aberta",
+    "dificuldade": 1,
+    "unilateral": false,
+    "primarios": [
+      "reto-abdominal"
+    ],
+    "secundarios": [
+      "obliquo-externo",
+      "psoas-iliaco"
+    ],
+    "estabilizadores": [],
+    "encurta": [
+      "psoas-iliaco"
+    ],
+    "inibe": [],
+    "notaPostural": "A versão com pés presos recruta bastante o flexor do quadril, o que é indesejável em quem já tem psoas encurtado.",
+    "evidenciaPostural": "consenso-fraco",
+    "descricao": "Flexiona o tronco levantando os ombros do chão. Treina o abdômen na função de encurtar, e não na de estabilizar.",
+    "dicas": [
+      "Amplitude curta já recruta o reto abdominal",
+      "Não puxe a cabeça com as mãos"
+    ],
+    "erros": [
+      "Prender os pés e puxar com o psoas"
+    ],
+    "cuidados": [
+      "Flexão lombar repetida sob compressão é mal tolerada por muita lombar sensível"
+    ],
+    "substituicoes": [
+      "dead-bug",
+      "prancha"
+    ]
+  },
+  {
+    "id": "corrida",
+    "nome": "Corrida",
+    "nomeEn": "Running",
+    "outrosNomes": [
+      "correr",
+      "running",
+      "trote",
+      "jogging"
+    ],
+    "tipo": "cardio",
+    "padrao": "marcha",
+    "plano": "sagital",
+    "equipamento": [
+      "nenhum",
+      "esteira"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 2,
+    "unilateral": false,
+    "primarios": [
+      "gastrocnemio-medial",
+      "gastrocnemio-lateral",
+      "soleo",
+      "gluteo-maximo"
+    ],
+    "secundarios": [
+      "biceps-femoral",
+      "semitendinoso",
+      "reto-femoral",
+      "vasto-lateral",
+      "psoas-iliaco",
+      "tibial-anterior"
+    ],
+    "estabilizadores": [
+      "gluteo-medio",
+      "gluteo-minimo",
+      "transverso-do-abdomen",
+      "obliquo-externo",
+      "quadrado-lombar",
+      "multifidos",
+      "eretores-da-espinha"
+    ],
+    "encurta": [
+      "psoas-iliaco",
+      "reto-femoral",
+      "gastrocnemio-medial",
+      "gastrocnemio-lateral"
+    ],
+    "inibe": [],
+    "notaPostural": "Volume alto de corrida sem trabalho complementar de amplitude tende a reduzir a extensão de quadril e a dorsiflexão do tornozelo.",
+    "evidenciaPostural": "consenso-fraco",
+    "descricao": "Marcha com fase aérea. A panturrilha e o glúteo absorvem e devolvem a maior parte da energia; o resto do corpo trabalha estabilizando.",
+    "dicas": [
+      "Aumente volume no máximo 10% por semana",
+      "Cadência mais alta reduz o impacto por passada"
+    ],
+    "erros": [
+      "Subir volume e intensidade ao mesmo tempo"
+    ],
+    "cuidados": [
+      "Dor na canela ou no tendão de Aquiles pede redução de volume antes de virar lesão"
+    ],
+    "substituicoes": [
+      "caminhada",
+      "bicicleta",
+      "natacao-crawl"
+    ]
+  },
+  {
+    "id": "caminhada",
+    "nome": "Caminhada",
+    "nomeEn": "Walking",
+    "outrosNomes": [
+      "caminhar",
+      "walking",
+      "andar",
+      "marcha"
+    ],
+    "tipo": "cardio",
+    "padrao": "marcha",
+    "plano": "sagital",
+    "equipamento": [
+      "nenhum",
+      "esteira"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 1,
+    "unilateral": false,
+    "primarios": [
+      "soleo",
+      "gluteo-medio"
+    ],
+    "secundarios": [
+      "gastrocnemio-medial",
+      "gluteo-maximo",
+      "biceps-femoral",
+      "reto-femoral",
+      "tibial-anterior",
+      "psoas-iliaco"
+    ],
+    "estabilizadores": [
+      "transverso-do-abdomen",
+      "multifidos",
+      "eretores-da-espinha",
+      "obliquo-externo",
+      "quadrado-lombar",
+      "gluteo-minimo"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Marcha sem fase aérea. Carga muito baixa por passo, mas o volume acumulado torna-a o exercício mais consistentemente recomendado para dor lombar.",
+    "dicas": [
+      "Regular é melhor do que intenso",
+      "Terreno variado exige mais dos estabilizadores"
+    ],
+    "erros": [],
+    "cuidados": [],
+    "substituicoes": [
+      "corrida",
+      "bicicleta"
+    ]
+  },
+  {
+    "id": "natacao-crawl",
+    "nome": "Natação, nado crawl",
+    "nomeEn": "Front crawl swimming",
+    "outrosNomes": [
+      "crawl",
+      "nado livre",
+      "freestyle",
+      "natacao"
+    ],
+    "tipo": "desporto",
+    "padrao": "puxar-vertical",
+    "plano": "multiplanar",
+    "equipamento": [
+      "agua"
+    ],
+    "cadeia": "aberta",
+    "dificuldade": 2,
+    "unilateral": false,
+    "primarios": [
+      "grande-dorsal",
+      "peitoral-maior-esternal"
+    ],
+    "secundarios": [
+      "triceps-cabeca-longa",
+      "deltoide-posterior",
+      "redondo-maior",
+      "serratil-anterior",
+      "trapezio-inferior",
+      "gluteo-maximo",
+      "reto-femoral"
+    ],
+    "estabilizadores": [
+      "transverso-do-abdomen",
+      "obliquo-externo",
+      "multifidos",
+      "eretores-da-espinha",
+      "infraespinhoso",
+      "supraespinhoso",
+      "redondo-menor",
+      "subescapular"
+    ],
+    "encurta": [
+      "peitoral-maior-esternal",
+      "peitoral-menor",
+      "grande-dorsal"
+    ],
+    "inibe": [],
+    "notaPostural": "Volume alto de crawl é associado a rotadores internos dominantes e ombros protraídos, padrão conhecido como ombro do nadador.",
+    "evidenciaPostural": "consenso-fraco",
+    "descricao": "Puxada alternada dos braços com rolamento do tronco. Sem impacto, o que a torna útil quando articulações de carga precisam descansar.",
+    "dicas": [
+      "Técnica limita mais que condicionamento",
+      "Alterne com nado costas para equilibrar os rotadores do ombro"
+    ],
+    "erros": [
+      "Braçada que cruza a linha média do corpo"
+    ],
+    "cuidados": [
+      "Ombro dolorido em nadadores costuma vir de volume alto com rotação externa fraca"
+    ],
+    "substituicoes": [
+      "natacao-costas",
+      "corrida",
+      "bicicleta"
+    ]
+  },
+  {
+    "id": "natacao-costas",
+    "nome": "Natação, nado costas",
+    "nomeEn": "Backstroke swimming",
+    "outrosNomes": [
+      "nado costas",
+      "backstroke",
+      "costas"
+    ],
+    "tipo": "desporto",
+    "padrao": "puxar-vertical",
+    "plano": "multiplanar",
+    "equipamento": [
+      "agua"
+    ],
+    "cadeia": "aberta",
+    "dificuldade": 2,
+    "unilateral": false,
+    "primarios": [
+      "grande-dorsal",
+      "deltoide-posterior"
+    ],
+    "secundarios": [
+      "trapezio-medio",
+      "trapezio-inferior",
+      "romboides",
+      "infraespinhoso",
+      "redondo-maior",
+      "triceps-cabeca-longa",
+      "gluteo-maximo"
+    ],
+    "estabilizadores": [
+      "transverso-do-abdomen",
+      "multifidos",
+      "eretores-da-espinha",
+      "serratil-anterior",
+      "supraespinhoso"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Nado de decúbito dorsal. Trabalha a musculatura posterior do ombro e das costas, o oposto do padrão do crawl.",
+    "dicas": [
+      "Bom complemento para quem faz muito crawl ou muito empurrão"
+    ],
+    "erros": [],
+    "cuidados": [],
+    "substituicoes": [
+      "natacao-crawl"
+    ]
+  },
+  {
+    "id": "bicicleta",
+    "nome": "Bicicleta",
+    "nomeEn": "Cycling",
+    "outrosNomes": [
+      "ciclismo",
+      "cycling",
+      "bike",
+      "spinning",
+      "pedalar"
+    ],
+    "tipo": "cardio",
+    "padrao": "agachamento",
+    "plano": "sagital",
+    "equipamento": [
+      "bicicleta"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 1,
+    "unilateral": false,
+    "primarios": [
+      "vasto-lateral",
+      "vasto-medial",
+      "reto-femoral"
+    ],
+    "secundarios": [
+      "gluteo-maximo",
+      "soleo",
+      "gastrocnemio-medial",
+      "biceps-femoral"
+    ],
+    "estabilizadores": [
+      "transverso-do-abdomen",
+      "eretores-da-espinha",
+      "trapezio-superior",
+      "gluteo-medio"
+    ],
+    "encurta": [
+      "psoas-iliaco",
+      "peitoral-menor",
+      "trapezio-superior"
+    ],
+    "inibe": [
+      "gluteo-maximo"
+    ],
+    "notaPostural": "A posição de pedalada mantém o quadril fletido e a coluna torácica curvada por horas, um padrão parecido com o de ficar sentado.",
+    "evidenciaPostural": "consenso-fraco",
+    "descricao": "Extensão repetida de joelho e quadril em amplitude limitada e sem impacto. O quadríceps faz a maior parte do trabalho.",
+    "dicas": [
+      "Altura do selim mal ajustada é a causa mais comum de dor no joelho"
+    ],
+    "erros": [],
+    "cuidados": [],
+    "substituicoes": [
+      "corrida",
+      "caminhada"
+    ]
+  },
+  {
+    "id": "pular-corda",
+    "nome": "Pular corda",
+    "nomeEn": "Jump rope",
+    "outrosNomes": [
+      "corda",
+      "jump rope",
+      "pular corda"
+    ],
+    "tipo": "cardio",
+    "padrao": "marcha",
+    "plano": "sagital",
+    "equipamento": [
+      "nenhum"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 2,
+    "unilateral": false,
+    "primarios": [
+      "gastrocnemio-medial",
+      "gastrocnemio-lateral",
+      "soleo"
+    ],
+    "secundarios": [
+      "tibial-anterior",
+      "vasto-lateral",
+      "gluteo-maximo",
+      "flexores-antebraco",
+      "deltoide-medial"
+    ],
+    "estabilizadores": [
+      "transverso-do-abdomen",
+      "reto-abdominal",
+      "gluteo-medio",
+      "eretores-da-espinha"
+    ],
+    "encurta": [
+      "gastrocnemio-medial",
+      "gastrocnemio-lateral"
+    ],
+    "inibe": [],
+    "notaPostural": "Saltos sempre na ponta do pé mantêm a panturrilha em amplitude curta, o que tende a reduzir a dorsiflexão do tornozelo ao longo do tempo.",
+    "evidenciaPostural": "consenso-fraco",
+    "descricao": "Saltos curtos e repetidos com absorção pelo tornozelo. Carga alta sobre a panturrilha e o tendão de Aquiles num volume pequeno de tempo.",
+    "dicas": [
+      "Saltos baixos, contato leve",
+      "Comece com séries curtas: a panturrilha satura rápido"
+    ],
+    "erros": [
+      "Aterrissar com o calcanhar"
+    ],
+    "cuidados": [
+      "Alto estresse no tendão de Aquiles e na tíbia; progrida devagar"
+    ],
+    "substituicoes": [
+      "corrida"
+    ]
+  },
+  {
+    "id": "pilates-solo",
+    "nome": "Pilates de solo",
+    "nomeEn": "Mat pilates",
+    "outrosNomes": [
+      "pilates",
+      "mat pilates",
+      "pilates solo"
+    ],
+    "tipo": "mobilidade",
+    "padrao": "anti-extensao",
+    "plano": "multiplanar",
+    "equipamento": [
+      "tapete",
+      "peso-corporal",
+      "bola",
+      "elastico"
+    ],
+    "cadeia": "mista",
+    "dificuldade": 1,
+    "unilateral": false,
+    "primarios": [
+      "transverso-do-abdomen",
+      "multifidos"
+    ],
+    "secundarios": [
+      "reto-abdominal",
+      "obliquo-externo",
+      "gluteo-maximo",
+      "gluteo-medio",
+      "eretores-da-espinha",
+      "adutores"
+    ],
+    "estabilizadores": [
+      "serratil-anterior",
+      "trapezio-inferior",
+      "quadrado-lombar",
+      "psoas-iliaco"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "notaPostural": "Boa parte do repertório é dirigida justamente aos músculos que a vida sentada inibe.",
+    "evidenciaPostural": "consenso-fraco",
+    "descricao": "Sequência de exercícios de controle motor com ênfase em respiração, estabilidade do tronco e amplitude. Carga externa baixa ou nula.",
+    "dicas": [
+      "A qualidade do controle importa mais que o número de repetições",
+      "Complementa, mas não substitui, treino de força com carga"
+    ],
+    "erros": [
+      "Prender a respiração durante as sustentações"
+    ],
+    "cuidados": [
+      "Alguns exercícios clássicos envolvem flexão lombar carregada; adapte se a lombar estiver sensível"
+    ],
+    "substituicoes": [
+      "dead-bug",
+      "bird-dog"
+    ]
+  },
+  {
+    "id": "gato-camelo",
+    "nome": "Gato e camelo",
+    "nomeEn": "Cat-camel",
+    "outrosNomes": [
+      "gato camelo",
+      "cat cow",
+      "cat camel",
+      "gato vaca"
+    ],
+    "tipo": "mobilidade",
+    "padrao": "nenhum",
+    "plano": "sagital",
+    "equipamento": [
+      "tapete",
+      "peso-corporal"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 1,
+    "unilateral": false,
+    "primarios": [],
+    "secundarios": [
+      "eretores-da-espinha",
+      "multifidos",
+      "reto-abdominal"
+    ],
+    "estabilizadores": [
+      "serratil-anterior",
+      "deltoide-anterior"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Em quatro apoios, alterna arredondar e arquear a coluna sem carga. É mobilização, não fortalecimento.",
+    "dicas": [
+      "Movimento lento, sem forçar os extremos",
+      "Bom aquecimento antes de treinar coluna"
+    ],
+    "erros": [
+      "Tratar como alongamento forçado"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "alongamento-flexores-quadril"
+    ]
+  },
+  {
+    "id": "alongamento-flexores-quadril",
+    "nome": "Alongamento dos flexores do quadril",
+    "nomeEn": "Hip flexor stretch",
+    "outrosNomes": [
+      "alongamento psoas",
+      "hip flexor stretch",
+      "afundo ajoelhado",
+      "couch stretch"
+    ],
+    "tipo": "mobilidade",
+    "padrao": "nenhum",
+    "plano": "sagital",
+    "equipamento": [
+      "tapete",
+      "peso-corporal"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 1,
+    "unilateral": true,
+    "notaUnilateral": "Alonga o lado da perna que está atrás, ajoelhada. Faça os dois lados.",
+    "primarios": [],
+    "secundarios": [
+      "gluteo-maximo"
+    ],
+    "estabilizadores": [
+      "transverso-do-abdomen",
+      "obliquo-externo"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "notaPostural": "Contramedida direta ao encurtamento do psoas e do reto femoral associado a horas sentado.",
+    "evidenciaPostural": "consenso-fraco",
+    "descricao": "Ajoelhado num joelho, leva o quadril à frente com a pelve em retroversão até sentir a frente da coxa de trás esticar.",
+    "dicas": [
+      "Aperte o glúteo do lado de trás: é o que faz o alongamento chegar no psoas",
+      "Não arqueie a lombar para ganhar amplitude"
+    ],
+    "erros": [
+      "Arquear a lombar e sentir o alongamento na coluna em vez da coxa"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "agachamento-bulgaro",
+      "gato-camelo"
+    ]
+  },
+  {
+    "id": "ficar-sentado",
+    "nome": "Ficar sentado",
+    "nomeEn": "Prolonged sitting",
+    "outrosNomes": [
+      "sentar",
+      "sedentarismo",
+      "trabalho de escritorio",
+      "sitting",
+      "trabalho ao computador"
+    ],
+    "tipo": "quotidiano",
+    "padrao": "postura-mantida",
+    "plano": "sagital",
+    "equipamento": [
+      "nenhum"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 1,
+    "unilateral": false,
+    "primarios": [],
+    "secundarios": [],
+    "estabilizadores": [
+      "eretores-da-espinha",
+      "trapezio-superior",
+      "elevador-da-escapula",
+      "esternocleidomastoideo"
+    ],
+    "encurta": [
+      "psoas-iliaco",
+      "reto-femoral",
+      "peitoral-menor",
+      "peitoral-maior-clavicular",
+      "trapezio-superior",
+      "elevador-da-escapula",
+      "biceps-femoral"
+    ],
+    "inibe": [
+      "gluteo-maximo",
+      "gluteo-medio",
+      "gluteo-minimo",
+      "transverso-do-abdomen",
+      "multifidos",
+      "trapezio-inferior",
+      "trapezio-medio",
+      "romboides",
+      "serratil-anterior"
+    ],
+    "notaPostural": "O padrão é descrito na literatura como síndrome cruzada superior e inferior (Janda). É um mapa mental útil, mas o suporte experimental para a relação causal com dor é limitado — trate como hipótese de trabalho, não como fato.",
+    "evidenciaPostural": "consenso-fraco",
+    "descricao": "Quadril e joelho a cerca de 90° por horas: os flexores do quadril ficam em posição encurtada, os extensores em desuso prolongado, e a musculatura escapular posterior fica alongada e inativa.",
+    "dicas": [
+      "Levantar a cada 30 minutos importa mais do que a cadeira perfeita",
+      "Alternar entre sentado e em pé é melhor que qualquer postura fixa"
+    ],
+    "erros": [],
+    "cuidados": [],
+    "substituicoes": [
+      "ficar-em-pe-parado"
+    ]
+  },
+  {
+    "id": "ficar-em-pe-parado",
+    "nome": "Ficar em pé parado",
+    "nomeEn": "Prolonged standing",
+    "outrosNomes": [
+      "em pe",
+      "standing",
+      "mesa em pe",
+      "standing desk"
+    ],
+    "tipo": "quotidiano",
+    "padrao": "postura-mantida",
+    "plano": "sagital",
+    "equipamento": [
+      "nenhum"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 1,
+    "unilateral": false,
+    "primarios": [],
+    "secundarios": [],
+    "estabilizadores": [
+      "soleo",
+      "eretores-da-espinha",
+      "multifidos",
+      "gluteo-medio",
+      "tibial-anterior",
+      "transverso-do-abdomen"
+    ],
+    "encurta": [
+      "gastrocnemio-medial",
+      "gastrocnemio-lateral",
+      "eretores-da-espinha"
+    ],
+    "inibe": [
+      "gluteo-maximo"
+    ],
+    "notaPostural": "Trocar sentar por ficar parado em pé o dia inteiro apenas muda quais estruturas ficam sob carga estática; alternar é o que ajuda.",
+    "evidenciaPostural": "consenso-fraco",
+    "descricao": "Postura mantida em pé. O sóleo e os extensores lombares trabalham em contração isométrica de baixa intensidade por horas.",
+    "dicas": [
+      "Alterne o peso entre as pernas e use um apoio baixo para um pé",
+      "Mesa em pé funciona melhor alternada com sentada, não substituindo-a"
+    ],
+    "erros": [
+      "Descansar sempre na mesma perna, o que sobrecarrega um lado só"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "ficar-sentado",
+      "caminhada"
+    ]
+  },
+  {
+    "id": "carregar-mochila-um-ombro",
+    "nome": "Carregar peso num ombro só",
+    "nomeEn": "Single-shoulder carrying",
+    "outrosNomes": [
+      "mochila num ombro",
+      "bolsa a tiracolo",
+      "carregar sacola"
+    ],
+    "tipo": "quotidiano",
+    "padrao": "transporte",
+    "plano": "frontal",
+    "equipamento": [
+      "nenhum"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 1,
+    "unilateral": true,
+    "notaUnilateral": "Sobrecarrega assimetricamente o lado que carrega o peso; o lado oposto trabalha para impedir a inclinação do tronco.",
+    "primarios": [],
+    "secundarios": [
+      "trapezio-superior",
+      "elevador-da-escapula"
+    ],
+    "estabilizadores": [
+      "quadrado-lombar",
+      "obliquo-externo",
+      "eretores-da-espinha",
+      "gluteo-medio"
+    ],
+    "encurta": [
+      "trapezio-superior",
+      "elevador-da-escapula",
+      "quadrado-lombar"
+    ],
+    "inibe": [
+      "trapezio-inferior"
+    ],
+    "notaPostural": "Carga assimétrica repetida é frequentemente citada como fator em dor cervical e lombar unilateral, mas a evidência é observacional.",
+    "evidenciaPostural": "consenso-fraco",
+    "descricao": "Peso pendurado de um lado só obriga o tronco a se inclinar para o lado oposto e o ombro carregado a subir.",
+    "dicas": [
+      "Alterne os lados",
+      "Mochila nos dois ombros distribui melhor que bolsa a tiracolo"
+    ],
+    "erros": [],
+    "cuidados": [],
+    "substituicoes": [
+      "farmer-walk"
+    ]
+  },
+  {
+    "id": "subir-escadas",
+    "nome": "Subir escadas",
+    "nomeEn": "Stair climbing",
+    "outrosNomes": [
+      "escada",
+      "stair climbing",
+      "subir escada"
+    ],
+    "tipo": "quotidiano",
+    "padrao": "avanco",
+    "plano": "sagital",
+    "equipamento": [
+      "nenhum"
+    ],
+    "cadeia": "fechada",
+    "dificuldade": 1,
+    "unilateral": true,
+    "notaUnilateral": "Cada degrau é uma repetição unilateral da perna que sobe. Alterna sozinho.",
+    "primarios": [
+      "gluteo-maximo",
+      "vasto-lateral"
+    ],
+    "secundarios": [
+      "vasto-medial",
+      "reto-femoral",
+      "soleo",
+      "gastrocnemio-medial",
+      "biceps-femoral"
+    ],
+    "estabilizadores": [
+      "gluteo-medio",
+      "gluteo-minimo",
+      "transverso-do-abdomen",
+      "quadrado-lombar",
+      "eretores-da-espinha"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Versão cotidiana da subida no banco. É uma das poucas atividades diárias que carrega o glúteo de forma significativa.",
+    "dicas": [
+      "Subir empurrando com o calcanhar recruta mais glúteo"
+    ],
+    "erros": [],
+    "cuidados": [
+      "Descer carrega mais o joelho do que subir"
+    ],
+    "substituicoes": [
+      "subida-no-banco",
+      "caminhada"
+    ]
+  },
+  {
+    "outrosNomes": [
+      "rotacao externa",
+      "external rotation",
+      "manguito rotador",
+      "cuban rotation"
+    ],
+    "plano": "transverso",
+    "cadeia": "aberta",
+    "unilateral": false,
+    "primarios": [
+      "infraespinhoso",
+      "redondo-menor"
+    ],
+    "secundarios": [
+      "deltoide-posterior"
+    ],
+    "estabilizadores": [
+      "trapezio-medio",
+      "trapezio-inferior",
+      "serratil-anterior"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "dicas": [
+      "Carga leve: são músculos pequenos",
+      "Cotovelo colado ao tronco; uma toalha enrolada na axila ajuda a manter a posição"
+    ],
+    "erros": [
+      "Girar o tronco em vez do ombro"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "face-pull"
+    ],
+    "id": "rotacao-externa-ombro",
+    "nome": "Rotação externa de ombro",
+    "nomeEn": "Shoulder external rotation",
+    "tipo": "forca",
+    "padrao": "isolamento",
+    "equipamento": [
+      "elastico",
+      "cabos",
+      "halteres"
+    ],
+    "dificuldade": 1,
+    "descricao": "Cotovelo junto ao corpo a 90 graus, gira o antebraço para fora contra resistência. É o exercício direto para a face posterior do manguito rotador."
+  },
+  {
+    "outrosNomes": [
+      "y raise",
+      "elevacao em y",
+      "prone y"
+    ],
+    "plano": "frontal",
+    "cadeia": "aberta",
+    "unilateral": false,
+    "primarios": [
+      "trapezio-inferior"
+    ],
+    "secundarios": [
+      "trapezio-medio",
+      "deltoide-posterior",
+      "serratil-anterior",
+      "supraespinhoso"
+    ],
+    "estabilizadores": [
+      "eretores-da-espinha",
+      "multifidos",
+      "gluteo-maximo"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "dicas": [
+      "Polegares apontando para cima",
+      "Puxe a escápula para baixo antes de levantar o braço"
+    ],
+    "erros": [
+      "Encolher o ombro, o que passa o trabalho para o trapézio superior"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "face-pull"
+    ],
+    "id": "elevacao-em-y",
+    "nome": "Elevação em Y",
+    "nomeEn": "Prone Y raise",
+    "tipo": "forca",
+    "padrao": "isolamento",
+    "equipamento": [
+      "peso-corporal",
+      "halteres",
+      "banco"
+    ],
+    "dificuldade": 1,
+    "descricao": "De bruços num banco inclinado, eleva os braços em Y acima da cabeça. Trabalha a porção do trapézio que costuma estar mais fraca."
+  },
+  {
+    "outrosNomes": [
+      "push up plus",
+      "serratil",
+      "protracao",
+      "serratus punch"
+    ],
+    "plano": "transverso",
+    "cadeia": "fechada",
+    "unilateral": false,
+    "primarios": [
+      "serratil-anterior"
+    ],
+    "secundarios": [
+      "peitoral-maior-esternal",
+      "triceps-cabeca-lateral"
+    ],
+    "estabilizadores": [
+      "reto-abdominal",
+      "transverso-do-abdomen",
+      "gluteo-maximo",
+      "trapezio-inferior"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "dicas": [
+      "O movimento é curto: só a escápula se move",
+      "Cotovelos permanecem estendidos"
+    ],
+    "erros": [
+      "Dobrar os cotovelos e virar uma flexão"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "flexao-de-bracos"
+    ],
+    "id": "protracao-escapular",
+    "nome": "Protração escapular",
+    "nomeEn": "Push-up plus",
+    "tipo": "forca",
+    "padrao": "empurrar-horizontal",
+    "equipamento": [
+      "peso-corporal",
+      "tapete"
+    ],
+    "dificuldade": 1,
+    "descricao": "Na prancha alta, empurra o chão para longe deixando as escápulas se afastarem, e volta. Isola a função do serrátil."
+  },
+  {
+    "outrosNomes": [
+      "martelo",
+      "hammer curl",
+      "rosca neutra"
+    ],
+    "plano": "sagital",
+    "cadeia": "aberta",
+    "unilateral": false,
+    "primarios": [
+      "braquiorradial"
+    ],
+    "secundarios": [
+      "biceps-braquial",
+      "flexores-antebraco"
+    ],
+    "estabilizadores": [
+      "deltoide-anterior",
+      "trapezio-medio",
+      "reto-abdominal"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "dicas": [
+      "Cotovelos parados ao lado do tronco"
+    ],
+    "erros": [
+      "Balançar o tronco para gerar impulso"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "rosca-direta"
+    ],
+    "id": "rosca-martelo",
+    "nome": "Rosca martelo",
+    "nomeEn": "Hammer curl",
+    "tipo": "forca",
+    "padrao": "isolamento",
+    "equipamento": [
+      "halteres",
+      "elastico",
+      "cabos"
+    ],
+    "dificuldade": 1,
+    "descricao": "Rosca com a palma virada para dentro. A pegada neutra transfere carga do bíceps para o braquiorradial."
+  },
+  {
+    "outrosNomes": [
+      "extensao de punho",
+      "wrist extension",
+      "antebraco",
+      "epicondilite"
+    ],
+    "plano": "sagital",
+    "cadeia": "aberta",
+    "unilateral": false,
+    "primarios": [
+      "extensores-antebraco"
+    ],
+    "secundarios": [
+      "braquiorradial"
+    ],
+    "estabilizadores": [
+      "flexores-antebraco"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "dicas": [
+      "Descida lenta: a fase excêntrica é a que mais importa aqui",
+      "Carga pequena, muitas repetições"
+    ],
+    "erros": [
+      "Mover o cotovelo em vez do punho"
+    ],
+    "cuidados": [],
+    "substituicoes": [],
+    "id": "extensao-de-punho",
+    "nome": "Extensão de punho",
+    "nomeEn": "Wrist extension",
+    "tipo": "forca",
+    "padrao": "isolamento",
+    "equipamento": [
+      "halteres",
+      "elastico"
+    ],
+    "dificuldade": 1,
+    "descricao": "Antebraço apoiado, estende o punho contra resistência. É o exercício de carga progressiva usado na reabilitação da dor lateral do cotovelo."
+  },
+  {
+    "outrosNomes": [
+      "abducao",
+      "hip abduction",
+      "clamshell",
+      "elevacao lateral de perna"
+    ],
+    "plano": "frontal",
+    "cadeia": "aberta",
+    "unilateral": true,
+    "primarios": [
+      "gluteo-medio",
+      "gluteo-minimo"
+    ],
+    "secundarios": [
+      "tensor-fascia-lata",
+      "gluteo-maximo",
+      "piriforme"
+    ],
+    "estabilizadores": [
+      "obliquo-externo",
+      "quadrado-lombar",
+      "transverso-do-abdomen"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "dicas": [
+      "Tronco imóvel: se ele inclina, o quadrado lombar assumiu o trabalho",
+      "Ponta do pé levemente para dentro enfatiza o glúteo médio"
+    ],
+    "erros": [
+      "Girar a pelve para trás e transformar em extensão de quadril"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "prancha-lateral"
+    ],
+    "id": "abducao-de-quadril",
+    "nome": "Abdução de quadril",
+    "nomeEn": "Hip abduction",
+    "tipo": "forca",
+    "padrao": "isolamento",
+    "equipamento": [
+      "elastico",
+      "maquina",
+      "peso-corporal"
+    ],
+    "dificuldade": 1,
+    "notaUnilateral": "Trabalha o quadril da perna que se afasta da linha média. Faça os dois lados.",
+    "descricao": "Afasta a perna da linha média contra resistência. Exercício direto para os abdutores, cuja fraqueza aparece como joelho colapsando para dentro."
+  },
+  {
+    "outrosNomes": [
+      "aducao",
+      "hip adduction",
+      "adutores",
+      "copenhagen"
+    ],
+    "plano": "frontal",
+    "cadeia": "aberta",
+    "unilateral": true,
+    "primarios": [
+      "adutores"
+    ],
+    "secundarios": [
+      "gluteo-maximo"
+    ],
+    "estabilizadores": [
+      "transverso-do-abdomen",
+      "obliquo-externo",
+      "quadrado-lombar"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "dicas": [
+      "Amplitude confortável, sem forçar o alongamento final"
+    ],
+    "erros": [
+      "Usar o tronco para gerar o movimento"
+    ],
+    "cuidados": [],
+    "substituicoes": [],
+    "id": "aducao-de-quadril",
+    "nome": "Adução de quadril",
+    "nomeEn": "Hip adduction",
+    "tipo": "forca",
+    "padrao": "isolamento",
+    "equipamento": [
+      "elastico",
+      "maquina",
+      "peso-corporal"
+    ],
+    "dificuldade": 1,
+    "notaUnilateral": "Trabalha o adutor da perna que se aproxima da linha média. Faça os dois lados.",
+    "descricao": "Puxa a perna em direção à linha média contra resistência. Fortalece a virilha, sede clássica de distensão em esportes de mudança de direção."
+  },
+  {
+    "outrosNomes": [
+      "dorsiflexao",
+      "tibial anterior",
+      "canelite",
+      "toe raise"
+    ],
+    "plano": "sagital",
+    "cadeia": "aberta",
+    "unilateral": false,
+    "primarios": [
+      "tibial-anterior"
+    ],
+    "secundarios": [],
+    "estabilizadores": [
+      "soleo"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "dicas": [
+      "Movimento lento nos dois sentidos",
+      "Calcanhar apoiado o tempo todo"
+    ],
+    "erros": [
+      "Levantar a perna inteira em vez de só o pé"
+    ],
+    "cuidados": [],
+    "substituicoes": [],
+    "id": "dorsiflexao-de-tornozelo",
+    "nome": "Dorsiflexão de tornozelo",
+    "nomeEn": "Ankle dorsiflexion",
+    "tipo": "forca",
+    "padrao": "isolamento",
+    "equipamento": [
+      "elastico",
+      "peso-corporal"
+    ],
+    "dificuldade": 1,
+    "descricao": "Levanta a ponta do pé contra resistência. Contrapeso direto ao volume de panturrilha e usado na reabilitação da dor na canela."
+  },
+  {
+    "outrosNomes": [
+      "pescoco",
+      "neck flexion",
+      "fortalecimento cervical"
+    ],
+    "plano": "frontal",
+    "cadeia": "aberta",
+    "unilateral": true,
+    "primarios": [
+      "esternocleidomastoideo"
+    ],
+    "secundarios": [
+      "trapezio-superior",
+      "elevador-da-escapula"
+    ],
+    "estabilizadores": [],
+    "encurta": [],
+    "inibe": [],
+    "dicas": [
+      "Isometria de poucos segundos, sem chegar ao fim da amplitude",
+      "Comece com resistência muito leve"
+    ],
+    "erros": [
+      "Aplicar força súbita ou buscar amplitude máxima"
+    ],
+    "cuidados": [
+      "Interrompa se houver tontura, formigamento no braço ou dor irradiada"
+    ],
+    "substituicoes": [],
+    "id": "flexao-lateral-de-pescoco",
+    "nome": "Flexão lateral de pescoço",
+    "nomeEn": "Neck side flexion",
+    "tipo": "forca",
+    "padrao": "isolamento",
+    "equipamento": [
+      "peso-corporal",
+      "elastico"
+    ],
+    "dificuldade": 1,
+    "notaUnilateral": "Trabalha o lado para o qual a cabeça se inclina. Faça os dois lados pelo mesmo tempo.",
+    "descricao": "Inclina a cabeça para o lado contra a resistência da própria mão. Fortalecimento cervical isométrico, usado em programas para dor no pescoço."
+  },
+  {
+    "id": "rotacao-interna-ombro",
+    "nome": "Rotação interna de ombro",
+    "nomeEn": "Shoulder internal rotation",
+    "outrosNomes": [
+      "rotacao interna",
+      "internal rotation",
+      "subescapular"
+    ],
+    "tipo": "forca",
+    "padrao": "isolamento",
+    "plano": "transverso",
+    "equipamento": [
+      "elastico",
+      "cabos",
+      "halteres"
+    ],
+    "cadeia": "aberta",
+    "dificuldade": 1,
+    "unilateral": false,
+    "primarios": [
+      "subescapular"
+    ],
+    "secundarios": [
+      "peitoral-maior-esternal",
+      "grande-dorsal",
+      "redondo-maior"
+    ],
+    "estabilizadores": [
+      "trapezio-medio",
+      "trapezio-inferior",
+      "serratil-anterior"
+    ],
+    "encurta": [],
+    "inibe": [],
+    "descricao": "Cotovelo junto ao corpo a 90 graus, gira o antebraço para dentro contra resistência. Trabalha a face anterior do manguito rotador, que costuma ser esquecida em programas que só treinam rotação externa.",
+    "dicas": [
+      "Carga leve e controlada",
+      "Cotovelo colado ao tronco durante todo o movimento"
+    ],
+    "erros": [
+      "Girar o tronco em vez do ombro"
+    ],
+    "cuidados": [],
+    "substituicoes": [
+      "rotacao-externa-ombro"
+    ]
+  }
+]
