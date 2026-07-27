@@ -135,6 +135,19 @@ describe('dados: invariantes editoriais', () => {
     }
   })
 
+  it('todo musculo tem pelo menos um exercicio que o treina', () => {
+    // O mapa promete: toque num musculo e veja os melhores exercicios para
+    // ele. Um musculo que nenhuma atividade trabalha como primario ou
+    // secundario e um beco sem saida — a ficha abre com a lista vazia e a
+    // promessa fica por cumprir. O peitoral menor esteve exatamente assim ate
+    // esta asserçao existir. A mesma regra ja valia para os musculos que uma
+    // queixa manda fortalecer; nao havia razao para o resto do corpo escapar.
+    const orfaos = musculos.filter(
+      (m) => !atividades.some((a) => a.primarios.includes(m.id) || a.secundarios.includes(m.id)),
+    )
+    expect(orfaos.map((m) => m.id)).toEqual([])
+  })
+
   it('uma relacao postural sem nota nao passa despercebida', () => {
     for (const a of atividades) {
       if (a.encurta.length === 0 && a.inibe.length === 0) continue
