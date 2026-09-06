@@ -55,3 +55,6 @@ jobs:
       - run: npm run toque
         env:
           CHROME_PATH: /usr/bin/google-chrome
+      - run: npm run atlas
+        env:
+          CHROME_PATH: /usr/bin/google-chrome

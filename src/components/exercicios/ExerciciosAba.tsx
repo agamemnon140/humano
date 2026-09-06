@@ -4,6 +4,8 @@ import { FILTRO_VAZIO, filtrarAtividades, filtroAtivo, type FiltroAtividades } f
 import {
   ROTULO_PADRAO,
   ROTULO_TIPO,
+  ROTULO_REGIAO,
+  REGIOES,
   type Atividade,
   type AtividadeId,
   type Equipamento,
@@ -14,10 +16,12 @@ import { Vazio } from '../shell/Comuns'
 
 const TIPOS = Object.keys(ROTULO_TIPO) as TipoAtividade[]
 const PADROES = Object.keys(ROTULO_PADRAO) as PadraoMovimento[]
-const EQUIPAMENTOS: Equipamento[] = [
-  'peso-corporal', 'nenhum', 'halteres', 'barra', 'maquina', 'cabos',
-  'elastico', 'barra-fixa', 'kettlebell', 'tapete', 'banco',
-]
+const EQUIPAMENTOS = [...new Set(atividades.flatMap(a => a.equipamento))]
+const NOME_EQUIPAMENTO: Record<Equipamento, string> = {
+  nenhum: 'Sem equipamento', 'peso-corporal': 'Peso do corpo', barra: 'Barra', halteres: 'Halteres',
+  kettlebell: 'Kettlebell', maquina: 'Máquina', cabos: 'Cabos', elastico: 'Elástico', banco: 'Banco',
+  'barra-fixa': 'Barra fixa', bola: 'Bola', tapete: 'Tapete', bicicleta: 'Bicicleta', esteira: 'Esteira', agua: 'Água', reformer: 'Reformer',
+}
 
 export function ExerciciosAba({
   realcada,
@@ -39,7 +43,7 @@ export function ExerciciosAba({
     [filtro],
   )
 
-  const alternar = <K extends 'tipos' | 'padroes' | 'equipamentos'>(
+  const alternar = <K extends 'tipos' | 'padroes' | 'equipamentos' | 'regioes'>(
     campo: K,
     valor: FiltroAtividades[K][number],
   ) => {
@@ -53,11 +57,13 @@ export function ExerciciosAba({
   }
 
   return (
-    <div className="flex h-full flex-col gap-3">
+    <div className="catalogo-treino flex flex-col gap-3">
+      <div><h2 className="titulo-treino">Escolha seus exercícios</h2><p className="texto-apoio">Adicione ao treino. Abra os detalhes quando quiser conhecer a execução.</p></div>
       <div className="flex gap-2">
         <input
           className="campo"
           placeholder="Buscar por nome, músculo ou termo em inglês…"
+          aria-label="Buscar exercícios"
           value={filtro.busca}
           onChange={(e) => setFiltro((f) => ({ ...f, busca: e.target.value }))}
         />
@@ -71,25 +77,23 @@ export function ExerciciosAba({
         </button>
       </div>
 
+      <div className="modalidades-treino" role="group" aria-label="Modalidade">
+        <button className="chip" aria-pressed={filtro.tipos.length === 0} onClick={() => setFiltro(f => ({ ...f, tipos: [] }))}>Todas</button>
+        {TIPOS.map(tipo => <button className="chip" key={tipo} aria-pressed={filtro.tipos.includes(tipo)} onClick={() => setFiltro(f => ({ ...f, tipos: f.tipos.includes(tipo) ? [] : [tipo] }))}>{ROTULO_TIPO[tipo]}</button>)}
+      </div>
+
+      <div className="filtros-principais">
+        <label>Região<select value={filtro.regioes[0] ?? ''} onChange={e => setFiltro(f => ({ ...f, regioes: e.target.value ? [e.target.value as typeof REGIOES[number]] : [] }))}><option value="">Todas as regiões</option>{REGIOES.map(r => <option key={r} value={r}>{ROTULO_REGIAO[r]}</option>)}</select></label>
+        <label>Equipamento<select value={filtro.equipamentos[0] ?? ''} onChange={e => setFiltro(f => ({ ...f, equipamentos: e.target.value ? [e.target.value as Equipamento] : [] }))}><option value="">Todos os equipamentos</option>{EQUIPAMENTOS.map(e => <option key={e} value={e}>{NOME_EQUIPAMENTO[e]}</option>)}</select></label>
+      </div>
+
       {painelAberto && (
         <div className="cartao space-y-3 p-3">
-          <GrupoFiltro
-            titulo="Tipo"
-            opcoes={TIPOS.map((t) => ({ valor: t, rotulo: ROTULO_TIPO[t] }))}
-            ativos={filtro.tipos}
-            onAlternar={(v) => alternar('tipos', v)}
-          />
           <GrupoFiltro
             titulo="Padrão de movimento"
             opcoes={PADROES.filter((p) => p !== 'nenhum').map((p) => ({ valor: p, rotulo: ROTULO_PADRAO[p] }))}
             ativos={filtro.padroes}
             onAlternar={(v) => alternar('padroes', v)}
-          />
-          <GrupoFiltro
-            titulo="Equipamento"
-            opcoes={EQUIPAMENTOS.map((e) => ({ valor: e, rotulo: e.replace(/-/g, ' ') }))}
-            ativos={filtro.equipamentos}
-            onAlternar={(v) => alternar('equipamentos', v)}
           />
           {filtroAtivo(filtro) && (
             <button type="button" onClick={() => setFiltro(FILTRO_VAZIO)} className="botao-2 w-full">
@@ -99,9 +103,7 @@ export function ExerciciosAba({
         </div>
       )}
 
-      <p className="text-xs text-muted">
-        {resultado.length} de {atividades.length} atividades
-      </p>
+      <div className="catalogo-contagem"><p>{resultado.length} de {atividades.length} atividades</p>{filtroAtivo(filtro) && <button className="sublinhado" onClick={() => setFiltro(FILTRO_VAZIO)}>Limpar filtros</button>}</div>
 
       <div className="min-h-0 flex-1 overflow-y-auto">
         {resultado.length === 0 ? (
@@ -145,28 +147,30 @@ function CartaoAtividade({
     .join(', ')
 
   return (
-    <div className={`cartao flex items-stretch ${ativo ? 'border-accent' : ''}`}>
-      <button type="button" onClick={onAbrir} className="min-w-0 flex-1 p-3 text-left">
-        <p className="truncate font-medium text-ink">{atividade.nome}</p>
+    <div className={`cartao cartao-exercicio ${naSessao ? 'exercicio-adicionado' : ''} ${ativo ? 'border-accent' : ''}`} data-atividade={atividade.id}>
+      <div className="min-w-0">
+        <h3 className="font-medium text-ink">{atividade.nome}</h3>
         <p className="mt-0.5 truncate text-xs text-muted">
-          {ROTULO_PADRAO[atividade.padrao]} · {atividade.equipamento[0].replace(/-/g, ' ')}
+          {ROTULO_PADRAO[atividade.padrao]} · {atividade.equipamento.map(e => NOME_EQUIPAMENTO[e]).join(', ')}
         </p>
         {primarios && (
           <p className="mt-1 truncate text-xs text-ink2">
             <span style={{ color: 'var(--tom-primario)' }}>●</span> {primarios}
           </p>
         )}
-      </button>
+      </div>
+      <div className="acoes-exercicio">
+      <button type="button" onClick={onAbrir} className="detalhes-exercicio" aria-label={`Ver execução e detalhes de ${atividade.nome}`}>Ver execução e detalhes</button>
       <button
         type="button"
         onClick={onAlternarSessao}
-        aria-label={naSessao ? 'Remover da sessão' : 'Adicionar à sessão'}
-        className={`shrink-0 border-l border-hairline px-4 text-lg ${
-          naSessao ? 'text-accent' : 'text-muted hover:text-ink'
-        }`}
+        aria-label={`${naSessao ? 'Remover' : 'Adicionar'} ${atividade.nome} ${naSessao ? 'do' : 'ao'} treino`}
+        aria-pressed={naSessao}
+        className="adicionar-exercicio"
       >
-        {naSessao ? '−' : '+'}
+        {naSessao ? '✓ Adicionado' : 'Adicionar ao treino'}
       </button>
+      </div>
     </div>
   )
 }

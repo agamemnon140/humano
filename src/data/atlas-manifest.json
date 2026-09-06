@@ -1,0 +1,4871 @@
+{
+  "source": {
+    "repository": "https://github.com/ashemag/human-atlas",
+    "revision": "7a383d3ee2759e3ddf157c704fb8814fd0c50bcb"
+  },
+  "anatomia": {
+    "url": "models/anatomia-v1.bin.gz",
+    "bytes": 14841720,
+    "gzipBytes": 8392395,
+    "parts": [
+      {
+        "id": "FJ1252",
+        "name": "Gingiva of upper jaw",
+        "muscle": null,
+        "vertexCount": 883,
+        "indexCount": 4272,
+        "positions": 0,
+        "normals": 10596,
+        "indices": 15896
+      },
+      {
+        "id": "FJ1253",
+        "name": "Gingiva of lower jaw",
+        "muscle": null,
+        "vertexCount": 726,
+        "indexCount": 3984,
+        "positions": 32984,
+        "normals": 41696,
+        "indices": 46052
+      },
+      {
+        "id": "FJ1254",
+        "name": "Left lower first secondary molar tooth",
+        "muscle": null,
+        "vertexCount": 807,
+        "indexCount": 4818,
+        "positions": 61988,
+        "normals": 71672,
+        "indices": 76516
+      },
+      {
+        "id": "FJ1255",
+        "name": "Left lower first secondary premolar tooth",
+        "muscle": null,
+        "vertexCount": 454,
+        "indexCount": 2700,
+        "positions": 95788,
+        "normals": 101236,
+        "indices": 103960
+      },
+      {
+        "id": "FJ1256",
+        "name": "Left lower second secondary molar tooth",
+        "muscle": null,
+        "vertexCount": 760,
+        "indexCount": 4476,
+        "positions": 114760,
+        "normals": 123880,
+        "indices": 128440
+      },
+      {
+        "id": "FJ1257",
+        "name": "Left lower second secondary premolar tooth",
+        "muscle": null,
+        "vertexCount": 450,
+        "indexCount": 2670,
+        "positions": 146344,
+        "normals": 151744,
+        "indices": 154444
+      },
+      {
+        "id": "FJ1258",
+        "name": "Left lower central secondary incisor tooth",
+        "muscle": null,
+        "vertexCount": 323,
+        "indexCount": 1926,
+        "positions": 165124,
+        "normals": 169000,
+        "indices": 170940
+      },
+      {
+        "id": "FJ1259",
+        "name": "Left lower lateral secondary incisor tooth",
+        "muscle": null,
+        "vertexCount": 323,
+        "indexCount": 1920,
+        "positions": 178644,
+        "normals": 182520,
+        "indices": 184460
+      },
+      {
+        "id": "FJ1260",
+        "name": "Left lower secondary canine tooth",
+        "muscle": null,
+        "vertexCount": 362,
+        "indexCount": 2160,
+        "positions": 192140,
+        "normals": 196484,
+        "indices": 198656
+      },
+      {
+        "id": "FJ1261",
+        "name": "Left upper first secondary molar tooth",
+        "muscle": null,
+        "vertexCount": 912,
+        "indexCount": 5436,
+        "positions": 207296,
+        "normals": 218240,
+        "indices": 223712
+      },
+      {
+        "id": "FJ1262",
+        "name": "Left upper first secondary premolar tooth",
+        "muscle": null,
+        "vertexCount": 562,
+        "indexCount": 3294,
+        "positions": 245456,
+        "normals": 252200,
+        "indices": 255572
+      },
+      {
+        "id": "FJ1263",
+        "name": "Left upper second secondary molar tooth",
+        "muscle": null,
+        "vertexCount": 823,
+        "indexCount": 4794,
+        "positions": 268748,
+        "normals": 278624,
+        "indices": 283564
+      },
+      {
+        "id": "FJ1264",
+        "name": "Left upper second secondary premolar tooth",
+        "muscle": null,
+        "vertexCount": 571,
+        "indexCount": 3342,
+        "positions": 302740,
+        "normals": 309592,
+        "indices": 313020
+      },
+      {
+        "id": "FJ1265",
+        "name": "Left upper central secondary incisor tooth",
+        "muscle": null,
+        "vertexCount": 398,
+        "indexCount": 2376,
+        "positions": 326388,
+        "normals": 331164,
+        "indices": 333552
+      },
+      {
+        "id": "FJ1266",
+        "name": "Left upper lateral secondary incisor tooth",
+        "muscle": null,
+        "vertexCount": 366,
+        "indexCount": 2184,
+        "positions": 343056,
+        "normals": 347448,
+        "indices": 349644
+      },
+      {
+        "id": "FJ1267",
+        "name": "Left upper secondary canine tooth",
+        "muscle": null,
+        "vertexCount": 387,
+        "indexCount": 2310,
+        "positions": 358380,
+        "normals": 363024,
+        "indices": 365348
+      },
+      {
+        "id": "FJ1268",
+        "name": "Right lower first secondary molar tooth",
+        "muscle": null,
+        "vertexCount": 805,
+        "indexCount": 4782,
+        "positions": 374588,
+        "normals": 384248,
+        "indices": 389080
+      },
+      {
+        "id": "FJ1269",
+        "name": "Right lower first secondary premolar tooth",
+        "muscle": null,
+        "vertexCount": 462,
+        "indexCount": 2760,
+        "positions": 408208,
+        "normals": 413752,
+        "indices": 416524
+      },
+      {
+        "id": "FJ1270",
+        "name": "Right lower second secondary molar tooth",
+        "muscle": null,
+        "vertexCount": 735,
+        "indexCount": 4362,
+        "positions": 427564,
+        "normals": 436384,
+        "indices": 440796
+      },
+      {
+        "id": "FJ1271",
+        "name": "Right lower second secondary premolar tooth",
+        "muscle": null,
+        "vertexCount": 458,
+        "indexCount": 2724,
+        "positions": 458244,
+        "normals": 463740,
+        "indices": 466488
+      },
+      {
+        "id": "FJ1272",
+        "name": "Right lower central secondary incisor tooth",
+        "muscle": null,
+        "vertexCount": 327,
+        "indexCount": 1944,
+        "positions": 477384,
+        "normals": 481308,
+        "indices": 483272
+      },
+      {
+        "id": "FJ1273",
+        "name": "Right lower lateral secondary incisor tooth",
+        "muscle": null,
+        "vertexCount": 311,
+        "indexCount": 1842,
+        "positions": 491048,
+        "normals": 494780,
+        "indices": 496648
+      },
+      {
+        "id": "FJ1274",
+        "name": "Right lower secondary canine tooth",
+        "muscle": null,
+        "vertexCount": 363,
+        "indexCount": 2166,
+        "positions": 504016,
+        "normals": 508372,
+        "indices": 510552
+      },
+      {
+        "id": "FJ1275",
+        "name": "Right upper second secondary molar tooth",
+        "muscle": null,
+        "vertexCount": 848,
+        "indexCount": 4884,
+        "positions": 519216,
+        "normals": 529392,
+        "indices": 534480
+      },
+      {
+        "id": "FJ1276",
+        "name": "Right upper first secondary molar tooth",
+        "muscle": null,
+        "vertexCount": 915,
+        "indexCount": 5376,
+        "positions": 554016,
+        "normals": 564996,
+        "indices": 570488
+      },
+      {
+        "id": "FJ1277",
+        "name": "Right upper first secondary premolar tooth",
+        "muscle": null,
+        "vertexCount": 557,
+        "indexCount": 3288,
+        "positions": 591992,
+        "normals": 598676,
+        "indices": 602020
+      },
+      {
+        "id": "FJ1278",
+        "name": "Right upper second secondary premolar tooth",
+        "muscle": null,
+        "vertexCount": 573,
+        "indexCount": 3366,
+        "positions": 615172,
+        "normals": 622048,
+        "indices": 625488
+      },
+      {
+        "id": "FJ1279",
+        "name": "Right upper central secondary incisor tooth",
+        "muscle": null,
+        "vertexCount": 399,
+        "indexCount": 2376,
+        "positions": 638952,
+        "normals": 643740,
+        "indices": 646136
+      },
+      {
+        "id": "FJ1280",
+        "name": "Right upper lateral secondary incisor tooth",
+        "muscle": null,
+        "vertexCount": 355,
+        "indexCount": 2118,
+        "positions": 655640,
+        "normals": 659900,
+        "indices": 662032
+      },
+      {
+        "id": "FJ1281",
+        "name": "Right upper secondary canine tooth",
+        "muscle": null,
+        "vertexCount": 382,
+        "indexCount": 2280,
+        "positions": 670504,
+        "normals": 675088,
+        "indices": 677380
+      },
+      {
+        "id": "FJ1394",
+        "name": "Lateral head of right gastrocnemius",
+        "muscle": "gastrocnemio-lateral",
+        "vertexCount": 482,
+        "indexCount": 2214,
+        "positions": 686500,
+        "normals": 692284,
+        "indices": 695176
+      },
+      {
+        "id": "FJ1394M",
+        "name": "Lateral head of left gastrocnemius",
+        "muscle": "gastrocnemio-lateral",
+        "vertexCount": 487,
+        "indexCount": 2244,
+        "positions": 704032,
+        "normals": 709876,
+        "indices": 712800
+      },
+      {
+        "id": "FJ1395",
+        "name": "Long head of right biceps femoris",
+        "muscle": "biceps-femoral",
+        "vertexCount": 718,
+        "indexCount": 3372,
+        "positions": 721776,
+        "normals": 730392,
+        "indices": 734700
+      },
+      {
+        "id": "FJ1395M",
+        "name": "Long head of left biceps femoris",
+        "muscle": "biceps-femoral",
+        "vertexCount": 726,
+        "indexCount": 3372,
+        "positions": 748188,
+        "normals": 756900,
+        "indices": 761256
+      },
+      {
+        "id": "FJ1397",
+        "name": "Medial head of right gastrocnemius",
+        "muscle": "gastrocnemio-medial",
+        "vertexCount": 647,
+        "indexCount": 2646,
+        "positions": 774744,
+        "normals": 782508,
+        "indices": 786392
+      },
+      {
+        "id": "FJ1397M",
+        "name": "Medial head of left gastrocnemius",
+        "muscle": "gastrocnemio-medial",
+        "vertexCount": 644,
+        "indexCount": 2676,
+        "positions": 796976,
+        "normals": 804704,
+        "indices": 808568
+      },
+      {
+        "id": "FJ1401",
+        "name": "Right adductor brevis",
+        "muscle": "adutores",
+        "vertexCount": 503,
+        "indexCount": 1584,
+        "positions": 819272,
+        "normals": 825308,
+        "indices": 828328
+      },
+      {
+        "id": "FJ1401M",
+        "name": "Left adductor brevis",
+        "muscle": "adutores",
+        "vertexCount": 507,
+        "indexCount": 1566,
+        "positions": 834664,
+        "normals": 840748,
+        "indices": 843792
+      },
+      {
+        "id": "FJ1402",
+        "name": "Right adductor longus",
+        "muscle": "adutores",
+        "vertexCount": 408,
+        "indexCount": 1722,
+        "positions": 850056,
+        "normals": 854952,
+        "indices": 857400
+      },
+      {
+        "id": "FJ1402M",
+        "name": "Left adductor longus",
+        "muscle": "adutores",
+        "vertexCount": 410,
+        "indexCount": 1722,
+        "positions": 864288,
+        "normals": 869208,
+        "indices": 871668
+      },
+      {
+        "id": "FJ1403",
+        "name": "Right adductor magnus",
+        "muscle": "adutores",
+        "vertexCount": 1786,
+        "indexCount": 4944,
+        "positions": 878556,
+        "normals": 899988,
+        "indices": 910704
+      },
+      {
+        "id": "FJ1403M",
+        "name": "Left adductor magnus",
+        "muscle": "adutores",
+        "vertexCount": 1801,
+        "indexCount": 4974,
+        "positions": 930480,
+        "normals": 952092,
+        "indices": 962900
+      },
+      {
+        "id": "FJ1404",
+        "name": "Right adductor minimus",
+        "muscle": "adutores",
+        "vertexCount": 825,
+        "indexCount": 2382,
+        "positions": 982796,
+        "normals": 992696,
+        "indices": 997648
+      },
+      {
+        "id": "FJ1404M",
+        "name": "Left adductor minimus",
+        "muscle": "adutores",
+        "vertexCount": 837,
+        "indexCount": 2394,
+        "positions": 1007176,
+        "normals": 1017220,
+        "indices": 1022244
+      },
+      {
+        "id": "FJ1409",
+        "name": "Right fibularis brevis",
+        "muscle": null,
+        "vertexCount": 802,
+        "indexCount": 1896,
+        "positions": 1031820,
+        "normals": 1041444,
+        "indices": 1046256
+      },
+      {
+        "id": "FJ1409M",
+        "name": "Left fibularis brevis",
+        "muscle": null,
+        "vertexCount": 790,
+        "indexCount": 1872,
+        "positions": 1053840,
+        "normals": 1063320,
+        "indices": 1068060
+      },
+      {
+        "id": "FJ1410",
+        "name": "Right fibularis longus",
+        "muscle": null,
+        "vertexCount": 1083,
+        "indexCount": 2676,
+        "positions": 1075548,
+        "normals": 1088544,
+        "indices": 1095044
+      },
+      {
+        "id": "FJ1410M",
+        "name": "Left fibularis longus",
+        "muscle": null,
+        "vertexCount": 1081,
+        "indexCount": 2670,
+        "positions": 1105748,
+        "normals": 1118720,
+        "indices": 1125208
+      },
+      {
+        "id": "FJ1411",
+        "name": "Right fibularis tertius",
+        "muscle": null,
+        "vertexCount": 1017,
+        "indexCount": 2148,
+        "positions": 1135888,
+        "normals": 1148092,
+        "indices": 1154196
+      },
+      {
+        "id": "FJ1411M",
+        "name": "Left fibularis tertius",
+        "muscle": null,
+        "vertexCount": 1004,
+        "indexCount": 2148,
+        "positions": 1162788,
+        "normals": 1174836,
+        "indices": 1180860
+      },
+      {
+        "id": "FJ1418",
+        "name": "Right gluteus maximus",
+        "muscle": "gluteo-maximo",
+        "vertexCount": 1328,
+        "indexCount": 3708,
+        "positions": 1189452,
+        "normals": 1205388,
+        "indices": 1213356
+      },
+      {
+        "id": "FJ1418M",
+        "name": "Left gluteus maximus",
+        "muscle": "gluteo-maximo",
+        "vertexCount": 1336,
+        "indexCount": 3720,
+        "positions": 1228188,
+        "normals": 1244220,
+        "indices": 1252236
+      },
+      {
+        "id": "FJ1419",
+        "name": "Right gluteus medius",
+        "muscle": "gluteo-medio",
+        "vertexCount": 1129,
+        "indexCount": 4110,
+        "positions": 1267116,
+        "normals": 1280664,
+        "indices": 1287440
+      },
+      {
+        "id": "FJ1419M",
+        "name": "Left gluteus medius",
+        "muscle": "gluteo-medio",
+        "vertexCount": 1126,
+        "indexCount": 4134,
+        "positions": 1303880,
+        "normals": 1317392,
+        "indices": 1324148
+      },
+      {
+        "id": "FJ1420",
+        "name": "Right gluteus minimus",
+        "muscle": "gluteo-minimo",
+        "vertexCount": 1346,
+        "indexCount": 4296,
+        "positions": 1340684,
+        "normals": 1356836,
+        "indices": 1364912
+      },
+      {
+        "id": "FJ1420M",
+        "name": "Left gluteus minimus",
+        "muscle": "gluteo-minimo",
+        "vertexCount": 1350,
+        "indexCount": 4308,
+        "positions": 1382096,
+        "normals": 1398296,
+        "indices": 1406396
+      },
+      {
+        "id": "FJ1421",
+        "name": "Right gracilis",
+        "muscle": "adutores",
+        "vertexCount": 657,
+        "indexCount": 2088,
+        "positions": 1423628,
+        "normals": 1431512,
+        "indices": 1435456
+      },
+      {
+        "id": "FJ1421M",
+        "name": "Left gracilis",
+        "muscle": "adutores",
+        "vertexCount": 666,
+        "indexCount": 2088,
+        "positions": 1443808,
+        "normals": 1451800,
+        "indices": 1455796
+      },
+      {
+        "id": "FJ1422",
+        "name": "Right iliacus",
+        "muscle": "psoas-iliaco",
+        "vertexCount": 1475,
+        "indexCount": 3966,
+        "positions": 1464148,
+        "normals": 1481848,
+        "indices": 1490700
+      },
+      {
+        "id": "FJ1422M",
+        "name": "Left iliacus",
+        "muscle": "psoas-iliaco",
+        "vertexCount": 1478,
+        "indexCount": 4002,
+        "positions": 1506564,
+        "normals": 1524300,
+        "indices": 1533168
+      },
+      {
+        "id": "FJ1423",
+        "name": "Right iliotibial tract",
+        "muscle": null,
+        "vertexCount": 2355,
+        "indexCount": 11328,
+        "positions": 1549176,
+        "normals": 1577436,
+        "indices": 1591568
+      },
+      {
+        "id": "FJ1423M",
+        "name": "Left iliotibial tract",
+        "muscle": null,
+        "vertexCount": 2359,
+        "indexCount": 11328,
+        "positions": 1636880,
+        "normals": 1665188,
+        "indices": 1679344
+      },
+      {
+        "id": "FJ1427",
+        "name": "Right pectineus",
+        "muscle": "adutores",
+        "vertexCount": 525,
+        "indexCount": 2034,
+        "positions": 1724656,
+        "normals": 1730956,
+        "indices": 1734108
+      },
+      {
+        "id": "FJ1427M",
+        "name": "Left pectineus",
+        "muscle": "adutores",
+        "vertexCount": 533,
+        "indexCount": 2046,
+        "positions": 1742244,
+        "normals": 1748640,
+        "indices": 1751840
+      },
+      {
+        "id": "FJ1428",
+        "name": "Right piriformis",
+        "muscle": "piriforme",
+        "vertexCount": 511,
+        "indexCount": 1842,
+        "positions": 1760024,
+        "normals": 1766156,
+        "indices": 1769224
+      },
+      {
+        "id": "FJ1428M",
+        "name": "Left piriformis",
+        "muscle": "piriforme",
+        "vertexCount": 507,
+        "indexCount": 1830,
+        "positions": 1776592,
+        "normals": 1782676,
+        "indices": 1785720
+      },
+      {
+        "id": "FJ1431",
+        "name": "Right psoas major",
+        "muscle": "psoas-iliaco",
+        "vertexCount": 1401,
+        "indexCount": 4224,
+        "positions": 1793040,
+        "normals": 1809852,
+        "indices": 1818260
+      },
+      {
+        "id": "FJ1431M",
+        "name": "Left psoas major",
+        "muscle": "psoas-iliaco",
+        "vertexCount": 1378,
+        "indexCount": 4206,
+        "positions": 1835156,
+        "normals": 1851692,
+        "indices": 1859960
+      },
+      {
+        "id": "FJ1433",
+        "name": "Right rectus femoris",
+        "muscle": "reto-femoral",
+        "vertexCount": 910,
+        "indexCount": 3750,
+        "positions": 1876784,
+        "normals": 1887704,
+        "indices": 1893164
+      },
+      {
+        "id": "FJ1433M",
+        "name": "Left rectus femoris",
+        "muscle": "reto-femoral",
+        "vertexCount": 918,
+        "indexCount": 3750,
+        "positions": 1908164,
+        "normals": 1919180,
+        "indices": 1924688
+      },
+      {
+        "id": "FJ1434",
+        "name": "Right sartorius",
+        "muscle": "sartorio",
+        "vertexCount": 1020,
+        "indexCount": 2268,
+        "positions": 1939688,
+        "normals": 1951928,
+        "indices": 1958048
+      },
+      {
+        "id": "FJ1434M",
+        "name": "Left sartorius",
+        "muscle": "sartorio",
+        "vertexCount": 1017,
+        "indexCount": 2268,
+        "positions": 1967120,
+        "normals": 1979324,
+        "indices": 1985428
+      },
+      {
+        "id": "FJ1435",
+        "name": "Right semimembranosus",
+        "muscle": "semimembranoso",
+        "vertexCount": 664,
+        "indexCount": 3042,
+        "positions": 1994500,
+        "normals": 2002468,
+        "indices": 2006452
+      },
+      {
+        "id": "FJ1435M",
+        "name": "Left semimembranosus",
+        "muscle": "semimembranoso",
+        "vertexCount": 659,
+        "indexCount": 3042,
+        "positions": 2018620,
+        "normals": 2026528,
+        "indices": 2030484
+      },
+      {
+        "id": "FJ1436",
+        "name": "Right semitendinosus",
+        "muscle": "semitendinoso",
+        "vertexCount": 638,
+        "indexCount": 1788,
+        "positions": 2042652,
+        "normals": 2050308,
+        "indices": 2054136
+      },
+      {
+        "id": "FJ1436M",
+        "name": "Left semitendinosus",
+        "muscle": "semitendinoso",
+        "vertexCount": 624,
+        "indexCount": 1788,
+        "positions": 2061288,
+        "normals": 2068776,
+        "indices": 2072520
+      },
+      {
+        "id": "FJ1437",
+        "name": "Right soleus",
+        "muscle": "soleo",
+        "vertexCount": 792,
+        "indexCount": 3012,
+        "positions": 2079672,
+        "normals": 2089176,
+        "indices": 2093928
+      },
+      {
+        "id": "FJ1437M",
+        "name": "Left soleus",
+        "muscle": "soleo",
+        "vertexCount": 778,
+        "indexCount": 2928,
+        "positions": 2105976,
+        "normals": 2115312,
+        "indices": 2119980
+      },
+      {
+        "id": "FJ1438",
+        "name": "Right tensor fasciae latae",
+        "muscle": "tensor-fascia-lata",
+        "vertexCount": 678,
+        "indexCount": 1878,
+        "positions": 2131692,
+        "normals": 2139828,
+        "indices": 2143896
+      },
+      {
+        "id": "FJ1438M",
+        "name": "Left tensor fasciae latae",
+        "muscle": "tensor-fascia-lata",
+        "vertexCount": 679,
+        "indexCount": 1878,
+        "positions": 2151408,
+        "normals": 2159556,
+        "indices": 2163632
+      },
+      {
+        "id": "FJ1439",
+        "name": "Right tibialis anterior",
+        "muscle": "tibial-anterior",
+        "vertexCount": 1116,
+        "indexCount": 2298,
+        "positions": 2171144,
+        "normals": 2184536,
+        "indices": 2191232
+      },
+      {
+        "id": "FJ1439M",
+        "name": "Left tibialis anterior",
+        "muscle": "tibial-anterior",
+        "vertexCount": 1113,
+        "indexCount": 2268,
+        "positions": 2200424,
+        "normals": 2213780,
+        "indices": 2220460
+      },
+      {
+        "id": "FJ1440",
+        "name": "Right tibialis posterior",
+        "muscle": null,
+        "vertexCount": 2920,
+        "indexCount": 5832,
+        "positions": 2229532,
+        "normals": 2264572,
+        "indices": 2282092
+      },
+      {
+        "id": "FJ1440M",
+        "name": "Left tibialis posterior",
+        "muscle": null,
+        "vertexCount": 2917,
+        "indexCount": 5802,
+        "positions": 2305420,
+        "normals": 2340424,
+        "indices": 2357928
+      },
+      {
+        "id": "FJ1442",
+        "name": "Right vastus lateralis",
+        "muscle": "vasto-lateral",
+        "vertexCount": 1091,
+        "indexCount": 4410,
+        "positions": 2381136,
+        "normals": 2394228,
+        "indices": 2400776
+      },
+      {
+        "id": "FJ1442M",
+        "name": "Left vastus lateralis",
+        "muscle": "vasto-lateral",
+        "vertexCount": 1080,
+        "indexCount": 4410,
+        "positions": 2418416,
+        "normals": 2431376,
+        "indices": 2437856
+      },
+      {
+        "id": "FJ1443",
+        "name": "Right vastus medialis",
+        "muscle": "vasto-medial",
+        "vertexCount": 784,
+        "indexCount": 3000,
+        "positions": 2455496,
+        "normals": 2464904,
+        "indices": 2469608
+      },
+      {
+        "id": "FJ1443M",
+        "name": "Left vastus medialis",
+        "muscle": "vasto-medial",
+        "vertexCount": 776,
+        "indexCount": 3000,
+        "positions": 2481608,
+        "normals": 2490920,
+        "indices": 2495576
+      },
+      {
+        "id": "FJ1444",
+        "name": "Short head of right biceps femoris",
+        "muscle": "biceps-femoral",
+        "vertexCount": 456,
+        "indexCount": 1476,
+        "positions": 2507576,
+        "normals": 2513048,
+        "indices": 2515784
+      },
+      {
+        "id": "FJ1444M",
+        "name": "Short head of left biceps femoris",
+        "muscle": "biceps-femoral",
+        "vertexCount": 450,
+        "indexCount": 1440,
+        "positions": 2521688,
+        "normals": 2527088,
+        "indices": 2529788
+      },
+      {
+        "id": "FJ1446",
+        "name": "Abdominal part of right pectoralis major",
+        "muscle": "peitoral-maior-esternal",
+        "vertexCount": 563,
+        "indexCount": 2178,
+        "positions": 2535548,
+        "normals": 2542304,
+        "indices": 2545684
+      },
+      {
+        "id": "FJ1446M",
+        "name": "Abdominal part of left pectoralis major",
+        "muscle": "peitoral-maior-esternal",
+        "vertexCount": 564,
+        "indexCount": 2166,
+        "positions": 2554396,
+        "normals": 2561164,
+        "indices": 2564548
+      },
+      {
+        "id": "FJ1447",
+        "name": "Clavicular part of right pectoralis major",
+        "muscle": "peitoral-maior-clavicular",
+        "vertexCount": 917,
+        "indexCount": 2994,
+        "positions": 2573212,
+        "normals": 2584216,
+        "indices": 2589720
+      },
+      {
+        "id": "FJ1447M",
+        "name": "Clavicular part of left pectoralis major",
+        "muscle": "peitoral-maior-clavicular",
+        "vertexCount": 922,
+        "indexCount": 2994,
+        "positions": 2601696,
+        "normals": 2612760,
+        "indices": 2618292
+      },
+      {
+        "id": "FJ1452",
+        "name": "Right external oblique",
+        "muscle": "obliquo-externo",
+        "vertexCount": 17145,
+        "indexCount": 73800,
+        "positions": 2630268,
+        "normals": 2836008,
+        "indices": 2938880
+      },
+      {
+        "id": "FJ1452M",
+        "name": "Left external oblique",
+        "muscle": "obliquo-externo",
+        "vertexCount": 17116,
+        "indexCount": 73800,
+        "positions": 3234080,
+        "normals": 3439472,
+        "indices": 3542168
+      },
+      {
+        "id": "FJ1456",
+        "name": "Right pectoralis minor",
+        "muscle": "peitoral-menor",
+        "vertexCount": 2726,
+        "indexCount": 7836,
+        "positions": 3837368,
+        "normals": 3870080,
+        "indices": 3886436
+      },
+      {
+        "id": "FJ1456M",
+        "name": "Left pectoralis minor",
+        "muscle": "peitoral-menor",
+        "vertexCount": 2729,
+        "indexCount": 7770,
+        "positions": 3917780,
+        "normals": 3950528,
+        "indices": 3966904
+      },
+      {
+        "id": "FJ1459",
+        "name": "Right serratus anterior",
+        "muscle": "serratil-anterior",
+        "vertexCount": 7818,
+        "indexCount": 32478,
+        "positions": 3997984,
+        "normals": 4091800,
+        "indices": 4138708
+      },
+      {
+        "id": "FJ1459M",
+        "name": "Left serratus anterior",
+        "muscle": "serratil-anterior",
+        "vertexCount": 7810,
+        "indexCount": 32478,
+        "positions": 4268620,
+        "normals": 4362340,
+        "indices": 4409200
+      },
+      {
+        "id": "FJ1464",
+        "name": "Sternocostal part of right pectoralis major",
+        "muscle": "peitoral-maior-esternal",
+        "vertexCount": 3278,
+        "indexCount": 10440,
+        "positions": 4539112,
+        "normals": 4578448,
+        "indices": 4598116
+      },
+      {
+        "id": "FJ1464M",
+        "name": "Sternocostal part of left pectoralis major",
+        "muscle": "peitoral-maior-esternal",
+        "vertexCount": 3271,
+        "indexCount": 10470,
+        "positions": 4639876,
+        "normals": 4679128,
+        "indices": 4698756
+      },
+      {
+        "id": "FJ1467",
+        "name": "Acromial part of right deltoid",
+        "muscle": "deltoide-medial",
+        "vertexCount": 545,
+        "indexCount": 2058,
+        "positions": 4740636,
+        "normals": 4747176,
+        "indices": 4750448
+      },
+      {
+        "id": "FJ1467M",
+        "name": "Acromial part of left deltoid",
+        "muscle": "deltoide-medial",
+        "vertexCount": 544,
+        "indexCount": 2058,
+        "positions": 4758680,
+        "normals": 4765208,
+        "indices": 4768472
+      },
+      {
+        "id": "FJ1468",
+        "name": "Clavicular part of right deltoid",
+        "muscle": "deltoide-anterior",
+        "vertexCount": 2121,
+        "indexCount": 4458,
+        "positions": 4776704,
+        "normals": 4802156,
+        "indices": 4814884
+      },
+      {
+        "id": "FJ1468M",
+        "name": "Clavicular part of left deltoid",
+        "muscle": "deltoide-anterior",
+        "vertexCount": 2143,
+        "indexCount": 4500,
+        "positions": 4832716,
+        "normals": 4858432,
+        "indices": 4871292
+      },
+      {
+        "id": "FJ1472",
+        "name": "Right extensor carpi ulnaris",
+        "muscle": "extensores-antebraco",
+        "vertexCount": 2167,
+        "indexCount": 3408,
+        "positions": 4889292,
+        "normals": 4915296,
+        "indices": 4928300
+      },
+      {
+        "id": "FJ1472M",
+        "name": "Left extensor carpi ulnaris",
+        "muscle": "extensores-antebraco",
+        "vertexCount": 2185,
+        "indexCount": 3456,
+        "positions": 4941932,
+        "normals": 4968152,
+        "indices": 4981264
+      },
+      {
+        "id": "FJ1473",
+        "name": "Humeral head of right flexor carpi ulnaris",
+        "muscle": "flexores-antebraco",
+        "vertexCount": 694,
+        "indexCount": 2040,
+        "positions": 4995088,
+        "normals": 5003416,
+        "indices": 5007580
+      },
+      {
+        "id": "FJ1473M",
+        "name": "Humeral head of left flexor carpi ulnaris",
+        "muscle": "flexores-antebraco",
+        "vertexCount": 666,
+        "indexCount": 2022,
+        "positions": 5015740,
+        "normals": 5023732,
+        "indices": 5027728
+      },
+      {
+        "id": "FJ1475",
+        "name": "Right flexor digitorum superficialis",
+        "muscle": "flexores-antebraco",
+        "vertexCount": 1998,
+        "indexCount": 5736,
+        "positions": 5035816,
+        "normals": 5059792,
+        "indices": 5071780
+      },
+      {
+        "id": "FJ1475M",
+        "name": "Left flexor digitorum superficialis",
+        "muscle": "flexores-antebraco",
+        "vertexCount": 1993,
+        "indexCount": 5736,
+        "positions": 5094724,
+        "normals": 5118640,
+        "indices": 5130600
+      },
+      {
+        "id": "FJ1477",
+        "name": "Lateral head of right triceps brachii",
+        "muscle": "triceps-cabeca-lateral",
+        "vertexCount": 656,
+        "indexCount": 2514,
+        "positions": 5153544,
+        "normals": 5161416,
+        "indices": 5165352
+      },
+      {
+        "id": "FJ1477M",
+        "name": "Lateral head of left triceps brachii",
+        "muscle": "triceps-cabeca-lateral",
+        "vertexCount": 661,
+        "indexCount": 2490,
+        "positions": 5175408,
+        "normals": 5183340,
+        "indices": 5187308
+      },
+      {
+        "id": "FJ1478",
+        "name": "Long head of right biceps brachii",
+        "muscle": "biceps-braquial",
+        "vertexCount": 466,
+        "indexCount": 1476,
+        "positions": 5197268,
+        "normals": 5202860,
+        "indices": 5205656
+      },
+      {
+        "id": "FJ1478M",
+        "name": "Long head of left biceps brachii",
+        "muscle": "biceps-braquial",
+        "vertexCount": 457,
+        "indexCount": 1476,
+        "positions": 5211560,
+        "normals": 5217044,
+        "indices": 5219788
+      },
+      {
+        "id": "FJ1479",
+        "name": "Long head of right triceps brachii",
+        "muscle": "triceps-cabeca-longa",
+        "vertexCount": 504,
+        "indexCount": 1680,
+        "positions": 5225692,
+        "normals": 5231740,
+        "indices": 5234764
+      },
+      {
+        "id": "FJ1479M",
+        "name": "Long head of left triceps brachii",
+        "muscle": "triceps-cabeca-longa",
+        "vertexCount": 504,
+        "indexCount": 1686,
+        "positions": 5241484,
+        "normals": 5247532,
+        "indices": 5250556
+      },
+      {
+        "id": "FJ1480",
+        "name": "Medial head of right triceps brachii",
+        "muscle": "triceps-cabeca-medial",
+        "vertexCount": 325,
+        "indexCount": 1116,
+        "positions": 5257300,
+        "normals": 5261200,
+        "indices": 5263152
+      },
+      {
+        "id": "FJ1480M",
+        "name": "Medial head of left triceps brachii",
+        "muscle": "triceps-cabeca-medial",
+        "vertexCount": 325,
+        "indexCount": 1122,
+        "positions": 5267616,
+        "normals": 5271516,
+        "indices": 5273468
+      },
+      {
+        "id": "FJ1487",
+        "name": "Right brachioradialis",
+        "muscle": "braquiorradial",
+        "vertexCount": 1012,
+        "indexCount": 3216,
+        "positions": 5277956,
+        "normals": 5290100,
+        "indices": 5296172
+      },
+      {
+        "id": "FJ1487M",
+        "name": "Left brachioradialis",
+        "muscle": "braquiorradial",
+        "vertexCount": 991,
+        "indexCount": 3210,
+        "positions": 5309036,
+        "normals": 5320928,
+        "indices": 5326876
+      },
+      {
+        "id": "FJ1489",
+        "name": "Right extensor carpi radialis brevis",
+        "muscle": "extensores-antebraco",
+        "vertexCount": 585,
+        "indexCount": 1566,
+        "positions": 5339716,
+        "normals": 5346736,
+        "indices": 5350248
+      },
+      {
+        "id": "FJ1489M",
+        "name": "Left extensor carpi radialis brevis",
+        "muscle": "extensores-antebraco",
+        "vertexCount": 560,
+        "indexCount": 1524,
+        "positions": 5356512,
+        "normals": 5363232,
+        "indices": 5366592
+      },
+      {
+        "id": "FJ1490",
+        "name": "Right extensor carpi radialis longus",
+        "muscle": "extensores-antebraco",
+        "vertexCount": 528,
+        "indexCount": 1632,
+        "positions": 5372688,
+        "normals": 5379024,
+        "indices": 5382192
+      },
+      {
+        "id": "FJ1490M",
+        "name": "Left extensor carpi radialis longus",
+        "muscle": "extensores-antebraco",
+        "vertexCount": 537,
+        "indexCount": 1632,
+        "positions": 5388720,
+        "normals": 5395164,
+        "indices": 5398388
+      },
+      {
+        "id": "FJ1491",
+        "name": "Right extensor digiti minimi",
+        "muscle": "extensores-antebraco",
+        "vertexCount": 304,
+        "indexCount": 942,
+        "positions": 5404916,
+        "normals": 5408564,
+        "indices": 5410388
+      },
+      {
+        "id": "FJ1491M",
+        "name": "Left extensor digiti minimi",
+        "muscle": "extensores-antebraco",
+        "vertexCount": 310,
+        "indexCount": 942,
+        "positions": 5414156,
+        "normals": 5417876,
+        "indices": 5419736
+      },
+      {
+        "id": "FJ1492",
+        "name": "Right extensor digitorum",
+        "muscle": "extensores-antebraco",
+        "vertexCount": 1313,
+        "indexCount": 3162,
+        "positions": 5423504,
+        "normals": 5439260,
+        "indices": 5447140
+      },
+      {
+        "id": "FJ1492M",
+        "name": "Left extensor digitorum",
+        "muscle": "extensores-antebraco",
+        "vertexCount": 1305,
+        "indexCount": 3186,
+        "positions": 5459788,
+        "normals": 5475448,
+        "indices": 5483280
+      },
+      {
+        "id": "FJ1493",
+        "name": "Right extensor indicis",
+        "muscle": "extensores-antebraco",
+        "vertexCount": 426,
+        "indexCount": 1020,
+        "positions": 5496024,
+        "normals": 5501136,
+        "indices": 5503692
+      },
+      {
+        "id": "FJ1493M",
+        "name": "Left extensor indicis",
+        "muscle": "extensores-antebraco",
+        "vertexCount": 431,
+        "indexCount": 1026,
+        "positions": 5507772,
+        "normals": 5512944,
+        "indices": 5515532
+      },
+      {
+        "id": "FJ1494",
+        "name": "Right extensor pollicis brevis",
+        "muscle": "extensores-antebraco",
+        "vertexCount": 497,
+        "indexCount": 1314,
+        "positions": 5519636,
+        "normals": 5525600,
+        "indices": 5528584
+      },
+      {
+        "id": "FJ1494M",
+        "name": "Left extensor pollicis brevis",
+        "muscle": "extensores-antebraco",
+        "vertexCount": 491,
+        "indexCount": 1302,
+        "positions": 5533840,
+        "normals": 5539732,
+        "indices": 5542680
+      },
+      {
+        "id": "FJ1495",
+        "name": "Right extensor pollicis longus",
+        "muscle": "extensores-antebraco",
+        "vertexCount": 613,
+        "indexCount": 1464,
+        "positions": 5547888,
+        "normals": 5555244,
+        "indices": 5558924
+      },
+      {
+        "id": "FJ1495M",
+        "name": "Left extensor pollicis longus",
+        "muscle": "extensores-antebraco",
+        "vertexCount": 623,
+        "indexCount": 1470,
+        "positions": 5564780,
+        "normals": 5572256,
+        "indices": 5575996
+      },
+      {
+        "id": "FJ1496",
+        "name": "Right flexor carpi radialis",
+        "muscle": "flexores-antebraco",
+        "vertexCount": 299,
+        "indexCount": 930,
+        "positions": 5581876,
+        "normals": 5585464,
+        "indices": 5587260
+      },
+      {
+        "id": "FJ1496M",
+        "name": "Left flexor carpi radialis",
+        "muscle": "flexores-antebraco",
+        "vertexCount": 300,
+        "indexCount": 936,
+        "positions": 5590980,
+        "normals": 5594580,
+        "indices": 5596380
+      },
+      {
+        "id": "FJ1497",
+        "name": "Right flexor digitorum profundus",
+        "muscle": "flexores-antebraco",
+        "vertexCount": 1520,
+        "indexCount": 3912,
+        "positions": 5600124,
+        "normals": 5618364,
+        "indices": 5627484
+      },
+      {
+        "id": "FJ1497M",
+        "name": "Left flexor digitorum profundus",
+        "muscle": "flexores-antebraco",
+        "vertexCount": 1521,
+        "indexCount": 3888,
+        "positions": 5643132,
+        "normals": 5661384,
+        "indices": 5670512
+      },
+      {
+        "id": "FJ1498",
+        "name": "Right flexor pollicis longus",
+        "muscle": "flexores-antebraco",
+        "vertexCount": 1311,
+        "indexCount": 2472,
+        "positions": 5686064,
+        "normals": 5701796,
+        "indices": 5709664
+      },
+      {
+        "id": "FJ1498M",
+        "name": "Left flexor pollicis longus",
+        "muscle": "flexores-antebraco",
+        "vertexCount": 1322,
+        "indexCount": 2502,
+        "positions": 5719552,
+        "normals": 5735416,
+        "indices": 5743348
+      },
+      {
+        "id": "FJ1499",
+        "name": "Right flexor digitorum superficialis",
+        "muscle": "flexores-antebraco",
+        "vertexCount": 329,
+        "indexCount": 1104,
+        "positions": 5753356,
+        "normals": 5757304,
+        "indices": 5759280
+      },
+      {
+        "id": "FJ1499M",
+        "name": "Left flexor digitorum superficialis",
+        "muscle": "flexores-antebraco",
+        "vertexCount": 328,
+        "indexCount": 1098,
+        "positions": 5763696,
+        "normals": 5767632,
+        "indices": 5769600
+      },
+      {
+        "id": "FJ1500",
+        "name": "Right infraspinatus muscle",
+        "muscle": "infraespinhoso",
+        "vertexCount": 528,
+        "indexCount": 1608,
+        "positions": 5773992,
+        "normals": 5780328,
+        "indices": 5783496
+      },
+      {
+        "id": "FJ1500M",
+        "name": "Left infraspinatus muscle",
+        "muscle": "infraespinhoso",
+        "vertexCount": 510,
+        "indexCount": 1590,
+        "positions": 5789928,
+        "normals": 5796048,
+        "indices": 5799108
+      },
+      {
+        "id": "FJ1502",
+        "name": "Right palmaris longus",
+        "muscle": "flexores-antebraco",
+        "vertexCount": 2090,
+        "indexCount": 4500,
+        "positions": 5805468,
+        "normals": 5830548,
+        "indices": 5843088
+      },
+      {
+        "id": "FJ1502M",
+        "name": "Left palmaris longus",
+        "muscle": "flexores-antebraco",
+        "vertexCount": 2094,
+        "indexCount": 4518,
+        "positions": 5861088,
+        "normals": 5886216,
+        "indices": 5898780
+      },
+      {
+        "id": "FJ1504",
+        "name": "Right subscapularis",
+        "muscle": "subescapular",
+        "vertexCount": 2368,
+        "indexCount": 4572,
+        "positions": 5916852,
+        "normals": 5945268,
+        "indices": 5959476
+      },
+      {
+        "id": "FJ1504M",
+        "name": "Left subscapularis",
+        "muscle": "subescapular",
+        "vertexCount": 2342,
+        "indexCount": 4536,
+        "positions": 5977764,
+        "normals": 6005868,
+        "indices": 6019920
+      },
+      {
+        "id": "FJ1506",
+        "name": "Right supraspinatus",
+        "muscle": "supraespinhoso",
+        "vertexCount": 622,
+        "indexCount": 1692,
+        "positions": 6038064,
+        "normals": 6045528,
+        "indices": 6049260
+      },
+      {
+        "id": "FJ1506M",
+        "name": "Left supraspinatus",
+        "muscle": "supraespinhoso",
+        "vertexCount": 627,
+        "indexCount": 1692,
+        "positions": 6056028,
+        "normals": 6063552,
+        "indices": 6067316
+      },
+      {
+        "id": "FJ1507",
+        "name": "Right teres major",
+        "muscle": "redondo-maior",
+        "vertexCount": 775,
+        "indexCount": 2100,
+        "positions": 6074084,
+        "normals": 6083384,
+        "indices": 6088036
+      },
+      {
+        "id": "FJ1507M",
+        "name": "Left teres major",
+        "muscle": "redondo-maior",
+        "vertexCount": 783,
+        "indexCount": 2106,
+        "positions": 6096436,
+        "normals": 6105832,
+        "indices": 6110532
+      },
+      {
+        "id": "FJ1508",
+        "name": "Right teres minor",
+        "muscle": "redondo-menor",
+        "vertexCount": 316,
+        "indexCount": 1116,
+        "positions": 6118956,
+        "normals": 6122748,
+        "indices": 6124644
+      },
+      {
+        "id": "FJ1508M",
+        "name": "Left teres minor",
+        "muscle": "redondo-menor",
+        "vertexCount": 307,
+        "indexCount": 1092,
+        "positions": 6129108,
+        "normals": 6132792,
+        "indices": 6134636
+      },
+      {
+        "id": "FJ1512",
+        "name": "Short head of right biceps brachii",
+        "muscle": "biceps-braquial",
+        "vertexCount": 1035,
+        "indexCount": 2412,
+        "positions": 6139004,
+        "normals": 6151424,
+        "indices": 6157636
+      },
+      {
+        "id": "FJ1512M",
+        "name": "Short head of left biceps brachii",
+        "muscle": "biceps-braquial",
+        "vertexCount": 1032,
+        "indexCount": 2448,
+        "positions": 6167284,
+        "normals": 6179668,
+        "indices": 6185860
+      },
+      {
+        "id": "FJ1513",
+        "name": "Spinal part of right deltoid",
+        "muscle": "deltoide-posterior",
+        "vertexCount": 1063,
+        "indexCount": 3084,
+        "positions": 6195652,
+        "normals": 6208408,
+        "indices": 6214788
+      },
+      {
+        "id": "FJ1513M",
+        "name": "Spinal part of left deltoid",
+        "muscle": "deltoide-posterior",
+        "vertexCount": 1078,
+        "indexCount": 3138,
+        "positions": 6227124,
+        "normals": 6240060,
+        "indices": 6246528
+      },
+      {
+        "id": "FJ1517",
+        "name": "Right extensor carpi ulnaris",
+        "muscle": "extensores-antebraco",
+        "vertexCount": 662,
+        "indexCount": 1512,
+        "positions": 6259080,
+        "normals": 6267024,
+        "indices": 6270996
+      },
+      {
+        "id": "FJ1517M",
+        "name": "Left extensor carpi ulnaris",
+        "muscle": "extensores-antebraco",
+        "vertexCount": 666,
+        "indexCount": 1524,
+        "positions": 6277044,
+        "normals": 6285036,
+        "indices": 6289032
+      },
+      {
+        "id": "FJ1518",
+        "name": "Ulnar head of right flexor carpi ulnaris",
+        "muscle": "flexores-antebraco",
+        "vertexCount": 1262,
+        "indexCount": 2604,
+        "positions": 6295128,
+        "normals": 6310272,
+        "indices": 6317844
+      },
+      {
+        "id": "FJ1518M",
+        "name": "Ulnar head of left flexor carpi ulnaris",
+        "muscle": "flexores-antebraco",
+        "vertexCount": 1269,
+        "indexCount": 2604,
+        "positions": 6328260,
+        "normals": 6343488,
+        "indices": 6351104
+      },
+      {
+        "id": "FJ1520",
+        "name": "Ascending part of right trapezius",
+        "muscle": "trapezio-inferior",
+        "vertexCount": 2787,
+        "indexCount": 7962,
+        "positions": 6361520,
+        "normals": 6394964,
+        "indices": 6411688
+      },
+      {
+        "id": "FJ1520M",
+        "name": "Ascending part of left trapezius",
+        "muscle": "trapezio-inferior",
+        "vertexCount": 2752,
+        "indexCount": 7920,
+        "positions": 6443536,
+        "normals": 6476560,
+        "indices": 6493072
+      },
+      {
+        "id": "FJ1521",
+        "name": "Descending part of right trapezius",
+        "muscle": "trapezio-superior",
+        "vertexCount": 2394,
+        "indexCount": 7854,
+        "positions": 6524752,
+        "normals": 6553480,
+        "indices": 6567844
+      },
+      {
+        "id": "FJ1521M",
+        "name": "Descending part of left trapezius",
+        "muscle": "trapezio-superior",
+        "vertexCount": 2380,
+        "indexCount": 7866,
+        "positions": 6599260,
+        "normals": 6627820,
+        "indices": 6642100
+      },
+      {
+        "id": "FJ1526",
+        "name": "Right iliocostalis cervicis",
+        "muscle": "eretores-da-espinha",
+        "vertexCount": 988,
+        "indexCount": 2706,
+        "positions": 6673564,
+        "normals": 6685420,
+        "indices": 6691348
+      },
+      {
+        "id": "FJ1526M",
+        "name": "Left iliocostalis cervicis",
+        "muscle": "eretores-da-espinha",
+        "vertexCount": 988,
+        "indexCount": 2694,
+        "positions": 6702172,
+        "normals": 6714028,
+        "indices": 6719956
+      },
+      {
+        "id": "FJ1527",
+        "name": "Right iliocostalis lumborum",
+        "muscle": "eretores-da-espinha",
+        "vertexCount": 3264,
+        "indexCount": 10470,
+        "positions": 6730732,
+        "normals": 6769900,
+        "indices": 6789484
+      },
+      {
+        "id": "FJ1527M",
+        "name": "Left iliocostalis lumborum",
+        "muscle": "eretores-da-espinha",
+        "vertexCount": 3278,
+        "indexCount": 10470,
+        "positions": 6831364,
+        "normals": 6870700,
+        "indices": 6890368
+      },
+      {
+        "id": "FJ1528",
+        "name": "Right iliocostalis thoracis",
+        "muscle": "eretores-da-espinha",
+        "vertexCount": 1684,
+        "indexCount": 5532,
+        "positions": 6932248,
+        "normals": 6952456,
+        "indices": 6962560
+      },
+      {
+        "id": "FJ1528M",
+        "name": "Left iliocostalis thoracis",
+        "muscle": "eretores-da-espinha",
+        "vertexCount": 1703,
+        "indexCount": 5532,
+        "positions": 6984688,
+        "normals": 7005124,
+        "indices": 7015344
+      },
+      {
+        "id": "FJ1532",
+        "name": "Right levator scapulae",
+        "muscle": "elevador-da-escapula",
+        "vertexCount": 1262,
+        "indexCount": 3942,
+        "positions": 7037472,
+        "normals": 7052616,
+        "indices": 7060188
+      },
+      {
+        "id": "FJ1532M",
+        "name": "Left levator scapulae",
+        "muscle": "elevador-da-escapula",
+        "vertexCount": 1285,
+        "indexCount": 3948,
+        "positions": 7075956,
+        "normals": 7091376,
+        "indices": 7099088
+      },
+      {
+        "id": "FJ1533",
+        "name": "Right longissimus capitis",
+        "muscle": "eretores-da-espinha",
+        "vertexCount": 860,
+        "indexCount": 2340,
+        "positions": 7114880,
+        "normals": 7125200,
+        "indices": 7130360
+      },
+      {
+        "id": "FJ1533M",
+        "name": "Left longissimus capitis",
+        "muscle": "eretores-da-espinha",
+        "vertexCount": 867,
+        "indexCount": 2376,
+        "positions": 7139720,
+        "normals": 7150124,
+        "indices": 7155328
+      },
+      {
+        "id": "FJ1534",
+        "name": "Right longissimus cervicis",
+        "muscle": "eretores-da-espinha",
+        "vertexCount": 1065,
+        "indexCount": 2748,
+        "positions": 7164832,
+        "normals": 7177612,
+        "indices": 7184004
+      },
+      {
+        "id": "FJ1534M",
+        "name": "Left longissimus cervicis",
+        "muscle": "eretores-da-espinha",
+        "vertexCount": 1056,
+        "indexCount": 2736,
+        "positions": 7194996,
+        "normals": 7207668,
+        "indices": 7214004
+      },
+      {
+        "id": "FJ1535",
+        "name": "Right longissimus thoracis",
+        "muscle": "eretores-da-espinha",
+        "vertexCount": 5774,
+        "indexCount": 12408,
+        "positions": 7224948,
+        "normals": 7294236,
+        "indices": 7328880
+      },
+      {
+        "id": "FJ1535M",
+        "name": "Left longissimus thoracis",
+        "muscle": "eretores-da-espinha",
+        "vertexCount": 5816,
+        "indexCount": 12528,
+        "positions": 7378512,
+        "normals": 7448304,
+        "indices": 7483200
+      },
+      {
+        "id": "FJ1536",
+        "name": "Right rhomboid major",
+        "muscle": "romboides",
+        "vertexCount": 1824,
+        "indexCount": 5580,
+        "positions": 7533312,
+        "normals": 7555200,
+        "indices": 7566144
+      },
+      {
+        "id": "FJ1536M",
+        "name": "Left rhomboid major",
+        "muscle": "romboides",
+        "vertexCount": 1806,
+        "indexCount": 5556,
+        "positions": 7588464,
+        "normals": 7610136,
+        "indices": 7620972
+      },
+      {
+        "id": "FJ1537",
+        "name": "Right rhomboid minor",
+        "muscle": "romboides",
+        "vertexCount": 645,
+        "indexCount": 2238,
+        "positions": 7643196,
+        "normals": 7650936,
+        "indices": 7654808
+      },
+      {
+        "id": "FJ1537M",
+        "name": "Left rhomboid minor",
+        "muscle": "romboides",
+        "vertexCount": 644,
+        "indexCount": 2226,
+        "positions": 7663760,
+        "normals": 7671488,
+        "indices": 7675352
+      },
+      {
+        "id": "FJ1543",
+        "name": "spinalis",
+        "muscle": "eretores-da-espinha",
+        "vertexCount": 787,
+        "indexCount": 2016,
+        "positions": 7684256,
+        "normals": 7693700,
+        "indices": 7698424
+      },
+      {
+        "id": "FJ1543M",
+        "name": "Spinalis",
+        "muscle": "eretores-da-espinha",
+        "vertexCount": 792,
+        "indexCount": 2040,
+        "positions": 7706488,
+        "normals": 7715992,
+        "indices": 7720744
+      },
+      {
+        "id": "FJ1544",
+        "name": "Right spinalis thoracis",
+        "muscle": "eretores-da-espinha",
+        "vertexCount": 2063,
+        "indexCount": 4896,
+        "positions": 7728904,
+        "normals": 7753660,
+        "indices": 7766040
+      },
+      {
+        "id": "FJ1544M",
+        "name": "Left spinalis thoracis",
+        "muscle": "eretores-da-espinha",
+        "vertexCount": 2048,
+        "indexCount": 4896,
+        "positions": 7785624,
+        "normals": 7810200,
+        "indices": 7822488
+      },
+      {
+        "id": "FJ1554",
+        "name": "Transverse part of right trapezius",
+        "muscle": "trapezio-medio",
+        "vertexCount": 1989,
+        "indexCount": 5880,
+        "positions": 7842072,
+        "normals": 7865940,
+        "indices": 7877876
+      },
+      {
+        "id": "FJ1554M",
+        "name": "Transverse part of left trapezius",
+        "muscle": "trapezio-medio",
+        "vertexCount": 1981,
+        "indexCount": 5886,
+        "positions": 7901396,
+        "normals": 7925168,
+        "indices": 7937056
+      },
+      {
+        "id": "FJ1573",
+        "name": "Left sternocleidomastoid",
+        "muscle": "esternocleidomastoideo",
+        "vertexCount": 1825,
+        "indexCount": 6744,
+        "positions": 7960600,
+        "normals": 7982500,
+        "indices": 7993452
+      },
+      {
+        "id": "FJ1595",
+        "name": "Right sternocleidomastoid",
+        "muscle": "esternocleidomastoideo",
+        "vertexCount": 2166,
+        "indexCount": 6822,
+        "positions": 8020428,
+        "normals": 8046420,
+        "indices": 8059416
+      },
+      {
+        "id": "FJ2440",
+        "name": "Cricoid cartilage",
+        "muscle": null,
+        "vertexCount": 838,
+        "indexCount": 4542,
+        "positions": 8086704,
+        "normals": 8096760,
+        "indices": 8101788
+      },
+      {
+        "id": "FJ2554",
+        "name": "Right major alar cartilage",
+        "muscle": null,
+        "vertexCount": 210,
+        "indexCount": 1050,
+        "positions": 8119956,
+        "normals": 8122476,
+        "indices": 8123736
+      },
+      {
+        "id": "FJ2555",
+        "name": "Left major alar cartilage",
+        "muscle": null,
+        "vertexCount": 236,
+        "indexCount": 1164,
+        "positions": 8127936,
+        "normals": 8130768,
+        "indices": 8132184
+      },
+      {
+        "id": "FJ2769",
+        "name": "Cricoid cartilage",
+        "muscle": null,
+        "vertexCount": 838,
+        "indexCount": 4542,
+        "positions": 8136840,
+        "normals": 8146896,
+        "indices": 8151924
+      },
+      {
+        "id": "FJ2772",
+        "name": "Hyoid bone",
+        "muscle": null,
+        "vertexCount": 604,
+        "indexCount": 3108,
+        "positions": 8170092,
+        "normals": 8177340,
+        "indices": 8180964
+      },
+      {
+        "id": "FJ2773",
+        "name": "Left cuneiform cartilage",
+        "muscle": null,
+        "vertexCount": 91,
+        "indexCount": 522,
+        "positions": 8193396,
+        "normals": 8194488,
+        "indices": 8195036
+      },
+      {
+        "id": "FJ2775",
+        "name": "Left arytenoid cartilage",
+        "muscle": null,
+        "vertexCount": 280,
+        "indexCount": 1584,
+        "positions": 8197124,
+        "normals": 8200484,
+        "indices": 8202164
+      },
+      {
+        "id": "FJ2776",
+        "name": "Left corniculate cartilage",
+        "muscle": null,
+        "vertexCount": 109,
+        "indexCount": 402,
+        "positions": 8208500,
+        "normals": 8209808,
+        "indices": 8210464
+      },
+      {
+        "id": "FJ2792",
+        "name": "Right arytenoid cartilage",
+        "muscle": null,
+        "vertexCount": 279,
+        "indexCount": 1602,
+        "positions": 8212072,
+        "normals": 8215420,
+        "indices": 8217096
+      },
+      {
+        "id": "FJ2793",
+        "name": "Right corniculate cartilage",
+        "muscle": null,
+        "vertexCount": 108,
+        "indexCount": 516,
+        "positions": 8223504,
+        "normals": 8224800,
+        "indices": 8225448
+      },
+      {
+        "id": "FJ2795",
+        "name": "Right cuneiform cartilage",
+        "muscle": null,
+        "vertexCount": 88,
+        "indexCount": 510,
+        "positions": 8227512,
+        "normals": 8228568,
+        "indices": 8229096
+      },
+      {
+        "id": "FJ2808",
+        "name": "Thyroid cartilage",
+        "muscle": null,
+        "vertexCount": 1081,
+        "indexCount": 6174,
+        "positions": 8231136,
+        "normals": 8244108,
+        "indices": 8250596
+      },
+      {
+        "id": "FJ3152",
+        "name": "Right hip bone",
+        "muscle": null,
+        "vertexCount": 1036,
+        "indexCount": 5694,
+        "positions": 8275292,
+        "normals": 8287724,
+        "indices": 8293940
+      },
+      {
+        "id": "FJ3153",
+        "name": "Xiphoid process",
+        "muscle": null,
+        "vertexCount": 464,
+        "indexCount": 2592,
+        "positions": 8316716,
+        "normals": 8322284,
+        "indices": 8325068
+      },
+      {
+        "id": "FJ3154",
+        "name": "Tenth thoracic vertebra",
+        "muscle": null,
+        "vertexCount": 1251,
+        "indexCount": 6480,
+        "positions": 8335436,
+        "normals": 8350448,
+        "indices": 8357956
+      },
+      {
+        "id": "FJ3155",
+        "name": "Eleventh thoracic vertebra",
+        "muscle": null,
+        "vertexCount": 1238,
+        "indexCount": 6018,
+        "positions": 8383876,
+        "normals": 8398732,
+        "indices": 8406160
+      },
+      {
+        "id": "FJ3156",
+        "name": "Twelfth thoracic vertebra",
+        "muscle": null,
+        "vertexCount": 1228,
+        "indexCount": 6186,
+        "positions": 8430232,
+        "normals": 8444968,
+        "indices": 8452336
+      },
+      {
+        "id": "FJ3157",
+        "name": "First lumbar vertebra",
+        "muscle": null,
+        "vertexCount": 1391,
+        "indexCount": 7212,
+        "positions": 8477080,
+        "normals": 8493772,
+        "indices": 8502120
+      },
+      {
+        "id": "FJ3158",
+        "name": "First thoracic vertebra",
+        "muscle": null,
+        "vertexCount": 915,
+        "indexCount": 4194,
+        "positions": 8530968,
+        "normals": 8541948,
+        "indices": 8547440
+      },
+      {
+        "id": "FJ3159",
+        "name": "Second lumbar vertebra",
+        "muscle": null,
+        "vertexCount": 1493,
+        "indexCount": 7476,
+        "positions": 8564216,
+        "normals": 8582132,
+        "indices": 8591092
+      },
+      {
+        "id": "FJ3160",
+        "name": "Second thoracic vertebra",
+        "muscle": null,
+        "vertexCount": 965,
+        "indexCount": 4710,
+        "positions": 8620996,
+        "normals": 8632576,
+        "indices": 8638368
+      },
+      {
+        "id": "FJ3161",
+        "name": "Third cervical vertebra",
+        "muscle": null,
+        "vertexCount": 1184,
+        "indexCount": 5298,
+        "positions": 8657208,
+        "normals": 8671416,
+        "indices": 8678520
+      },
+      {
+        "id": "FJ3162",
+        "name": "Third lumbar vertebra",
+        "muscle": null,
+        "vertexCount": 1420,
+        "indexCount": 7362,
+        "positions": 8699712,
+        "normals": 8716752,
+        "indices": 8725272
+      },
+      {
+        "id": "FJ3163",
+        "name": "Third thoracic vertebra",
+        "muscle": null,
+        "vertexCount": 997,
+        "indexCount": 5088,
+        "positions": 8754720,
+        "normals": 8766684,
+        "indices": 8772668
+      },
+      {
+        "id": "FJ3164",
+        "name": "Fourth cervical vertebra",
+        "muscle": null,
+        "vertexCount": 1288,
+        "indexCount": 6186,
+        "positions": 8793020,
+        "normals": 8808476,
+        "indices": 8816204
+      },
+      {
+        "id": "FJ3165",
+        "name": "Fourth lumbar vertebra",
+        "muscle": null,
+        "vertexCount": 1503,
+        "indexCount": 7890,
+        "positions": 8840948,
+        "normals": 8858984,
+        "indices": 8868004
+      },
+      {
+        "id": "FJ3166",
+        "name": "Fourth thoracic vertebra",
+        "muscle": null,
+        "vertexCount": 1004,
+        "indexCount": 5052,
+        "positions": 8899564,
+        "normals": 8911612,
+        "indices": 8917636
+      },
+      {
+        "id": "FJ3167",
+        "name": "Fifth cervical vertebra",
+        "muscle": null,
+        "vertexCount": 1396,
+        "indexCount": 5802,
+        "positions": 8937844,
+        "normals": 8954596,
+        "indices": 8962972
+      },
+      {
+        "id": "FJ3168",
+        "name": "Fifth lumbar vertebra",
+        "muscle": null,
+        "vertexCount": 1469,
+        "indexCount": 7920,
+        "positions": 8986180,
+        "normals": 9003808,
+        "indices": 9012624
+      },
+      {
+        "id": "FJ3169",
+        "name": "Fifth thoracic vertebra",
+        "muscle": null,
+        "vertexCount": 1089,
+        "indexCount": 5496,
+        "positions": 9044304,
+        "normals": 9057372,
+        "indices": 9063908
+      },
+      {
+        "id": "FJ3170",
+        "name": "Sixth cervical vertebra",
+        "muscle": null,
+        "vertexCount": 1257,
+        "indexCount": 5784,
+        "positions": 9085892,
+        "normals": 9100976,
+        "indices": 9108520
+      },
+      {
+        "id": "FJ3171",
+        "name": "Sixth thoracic vertebra",
+        "muscle": null,
+        "vertexCount": 1127,
+        "indexCount": 5490,
+        "positions": 9131656,
+        "normals": 9145180,
+        "indices": 9151944
+      },
+      {
+        "id": "FJ3172",
+        "name": "Seventh cervical vertebra",
+        "muscle": null,
+        "vertexCount": 1162,
+        "indexCount": 4560,
+        "positions": 9173904,
+        "normals": 9187848,
+        "indices": 9194820
+      },
+      {
+        "id": "FJ3173",
+        "name": "Seventh thoracic vertebra",
+        "muscle": null,
+        "vertexCount": 1223,
+        "indexCount": 6282,
+        "positions": 9213060,
+        "normals": 9227736,
+        "indices": 9235076
+      },
+      {
+        "id": "FJ3174",
+        "name": "Eighth thoracic vertebra",
+        "muscle": null,
+        "vertexCount": 1195,
+        "indexCount": 6144,
+        "positions": 9260204,
+        "normals": 9274544,
+        "indices": 9281716
+      },
+      {
+        "id": "FJ3175",
+        "name": "Ninth thoracic vertebra",
+        "muscle": null,
+        "vertexCount": 1153,
+        "indexCount": 6120,
+        "positions": 9306292,
+        "normals": 9320128,
+        "indices": 9327048
+      },
+      {
+        "id": "FJ3176",
+        "name": "Atlas",
+        "muscle": null,
+        "vertexCount": 1114,
+        "indexCount": 4542,
+        "positions": 9351528,
+        "normals": 9364896,
+        "indices": 9371580
+      },
+      {
+        "id": "FJ3177",
+        "name": "Axis",
+        "muscle": null,
+        "vertexCount": 1408,
+        "indexCount": 6084,
+        "positions": 9389748,
+        "normals": 9406644,
+        "indices": 9415092
+      },
+      {
+        "id": "FJ3178",
+        "name": "Body of sternum",
+        "muscle": null,
+        "vertexCount": 2511,
+        "indexCount": 8430,
+        "positions": 9439428,
+        "normals": 9469560,
+        "indices": 9484628
+      },
+      {
+        "id": "FJ3179",
+        "name": "Distal phalanx of left second toe",
+        "muscle": null,
+        "vertexCount": 168,
+        "indexCount": 714,
+        "positions": 9518348,
+        "normals": 9520364,
+        "indices": 9521372
+      },
+      {
+        "id": "FJ3180",
+        "name": "Distal phalanx of left third toe",
+        "muscle": null,
+        "vertexCount": 188,
+        "indexCount": 1008,
+        "positions": 9524228,
+        "normals": 9526484,
+        "indices": 9527612
+      },
+      {
+        "id": "FJ3181",
+        "name": "Distal phalanx of left fourth toe",
+        "muscle": null,
+        "vertexCount": 146,
+        "indexCount": 678,
+        "positions": 9531644,
+        "normals": 9533396,
+        "indices": 9534272
+      },
+      {
+        "id": "FJ3182",
+        "name": "Distal phalanx of left big toe",
+        "muscle": null,
+        "vertexCount": 249,
+        "indexCount": 1098,
+        "positions": 9536984,
+        "normals": 9539972,
+        "indices": 9541468
+      },
+      {
+        "id": "FJ3183",
+        "name": "Distal phalanx of left index finger",
+        "muscle": null,
+        "vertexCount": 198,
+        "indexCount": 954,
+        "positions": 9545860,
+        "normals": 9548236,
+        "indices": 9549424
+      },
+      {
+        "id": "FJ3184",
+        "name": "Distal phalanx of left little finger",
+        "muscle": null,
+        "vertexCount": 154,
+        "indexCount": 594,
+        "positions": 9553240,
+        "normals": 9555088,
+        "indices": 9556012
+      },
+      {
+        "id": "FJ3185",
+        "name": "Distal phalanx of left little toe",
+        "muscle": null,
+        "vertexCount": 160,
+        "indexCount": 660,
+        "positions": 9558388,
+        "normals": 9560308,
+        "indices": 9561268
+      },
+      {
+        "id": "FJ3186",
+        "name": "Distal phalanx of left middle finger",
+        "muscle": null,
+        "vertexCount": 170,
+        "indexCount": 780,
+        "positions": 9563908,
+        "normals": 9565948,
+        "indices": 9566968
+      },
+      {
+        "id": "FJ3187",
+        "name": "Distal phalanx of left ring finger",
+        "muscle": null,
+        "vertexCount": 138,
+        "indexCount": 576,
+        "positions": 9570088,
+        "normals": 9571744,
+        "indices": 9572572
+      },
+      {
+        "id": "FJ3188",
+        "name": "Distal phalanx of left thumb",
+        "muscle": null,
+        "vertexCount": 185,
+        "indexCount": 786,
+        "positions": 9574876,
+        "normals": 9577096,
+        "indices": 9578208
+      },
+      {
+        "id": "FJ3189",
+        "name": "Distal phalanx of right second toe",
+        "muscle": null,
+        "vertexCount": 168,
+        "indexCount": 588,
+        "positions": 9581352,
+        "normals": 9583368,
+        "indices": 9584376
+      },
+      {
+        "id": "FJ3190",
+        "name": "Distal phalanx of right third toe",
+        "muscle": null,
+        "vertexCount": 161,
+        "indexCount": 774,
+        "positions": 9586728,
+        "normals": 9588660,
+        "indices": 9589628
+      },
+      {
+        "id": "FJ3191",
+        "name": "Distal phalanx of right fourth toe",
+        "muscle": null,
+        "vertexCount": 142,
+        "indexCount": 720,
+        "positions": 9592724,
+        "normals": 9594428,
+        "indices": 9595280
+      },
+      {
+        "id": "FJ3192",
+        "name": "Distal phalanx of right big toe",
+        "muscle": null,
+        "vertexCount": 271,
+        "indexCount": 1212,
+        "positions": 9598160,
+        "normals": 9601412,
+        "indices": 9603040
+      },
+      {
+        "id": "FJ3193",
+        "name": "Distal phalanx of right index finger",
+        "muscle": null,
+        "vertexCount": 187,
+        "indexCount": 624,
+        "positions": 9607888,
+        "normals": 9610132,
+        "indices": 9611256
+      },
+      {
+        "id": "FJ3194",
+        "name": "Distal phalanx of right little finger",
+        "muscle": null,
+        "vertexCount": 138,
+        "indexCount": 552,
+        "positions": 9613752,
+        "normals": 9615408,
+        "indices": 9616236
+      },
+      {
+        "id": "FJ3195",
+        "name": "Distal phalanx of right little toe",
+        "muscle": null,
+        "vertexCount": 178,
+        "indexCount": 630,
+        "positions": 9618444,
+        "normals": 9620580,
+        "indices": 9621648
+      },
+      {
+        "id": "FJ3196",
+        "name": "Distal phalanx of right middle finger",
+        "muscle": null,
+        "vertexCount": 141,
+        "indexCount": 510,
+        "positions": 9624168,
+        "normals": 9625860,
+        "indices": 9626708
+      },
+      {
+        "id": "FJ3197",
+        "name": "Distal phalanx of right ring finger",
+        "muscle": null,
+        "vertexCount": 114,
+        "indexCount": 336,
+        "positions": 9628748,
+        "normals": 9630116,
+        "indices": 9630800
+      },
+      {
+        "id": "FJ3198",
+        "name": "Distal phalanx of right thumb",
+        "muscle": null,
+        "vertexCount": 181,
+        "indexCount": 684,
+        "positions": 9632144,
+        "normals": 9634316,
+        "indices": 9635404
+      },
+      {
+        "id": "FJ3199",
+        "name": "Ethmoid",
+        "muscle": null,
+        "vertexCount": 5334,
+        "indexCount": 25854,
+        "positions": 9638140,
+        "normals": 9702148,
+        "indices": 9734152
+      },
+      {
+        "id": "FJ3200",
+        "name": "Frontal bone",
+        "muscle": null,
+        "vertexCount": 3315,
+        "indexCount": 15336,
+        "positions": 9837568,
+        "normals": 9877348,
+        "indices": 9897240
+      },
+      {
+        "id": "FJ3201",
+        "name": "Hyoid bone",
+        "muscle": null,
+        "vertexCount": 604,
+        "indexCount": 3108,
+        "positions": 9958584,
+        "normals": 9965832,
+        "indices": 9969456
+      },
+      {
+        "id": "FJ3202",
+        "name": "Intervertebral disk of axis",
+        "muscle": null,
+        "vertexCount": 996,
+        "indexCount": 5616,
+        "positions": 9981888,
+        "normals": 9993840,
+        "indices": 9999816
+      },
+      {
+        "id": "FJ3203",
+        "name": "Intervertebral disk of fourth thoracic vertebra",
+        "muscle": null,
+        "vertexCount": 999,
+        "indexCount": 3930,
+        "positions": 10022280,
+        "normals": 10034268,
+        "indices": 10040264
+      },
+      {
+        "id": "FJ3204",
+        "name": "Intervertebral disk of fifth thoracic vertebra",
+        "muscle": null,
+        "vertexCount": 1280,
+        "indexCount": 4590,
+        "positions": 10055984,
+        "normals": 10071344,
+        "indices": 10079024
+      },
+      {
+        "id": "FJ3205",
+        "name": "Intervertebral disk of sixth thoracic vertebra",
+        "muscle": null,
+        "vertexCount": 1831,
+        "indexCount": 6312,
+        "positions": 10097384,
+        "normals": 10119356,
+        "indices": 10130344
+      },
+      {
+        "id": "FJ3206",
+        "name": "Intervertebral disk of seventh thoracic vertebra",
+        "muscle": null,
+        "vertexCount": 1813,
+        "indexCount": 6438,
+        "positions": 10155592,
+        "normals": 10177348,
+        "indices": 10188228
+      },
+      {
+        "id": "FJ3207",
+        "name": "Intervertebral disk of eighth thoracic vertebra",
+        "muscle": null,
+        "vertexCount": 2675,
+        "indexCount": 7644,
+        "positions": 10213980,
+        "normals": 10246080,
+        "indices": 10262132
+      },
+      {
+        "id": "FJ3208",
+        "name": "Intervertebral disk of ninth thoracic vertebra",
+        "muscle": null,
+        "vertexCount": 2552,
+        "indexCount": 7260,
+        "positions": 10292708,
+        "normals": 10323332,
+        "indices": 10338644
+      },
+      {
+        "id": "FJ3209",
+        "name": "Intervertebral disk of tenth thoracic vertebra",
+        "muscle": null,
+        "vertexCount": 2554,
+        "indexCount": 7368,
+        "positions": 10367684,
+        "normals": 10398332,
+        "indices": 10413656
+      },
+      {
+        "id": "FJ3210",
+        "name": "Intervertebral disk of eleventh thoracic vertebra",
+        "muscle": null,
+        "vertexCount": 2892,
+        "indexCount": 7944,
+        "positions": 10443128,
+        "normals": 10477832,
+        "indices": 10495184
+      },
+      {
+        "id": "FJ3211",
+        "name": "Intervertebral disk",
+        "muscle": null,
+        "vertexCount": 3614,
+        "indexCount": 8556,
+        "positions": 10526960,
+        "normals": 10570328,
+        "indices": 10592012
+      },
+      {
+        "id": "FJ3212",
+        "name": "Intervertebral disk of first lumbar vertebra",
+        "muscle": null,
+        "vertexCount": 3399,
+        "indexCount": 8646,
+        "positions": 10626236,
+        "normals": 10667024,
+        "indices": 10687420
+      },
+      {
+        "id": "FJ3213",
+        "name": "Intervertebral disk of third cervical vertebra",
+        "muscle": null,
+        "vertexCount": 582,
+        "indexCount": 2184,
+        "positions": 10722004,
+        "normals": 10728988,
+        "indices": 10732480
+      },
+      {
+        "id": "FJ3214",
+        "name": "Intervertebral disk of second lumbar vertebra",
+        "muscle": null,
+        "vertexCount": 2955,
+        "indexCount": 7812,
+        "positions": 10741216,
+        "normals": 10776676,
+        "indices": 10794408
+      },
+      {
+        "id": "FJ3215",
+        "name": "Intervertebral disk of third lumbar vertebra",
+        "muscle": null,
+        "vertexCount": 3750,
+        "indexCount": 8766,
+        "positions": 10825656,
+        "normals": 10870656,
+        "indices": 10893156
+      },
+      {
+        "id": "FJ3216",
+        "name": "Intervertebral disk of fourth lumbar vertebra",
+        "muscle": null,
+        "vertexCount": 3137,
+        "indexCount": 8130,
+        "positions": 10928220,
+        "normals": 10965864,
+        "indices": 10984688
+      },
+      {
+        "id": "FJ3217",
+        "name": "Intervertebral disk of fifth lumbar vertebra",
+        "muscle": null,
+        "vertexCount": 1765,
+        "indexCount": 6144,
+        "positions": 11017208,
+        "normals": 11038388,
+        "indices": 11048980
+      },
+      {
+        "id": "FJ3218",
+        "name": "Intervertebral disk of fourth cervical vertebra",
+        "muscle": null,
+        "vertexCount": 626,
+        "indexCount": 2520,
+        "positions": 11073556,
+        "normals": 11081068,
+        "indices": 11084824
+      },
+      {
+        "id": "FJ3219",
+        "name": "Intervertebral disk of fifth cervical vertebra",
+        "muscle": null,
+        "vertexCount": 629,
+        "indexCount": 2592,
+        "positions": 11094904,
+        "normals": 11102452,
+        "indices": 11106228
+      },
+      {
+        "id": "FJ3220",
+        "name": "Intervertebral disk of sixth cervical vertebra",
+        "muscle": null,
+        "vertexCount": 850,
+        "indexCount": 2502,
+        "positions": 11116596,
+        "normals": 11126796,
+        "indices": 11131896
+      },
+      {
+        "id": "FJ3221",
+        "name": "Intervertebral disk of seventh cervical vertebra",
+        "muscle": null,
+        "vertexCount": 828,
+        "indexCount": 2868,
+        "positions": 11141904,
+        "normals": 11151840,
+        "indices": 11156808
+      },
+      {
+        "id": "FJ3222",
+        "name": "Intervertebral disk of first thoracic vertebra",
+        "muscle": null,
+        "vertexCount": 950,
+        "indexCount": 3186,
+        "positions": 11168280,
+        "normals": 11179680,
+        "indices": 11185380
+      },
+      {
+        "id": "FJ3223",
+        "name": "Intervertebral disk of second thoracic vertebra",
+        "muscle": null,
+        "vertexCount": 1128,
+        "indexCount": 3690,
+        "positions": 11198124,
+        "normals": 11211660,
+        "indices": 11218428
+      },
+      {
+        "id": "FJ3224",
+        "name": "Intervertebral disk of third thoracic vertebra",
+        "muscle": null,
+        "vertexCount": 1410,
+        "indexCount": 4164,
+        "positions": 11233188,
+        "normals": 11250108,
+        "indices": 11258568
+      },
+      {
+        "id": "FJ3225",
+        "name": "Left tenth rib",
+        "muscle": null,
+        "vertexCount": 754,
+        "indexCount": 4500,
+        "positions": 11275224,
+        "normals": 11284272,
+        "indices": 11288796
+      },
+      {
+        "id": "FJ3226",
+        "name": "Left eleventh rib",
+        "muscle": null,
+        "vertexCount": 537,
+        "indexCount": 3210,
+        "positions": 11306796,
+        "normals": 11313240,
+        "indices": 11316464
+      },
+      {
+        "id": "FJ3227",
+        "name": "Left twelfth rib",
+        "muscle": null,
+        "vertexCount": 367,
+        "indexCount": 2190,
+        "positions": 11329304,
+        "normals": 11333708,
+        "indices": 11335912
+      },
+      {
+        "id": "FJ3228",
+        "name": "Left first rib",
+        "muscle": null,
+        "vertexCount": 507,
+        "indexCount": 3030,
+        "positions": 11344672,
+        "normals": 11350756,
+        "indices": 11353800
+      },
+      {
+        "id": "FJ3229",
+        "name": "Left second rib",
+        "muscle": null,
+        "vertexCount": 656,
+        "indexCount": 3690,
+        "positions": 11365920,
+        "normals": 11373792,
+        "indices": 11377728
+      },
+      {
+        "id": "FJ3230",
+        "name": "Left third rib",
+        "muscle": null,
+        "vertexCount": 802,
+        "indexCount": 4782,
+        "positions": 11392488,
+        "normals": 11402112,
+        "indices": 11406924
+      },
+      {
+        "id": "FJ3231",
+        "name": "Left fourth rib",
+        "muscle": null,
+        "vertexCount": 981,
+        "indexCount": 5838,
+        "positions": 11426052,
+        "normals": 11437824,
+        "indices": 11443712
+      },
+      {
+        "id": "FJ3232",
+        "name": "Left fifth rib",
+        "muscle": null,
+        "vertexCount": 1095,
+        "indexCount": 6408,
+        "positions": 11467064,
+        "normals": 11480204,
+        "indices": 11486776
+      },
+      {
+        "id": "FJ3233",
+        "name": "Left sixth rib",
+        "muscle": null,
+        "vertexCount": 1147,
+        "indexCount": 6774,
+        "positions": 11512408,
+        "normals": 11526172,
+        "indices": 11533056
+      },
+      {
+        "id": "FJ3234",
+        "name": "Left seventh rib",
+        "muscle": null,
+        "vertexCount": 1122,
+        "indexCount": 6618,
+        "positions": 11560152,
+        "normals": 11573616,
+        "indices": 11580348
+      },
+      {
+        "id": "FJ3235",
+        "name": "Left eighth rib",
+        "muscle": null,
+        "vertexCount": 936,
+        "indexCount": 5496,
+        "positions": 11606820,
+        "normals": 11618052,
+        "indices": 11623668
+      },
+      {
+        "id": "FJ3236",
+        "name": "Left ninth rib",
+        "muscle": null,
+        "vertexCount": 843,
+        "indexCount": 4998,
+        "positions": 11645652,
+        "normals": 11655768,
+        "indices": 11660828
+      },
+      {
+        "id": "FJ3237",
+        "name": "Left clavicle",
+        "muscle": null,
+        "vertexCount": 426,
+        "indexCount": 2478,
+        "positions": 11680820,
+        "normals": 11685932,
+        "indices": 11688488
+      },
+      {
+        "id": "FJ3239",
+        "name": "Left first costal cartilage",
+        "muscle": null,
+        "vertexCount": 391,
+        "indexCount": 1782,
+        "positions": 11698400,
+        "normals": 11703092,
+        "indices": 11705440
+      },
+      {
+        "id": "FJ3240",
+        "name": "Left first metacarpal bone",
+        "muscle": null,
+        "vertexCount": 293,
+        "indexCount": 1668,
+        "positions": 11712568,
+        "normals": 11716084,
+        "indices": 11717844
+      },
+      {
+        "id": "FJ3241",
+        "name": "Left first metatarsal bone",
+        "muscle": null,
+        "vertexCount": 497,
+        "indexCount": 2832,
+        "positions": 11724516,
+        "normals": 11730480,
+        "indices": 11733464
+      },
+      {
+        "id": "FJ3242",
+        "name": "Left second costal cartilage",
+        "muscle": null,
+        "vertexCount": 309,
+        "indexCount": 1638,
+        "positions": 11744792,
+        "normals": 11748500,
+        "indices": 11750356
+      },
+      {
+        "id": "FJ3243",
+        "name": "Left second metacarpal bone",
+        "muscle": null,
+        "vertexCount": 328,
+        "indexCount": 1776,
+        "positions": 11756908,
+        "normals": 11760844,
+        "indices": 11762812
+      },
+      {
+        "id": "FJ3244",
+        "name": "Left second metatarsal bone",
+        "muscle": null,
+        "vertexCount": 401,
+        "indexCount": 1854,
+        "positions": 11769916,
+        "normals": 11774728,
+        "indices": 11777136
+      },
+      {
+        "id": "FJ3245",
+        "name": "Left third costal cartilage",
+        "muscle": null,
+        "vertexCount": 306,
+        "indexCount": 1680,
+        "positions": 11784552,
+        "normals": 11788224,
+        "indices": 11790060
+      },
+      {
+        "id": "FJ3246",
+        "name": "Left third metacarpal bone",
+        "muscle": null,
+        "vertexCount": 328,
+        "indexCount": 1758,
+        "positions": 11796780,
+        "normals": 11800716,
+        "indices": 11802684
+      },
+      {
+        "id": "FJ3247",
+        "name": "Left third metatarsal bone",
+        "muscle": null,
+        "vertexCount": 367,
+        "indexCount": 1884,
+        "positions": 11809716,
+        "normals": 11814120,
+        "indices": 11816324
+      },
+      {
+        "id": "FJ3248",
+        "name": "Left fourth costal cartilage",
+        "muscle": null,
+        "vertexCount": 318,
+        "indexCount": 1692,
+        "positions": 11823860,
+        "normals": 11827676,
+        "indices": 11829584
+      },
+      {
+        "id": "FJ3249",
+        "name": "Left fourth metacarpal bone",
+        "muscle": null,
+        "vertexCount": 267,
+        "indexCount": 1296,
+        "positions": 11836352,
+        "normals": 11839556,
+        "indices": 11841160
+      },
+      {
+        "id": "FJ3250",
+        "name": "Left fourth metatarsal bone",
+        "muscle": null,
+        "vertexCount": 353,
+        "indexCount": 1830,
+        "positions": 11846344,
+        "normals": 11850580,
+        "indices": 11852700
+      },
+      {
+        "id": "FJ3251",
+        "name": "Left fifth costal cartilage",
+        "muscle": null,
+        "vertexCount": 365,
+        "indexCount": 1926,
+        "positions": 11860020,
+        "normals": 11864400,
+        "indices": 11866592
+      },
+      {
+        "id": "FJ3252",
+        "name": "Left fifth metacarpal bone",
+        "muscle": null,
+        "vertexCount": 265,
+        "indexCount": 1404,
+        "positions": 11874296,
+        "normals": 11877476,
+        "indices": 11879068
+      },
+      {
+        "id": "FJ3253",
+        "name": "Left fifth metatarsal bone",
+        "muscle": null,
+        "vertexCount": 366,
+        "indexCount": 2106,
+        "positions": 11884684,
+        "normals": 11889076,
+        "indices": 11891272
+      },
+      {
+        "id": "FJ3254",
+        "name": "Left sixth costal cartilage",
+        "muscle": null,
+        "vertexCount": 350,
+        "indexCount": 1848,
+        "positions": 11899696,
+        "normals": 11903896,
+        "indices": 11905996
+      },
+      {
+        "id": "FJ3255",
+        "name": "Left seventh costal cartilage",
+        "muscle": null,
+        "vertexCount": 523,
+        "indexCount": 2304,
+        "positions": 11913388,
+        "normals": 11919664,
+        "indices": 11922804
+      },
+      {
+        "id": "FJ3256",
+        "name": "Left calcaneus",
+        "muscle": null,
+        "vertexCount": 632,
+        "indexCount": 3366,
+        "positions": 11932020,
+        "normals": 11939604,
+        "indices": 11943396
+      },
+      {
+        "id": "FJ3257",
+        "name": "Left capitate",
+        "muscle": null,
+        "vertexCount": 230,
+        "indexCount": 1164,
+        "positions": 11956860,
+        "normals": 11959620,
+        "indices": 11961000
+      },
+      {
+        "id": "FJ3258",
+        "name": "Left cuboid bone",
+        "muscle": null,
+        "vertexCount": 449,
+        "indexCount": 2418,
+        "positions": 11965656,
+        "normals": 11971044,
+        "indices": 11973740
+      },
+      {
+        "id": "FJ3259",
+        "name": "Left femur",
+        "muscle": null,
+        "vertexCount": 459,
+        "indexCount": 2652,
+        "positions": 11983412,
+        "normals": 11988920,
+        "indices": 11991676
+      },
+      {
+        "id": "FJ3260",
+        "name": "Left fibula",
+        "muscle": null,
+        "vertexCount": 149,
+        "indexCount": 834,
+        "positions": 12002284,
+        "normals": 12004072,
+        "indices": 12004968
+      },
+      {
+        "id": "FJ3261",
+        "name": "Left hamate",
+        "muscle": null,
+        "vertexCount": 274,
+        "indexCount": 1320,
+        "positions": 12008304,
+        "normals": 12011592,
+        "indices": 12013236
+      },
+      {
+        "id": "FJ3262",
+        "name": "Left humerus",
+        "muscle": null,
+        "vertexCount": 586,
+        "indexCount": 2886,
+        "positions": 12018516,
+        "normals": 12025548,
+        "indices": 12029064
+      },
+      {
+        "id": "FJ3264",
+        "name": "Left intermediate cuneiform bone",
+        "muscle": null,
+        "vertexCount": 291,
+        "indexCount": 1320,
+        "positions": 12040608,
+        "normals": 12044100,
+        "indices": 12045848
+      },
+      {
+        "id": "FJ3266",
+        "name": "Sesamoid bone of left foot",
+        "muscle": null,
+        "vertexCount": 78,
+        "indexCount": 300,
+        "positions": 12051128,
+        "normals": 12052064,
+        "indices": 12052532
+      },
+      {
+        "id": "FJ3267",
+        "name": "Left lateral cuneiform bone",
+        "muscle": null,
+        "vertexCount": 389,
+        "indexCount": 1944,
+        "positions": 12053732,
+        "normals": 12058400,
+        "indices": 12060736
+      },
+      {
+        "id": "FJ3268",
+        "name": "Left lunate",
+        "muscle": null,
+        "vertexCount": 184,
+        "indexCount": 924,
+        "positions": 12068512,
+        "normals": 12070720,
+        "indices": 12071824
+      },
+      {
+        "id": "FJ3269",
+        "name": "Left maxilla",
+        "muscle": null,
+        "vertexCount": 2678,
+        "indexCount": 10794,
+        "positions": 12075520,
+        "normals": 12107656,
+        "indices": 12123724
+      },
+      {
+        "id": "FJ3270",
+        "name": "Sesamoid bone of left foot",
+        "muscle": null,
+        "vertexCount": 95,
+        "indexCount": 426,
+        "positions": 12166900,
+        "normals": 12168040,
+        "indices": 12168612
+      },
+      {
+        "id": "FJ3271",
+        "name": "Left medial cuneiform bone",
+        "muscle": null,
+        "vertexCount": 513,
+        "indexCount": 2616,
+        "positions": 12170316,
+        "normals": 12176472,
+        "indices": 12179552
+      },
+      {
+        "id": "FJ3272",
+        "name": "Left nasal bone",
+        "muscle": null,
+        "vertexCount": 236,
+        "indexCount": 1164,
+        "positions": 12190016,
+        "normals": 12192848,
+        "indices": 12194264
+      },
+      {
+        "id": "FJ3273",
+        "name": "Left palatine bone",
+        "muscle": null,
+        "vertexCount": 986,
+        "indexCount": 4818,
+        "positions": 12198920,
+        "normals": 12210752,
+        "indices": 12216668
+      },
+      {
+        "id": "FJ3274",
+        "name": "Left parietal bone",
+        "muscle": null,
+        "vertexCount": 2927,
+        "indexCount": 11196,
+        "positions": 12235940,
+        "normals": 12271064,
+        "indices": 12288628
+      },
+      {
+        "id": "FJ3275",
+        "name": "Left patella",
+        "muscle": null,
+        "vertexCount": 177,
+        "indexCount": 912,
+        "positions": 12333412,
+        "normals": 12335536,
+        "indices": 12336600
+      },
+      {
+        "id": "FJ3276",
+        "name": "Left pisiform",
+        "muscle": null,
+        "vertexCount": 116,
+        "indexCount": 630,
+        "positions": 12340248,
+        "normals": 12341640,
+        "indices": 12342336
+      },
+      {
+        "id": "FJ3277",
+        "name": "Left radius",
+        "muscle": null,
+        "vertexCount": 250,
+        "indexCount": 1218,
+        "positions": 12344856,
+        "normals": 12347856,
+        "indices": 12349356
+      },
+      {
+        "id": "FJ3278",
+        "name": "Left scaphoid",
+        "muscle": null,
+        "vertexCount": 172,
+        "indexCount": 912,
+        "positions": 12354228,
+        "normals": 12356292,
+        "indices": 12357324
+      },
+      {
+        "id": "FJ3279",
+        "name": "Left scapula",
+        "muscle": null,
+        "vertexCount": 3097,
+        "indexCount": 18540,
+        "positions": 12360972,
+        "normals": 12398136,
+        "indices": 12416720
+      },
+      {
+        "id": "FJ3280",
+        "name": "Left talus",
+        "muscle": null,
+        "vertexCount": 666,
+        "indexCount": 3432,
+        "positions": 12490880,
+        "normals": 12498872,
+        "indices": 12502868
+      },
+      {
+        "id": "FJ3281",
+        "name": "Left temporal bone",
+        "muscle": null,
+        "vertexCount": 1835,
+        "indexCount": 8484,
+        "positions": 12516596,
+        "normals": 12538616,
+        "indices": 12549628
+      },
+      {
+        "id": "FJ3282",
+        "name": "Left tibia",
+        "muscle": null,
+        "vertexCount": 331,
+        "indexCount": 1860,
+        "positions": 12583564,
+        "normals": 12587536,
+        "indices": 12589524
+      },
+      {
+        "id": "FJ3283",
+        "name": "Left trapezium",
+        "muscle": null,
+        "vertexCount": 222,
+        "indexCount": 1044,
+        "positions": 12596964,
+        "normals": 12599628,
+        "indices": 12600960
+      },
+      {
+        "id": "FJ3284",
+        "name": "Left trapezoid",
+        "muscle": null,
+        "vertexCount": 278,
+        "indexCount": 1188,
+        "positions": 12605136,
+        "normals": 12608472,
+        "indices": 12610140
+      },
+      {
+        "id": "FJ3285",
+        "name": "Left triquetral",
+        "muscle": null,
+        "vertexCount": 178,
+        "indexCount": 900,
+        "positions": 12614892,
+        "normals": 12617028,
+        "indices": 12618096
+      },
+      {
+        "id": "FJ3286",
+        "name": "Left ulna",
+        "muscle": null,
+        "vertexCount": 283,
+        "indexCount": 1302,
+        "positions": 12621696,
+        "normals": 12625092,
+        "indices": 12626792
+      },
+      {
+        "id": "FJ3287",
+        "name": "Left zygomatic bone",
+        "muscle": null,
+        "vertexCount": 721,
+        "indexCount": 3168,
+        "positions": 12632000,
+        "normals": 12640652,
+        "indices": 12644980
+      },
+      {
+        "id": "FJ3288",
+        "name": "Left hip bone",
+        "muscle": null,
+        "vertexCount": 986,
+        "indexCount": 5424,
+        "positions": 12657652,
+        "normals": 12669484,
+        "indices": 12675400
+      },
+      {
+        "id": "FJ3289",
+        "name": "Mandible",
+        "muscle": null,
+        "vertexCount": 1207,
+        "indexCount": 7044,
+        "positions": 12697096,
+        "normals": 12711580,
+        "indices": 12718824
+      },
+      {
+        "id": "FJ3290",
+        "name": "Manubrium",
+        "muscle": null,
+        "vertexCount": 1094,
+        "indexCount": 5676,
+        "positions": 12747000,
+        "normals": 12760128,
+        "indices": 12766692
+      },
+      {
+        "id": "FJ3291",
+        "name": "Middle phalanx of left ring finger",
+        "muscle": null,
+        "vertexCount": 208,
+        "indexCount": 978,
+        "positions": 12789396,
+        "normals": 12791892,
+        "indices": 12793140
+      },
+      {
+        "id": "FJ3292",
+        "name": "Middle phalanx of right ring finger",
+        "muscle": null,
+        "vertexCount": 214,
+        "indexCount": 918,
+        "positions": 12797052,
+        "normals": 12799620,
+        "indices": 12800904
+      },
+      {
+        "id": "FJ3293",
+        "name": "Middle phalanx of left second toe",
+        "muscle": null,
+        "vertexCount": 196,
+        "indexCount": 966,
+        "positions": 12804576,
+        "normals": 12806928,
+        "indices": 12808104
+      },
+      {
+        "id": "FJ3294",
+        "name": "Middle phalanx of left third toe",
+        "muscle": null,
+        "vertexCount": 181,
+        "indexCount": 864,
+        "positions": 12811968,
+        "normals": 12814140,
+        "indices": 12815228
+      },
+      {
+        "id": "FJ3295",
+        "name": "Middle phalanx of left fourth toe",
+        "muscle": null,
+        "vertexCount": 181,
+        "indexCount": 840,
+        "positions": 12818684,
+        "normals": 12820856,
+        "indices": 12821944
+      },
+      {
+        "id": "FJ3296",
+        "name": "Middle phalanx of left index finger",
+        "muscle": null,
+        "vertexCount": 184,
+        "indexCount": 900,
+        "positions": 12825304,
+        "normals": 12827512,
+        "indices": 12828616
+      },
+      {
+        "id": "FJ3297",
+        "name": "Middle phalanx of left little finger",
+        "muscle": null,
+        "vertexCount": 190,
+        "indexCount": 756,
+        "positions": 12832216,
+        "normals": 12834496,
+        "indices": 12835636
+      },
+      {
+        "id": "FJ3298",
+        "name": "Middle phalanx of left little toe",
+        "muscle": null,
+        "vertexCount": 142,
+        "indexCount": 672,
+        "positions": 12838660,
+        "normals": 12840364,
+        "indices": 12841216
+      },
+      {
+        "id": "FJ3299",
+        "name": "Middle phalanx of left middle finger",
+        "muscle": null,
+        "vertexCount": 220,
+        "indexCount": 1098,
+        "positions": 12843904,
+        "normals": 12846544,
+        "indices": 12847864
+      },
+      {
+        "id": "FJ3300",
+        "name": "Middle phalanx of right second toe",
+        "muscle": null,
+        "vertexCount": 189,
+        "indexCount": 774,
+        "positions": 12852256,
+        "normals": 12854524,
+        "indices": 12855660
+      },
+      {
+        "id": "FJ3301",
+        "name": "Middle phalanx of right third toe",
+        "muscle": null,
+        "vertexCount": 190,
+        "indexCount": 876,
+        "positions": 12858756,
+        "normals": 12861036,
+        "indices": 12862176
+      },
+      {
+        "id": "FJ3302",
+        "name": "Middle phalanx of right fourth toe",
+        "muscle": null,
+        "vertexCount": 216,
+        "indexCount": 1026,
+        "positions": 12865680,
+        "normals": 12868272,
+        "indices": 12869568
+      },
+      {
+        "id": "FJ3303",
+        "name": "Middle phalanx of right index finger",
+        "muscle": null,
+        "vertexCount": 186,
+        "indexCount": 768,
+        "positions": 12873672,
+        "normals": 12875904,
+        "indices": 12877020
+      },
+      {
+        "id": "FJ3304",
+        "name": "Middle phalanx of right little finger",
+        "muscle": null,
+        "vertexCount": 168,
+        "indexCount": 618,
+        "positions": 12880092,
+        "normals": 12882108,
+        "indices": 12883116
+      },
+      {
+        "id": "FJ3305",
+        "name": "Middle phalanx of right little toe",
+        "muscle": null,
+        "vertexCount": 102,
+        "indexCount": 408,
+        "positions": 12885588,
+        "normals": 12886812,
+        "indices": 12887424
+      },
+      {
+        "id": "FJ3306",
+        "name": "Middle phalanx of right middle finger",
+        "muscle": null,
+        "vertexCount": 221,
+        "indexCount": 990,
+        "positions": 12889056,
+        "normals": 12891708,
+        "indices": 12893036
+      },
+      {
+        "id": "FJ3307",
+        "name": "Navicular bone of left foot",
+        "muscle": null,
+        "vertexCount": 396,
+        "indexCount": 1872,
+        "positions": 12896996,
+        "normals": 12901748,
+        "indices": 12904124
+      },
+      {
+        "id": "FJ3308",
+        "name": "Navicular bone of right foot",
+        "muscle": null,
+        "vertexCount": 404,
+        "indexCount": 1854,
+        "positions": 12911612,
+        "normals": 12916460,
+        "indices": 12918884
+      },
+      {
+        "id": "FJ3309",
+        "name": "Occipital bone",
+        "muscle": null,
+        "vertexCount": 2938,
+        "indexCount": 14736,
+        "positions": 12926300,
+        "normals": 12961556,
+        "indices": 12979184
+      },
+      {
+        "id": "FJ3310",
+        "name": "Proximal phalanx of right big toe",
+        "muscle": null,
+        "vertexCount": 272,
+        "indexCount": 1404,
+        "positions": 13038128,
+        "normals": 13041392,
+        "indices": 13043024
+      },
+      {
+        "id": "FJ3311",
+        "name": "Proximal phalanx of left third toe",
+        "muscle": null,
+        "vertexCount": 237,
+        "indexCount": 1164,
+        "positions": 13048640,
+        "normals": 13051484,
+        "indices": 13052908
+      },
+      {
+        "id": "FJ3312",
+        "name": "Proximal phalanx of left fourth toe",
+        "muscle": null,
+        "vertexCount": 245,
+        "indexCount": 1254,
+        "positions": 13057564,
+        "normals": 13060504,
+        "indices": 13061976
+      },
+      {
+        "id": "FJ3313",
+        "name": "Proximal phalanx of left index finger",
+        "muscle": null,
+        "vertexCount": 218,
+        "indexCount": 1152,
+        "positions": 13066992,
+        "normals": 13069608,
+        "indices": 13070916
+      },
+      {
+        "id": "FJ3314",
+        "name": "Proximal phalanx of left little finger",
+        "muscle": null,
+        "vertexCount": 162,
+        "indexCount": 810,
+        "positions": 13075524,
+        "normals": 13077468,
+        "indices": 13078440
+      },
+      {
+        "id": "FJ3315",
+        "name": "Proximal phalanx of left little toe",
+        "muscle": null,
+        "vertexCount": 226,
+        "indexCount": 1158,
+        "positions": 13081680,
+        "normals": 13084392,
+        "indices": 13085748
+      },
+      {
+        "id": "FJ3316",
+        "name": "Proximal phalanx of left middle finger",
+        "muscle": null,
+        "vertexCount": 253,
+        "indexCount": 1320,
+        "positions": 13090380,
+        "normals": 13093416,
+        "indices": 13094936
+      },
+      {
+        "id": "FJ3317",
+        "name": "Proximal phalanx of left ring finger",
+        "muscle": null,
+        "vertexCount": 200,
+        "indexCount": 1098,
+        "positions": 13100216,
+        "normals": 13102616,
+        "indices": 13103816
+      },
+      {
+        "id": "FJ3318",
+        "name": "Proximal phalanx of left thumb",
+        "muscle": null,
+        "vertexCount": 197,
+        "indexCount": 1008,
+        "positions": 13108208,
+        "normals": 13110572,
+        "indices": 13111756
+      },
+      {
+        "id": "FJ3319",
+        "name": "Proximal phalanx of right second toe",
+        "muscle": null,
+        "vertexCount": 225,
+        "indexCount": 1176,
+        "positions": 13115788,
+        "normals": 13118488,
+        "indices": 13119840
+      },
+      {
+        "id": "FJ3320",
+        "name": "Proximal phalanx of right third toe",
+        "muscle": null,
+        "vertexCount": 264,
+        "indexCount": 1194,
+        "positions": 13124544,
+        "normals": 13127712,
+        "indices": 13129296
+      },
+      {
+        "id": "FJ3321",
+        "name": "Proximal phalanx of right fourth toe",
+        "muscle": null,
+        "vertexCount": 244,
+        "indexCount": 1254,
+        "positions": 13134072,
+        "normals": 13137000,
+        "indices": 13138464
+      },
+      {
+        "id": "FJ3322",
+        "name": "Proximal phalanx of right index finger",
+        "muscle": null,
+        "vertexCount": 213,
+        "indexCount": 1080,
+        "positions": 13143480,
+        "normals": 13146036,
+        "indices": 13147316
+      },
+      {
+        "id": "FJ3323",
+        "name": "Proximal phalanx of right little finger",
+        "muscle": null,
+        "vertexCount": 186,
+        "indexCount": 936,
+        "positions": 13151636,
+        "normals": 13153868,
+        "indices": 13154984
+      },
+      {
+        "id": "FJ3324",
+        "name": "Proximal phalanx of right little toe",
+        "muscle": null,
+        "vertexCount": 228,
+        "indexCount": 1158,
+        "positions": 13158728,
+        "normals": 13161464,
+        "indices": 13162832
+      },
+      {
+        "id": "FJ3325",
+        "name": "Proximal phalanx of right middle finger",
+        "muscle": null,
+        "vertexCount": 266,
+        "indexCount": 1344,
+        "positions": 13167464,
+        "normals": 13170656,
+        "indices": 13172252
+      },
+      {
+        "id": "FJ3326",
+        "name": "Proximal phalanx of right ring finger",
+        "muscle": null,
+        "vertexCount": 202,
+        "indexCount": 1092,
+        "positions": 13177628,
+        "normals": 13180052,
+        "indices": 13181264
+      },
+      {
+        "id": "FJ3327",
+        "name": "Proximal phalanx of right thumb",
+        "muscle": null,
+        "vertexCount": 196,
+        "indexCount": 948,
+        "positions": 13185632,
+        "normals": 13187984,
+        "indices": 13189160
+      },
+      {
+        "id": "FJ3328",
+        "name": "Proximal phalanx of left second toe",
+        "muscle": null,
+        "vertexCount": 230,
+        "indexCount": 1122,
+        "positions": 13192952,
+        "normals": 13195712,
+        "indices": 13197092
+      },
+      {
+        "id": "FJ3329",
+        "name": "Proximal phalanx of left big toe",
+        "muscle": null,
+        "vertexCount": 310,
+        "indexCount": 1506,
+        "positions": 13201580,
+        "normals": 13205300,
+        "indices": 13207160
+      },
+      {
+        "id": "FJ3330",
+        "name": "Right tenth rib",
+        "muscle": null,
+        "vertexCount": 754,
+        "indexCount": 4500,
+        "positions": 13213184,
+        "normals": 13222232,
+        "indices": 13226756
+      },
+      {
+        "id": "FJ3331",
+        "name": "Right eleventh rib",
+        "muscle": null,
+        "vertexCount": 538,
+        "indexCount": 3210,
+        "positions": 13244756,
+        "normals": 13251212,
+        "indices": 13254440
+      },
+      {
+        "id": "FJ3332",
+        "name": "Right twelfth rib",
+        "muscle": null,
+        "vertexCount": 372,
+        "indexCount": 2220,
+        "positions": 13267280,
+        "normals": 13271744,
+        "indices": 13273976
+      },
+      {
+        "id": "FJ3333",
+        "name": "Right first costal cartilage",
+        "muscle": null,
+        "vertexCount": 401,
+        "indexCount": 1848,
+        "positions": 13282856,
+        "normals": 13287668,
+        "indices": 13290076
+      },
+      {
+        "id": "FJ3334",
+        "name": "Right first rib",
+        "muscle": null,
+        "vertexCount": 519,
+        "indexCount": 3096,
+        "positions": 13297468,
+        "normals": 13303696,
+        "indices": 13306812
+      },
+      {
+        "id": "FJ3335",
+        "name": "Right second costal cartilage",
+        "muscle": null,
+        "vertexCount": 346,
+        "indexCount": 1788,
+        "positions": 13319196,
+        "normals": 13323348,
+        "indices": 13325424
+      },
+      {
+        "id": "FJ3336",
+        "name": "Right second rib",
+        "muscle": null,
+        "vertexCount": 648,
+        "indexCount": 3690,
+        "positions": 13332576,
+        "normals": 13340352,
+        "indices": 13344240
+      },
+      {
+        "id": "FJ3337",
+        "name": "Right third costal cartilage",
+        "muscle": null,
+        "vertexCount": 355,
+        "indexCount": 1770,
+        "positions": 13359000,
+        "normals": 13363260,
+        "indices": 13365392
+      },
+      {
+        "id": "FJ3338",
+        "name": "Right third rib",
+        "muscle": null,
+        "vertexCount": 800,
+        "indexCount": 4782,
+        "positions": 13372472,
+        "normals": 13382072,
+        "indices": 13386872
+      },
+      {
+        "id": "FJ3339",
+        "name": "Right fourth costal cartilage",
+        "muscle": null,
+        "vertexCount": 332,
+        "indexCount": 1740,
+        "positions": 13406000,
+        "normals": 13409984,
+        "indices": 13411976
+      },
+      {
+        "id": "FJ3340",
+        "name": "Right fourth rib",
+        "muscle": null,
+        "vertexCount": 979,
+        "indexCount": 5826,
+        "positions": 13418936,
+        "normals": 13430684,
+        "indices": 13436560
+      },
+      {
+        "id": "FJ3341",
+        "name": "Right fifth costal cartilage",
+        "muscle": null,
+        "vertexCount": 358,
+        "indexCount": 1788,
+        "positions": 13459864,
+        "normals": 13464160,
+        "indices": 13466308
+      },
+      {
+        "id": "FJ3342",
+        "name": "Right fifth rib",
+        "muscle": null,
+        "vertexCount": 1093,
+        "indexCount": 6408,
+        "positions": 13473460,
+        "normals": 13486576,
+        "indices": 13493136
+      },
+      {
+        "id": "FJ3343",
+        "name": "Right sixth costal cartilage",
+        "muscle": null,
+        "vertexCount": 444,
+        "indexCount": 1926,
+        "positions": 13518768,
+        "normals": 13524096,
+        "indices": 13526760
+      },
+      {
+        "id": "FJ3344",
+        "name": "Right sixth rib",
+        "muscle": null,
+        "vertexCount": 1147,
+        "indexCount": 6762,
+        "positions": 13534464,
+        "normals": 13548228,
+        "indices": 13555112
+      },
+      {
+        "id": "FJ3345",
+        "name": "Right seventh costal cartilage",
+        "muscle": null,
+        "vertexCount": 514,
+        "indexCount": 1854,
+        "positions": 13582160,
+        "normals": 13588328,
+        "indices": 13591412
+      },
+      {
+        "id": "FJ3346",
+        "name": "Right seventh rib",
+        "muscle": null,
+        "vertexCount": 1122,
+        "indexCount": 6618,
+        "positions": 13598828,
+        "normals": 13612292,
+        "indices": 13619024
+      },
+      {
+        "id": "FJ3347",
+        "name": "Right eighth rib",
+        "muscle": null,
+        "vertexCount": 928,
+        "indexCount": 5496,
+        "positions": 13645496,
+        "normals": 13656632,
+        "indices": 13662200
+      },
+      {
+        "id": "FJ3348",
+        "name": "Right ninth rib",
+        "muscle": null,
+        "vertexCount": 842,
+        "indexCount": 4998,
+        "positions": 13684184,
+        "normals": 13694288,
+        "indices": 13699340
+      },
+      {
+        "id": "FJ3349",
+        "name": "Right radius",
+        "muscle": null,
+        "vertexCount": 249,
+        "indexCount": 1224,
+        "positions": 13719332,
+        "normals": 13722320,
+        "indices": 13723816
+      },
+      {
+        "id": "FJ3350",
+        "name": "Right first metacarpal bone",
+        "muscle": null,
+        "vertexCount": 287,
+        "indexCount": 1578,
+        "positions": 13728712,
+        "normals": 13732156,
+        "indices": 13733880
+      },
+      {
+        "id": "FJ3351",
+        "name": "Right first metatarsal bone",
+        "muscle": null,
+        "vertexCount": 492,
+        "indexCount": 2724,
+        "positions": 13740192,
+        "normals": 13746096,
+        "indices": 13749048
+      },
+      {
+        "id": "FJ3352",
+        "name": "Right second metacarpal bone",
+        "muscle": null,
+        "vertexCount": 347,
+        "indexCount": 1830,
+        "positions": 13759944,
+        "normals": 13764108,
+        "indices": 13766192
+      },
+      {
+        "id": "FJ3353",
+        "name": "Right second metatarsal bone",
+        "muscle": null,
+        "vertexCount": 434,
+        "indexCount": 1836,
+        "positions": 13773512,
+        "normals": 13778720,
+        "indices": 13781324
+      },
+      {
+        "id": "FJ3354",
+        "name": "Right third metacarpal bone",
+        "muscle": null,
+        "vertexCount": 345,
+        "indexCount": 1758,
+        "positions": 13788668,
+        "normals": 13792808,
+        "indices": 13794880
+      },
+      {
+        "id": "FJ3355",
+        "name": "Right third metatarsal bone",
+        "muscle": null,
+        "vertexCount": 381,
+        "indexCount": 1860,
+        "positions": 13801912,
+        "normals": 13806484,
+        "indices": 13808772
+      },
+      {
+        "id": "FJ3356",
+        "name": "Right fourth metacarpal bone",
+        "muscle": null,
+        "vertexCount": 280,
+        "indexCount": 1266,
+        "positions": 13816212,
+        "normals": 13819572,
+        "indices": 13821252
+      },
+      {
+        "id": "FJ3357",
+        "name": "Right fourth metatarsal bone",
+        "muscle": null,
+        "vertexCount": 333,
+        "indexCount": 1662,
+        "positions": 13826316,
+        "normals": 13830312,
+        "indices": 13832312
+      },
+      {
+        "id": "FJ3358",
+        "name": "Right fifth metacarpal bone",
+        "muscle": null,
+        "vertexCount": 236,
+        "indexCount": 1284,
+        "positions": 13838960,
+        "normals": 13841792,
+        "indices": 13843208
+      },
+      {
+        "id": "FJ3359",
+        "name": "Right fifth metatarsal bone",
+        "muscle": null,
+        "vertexCount": 371,
+        "indexCount": 2010,
+        "positions": 13848344,
+        "normals": 13852796,
+        "indices": 13855024
+      },
+      {
+        "id": "FJ3360",
+        "name": "Right calcaneus",
+        "muscle": null,
+        "vertexCount": 641,
+        "indexCount": 3228,
+        "positions": 13863064,
+        "normals": 13870756,
+        "indices": 13874604
+      },
+      {
+        "id": "FJ3361",
+        "name": "Right capitate",
+        "muscle": null,
+        "vertexCount": 245,
+        "indexCount": 1218,
+        "positions": 13887516,
+        "normals": 13890456,
+        "indices": 13891928
+      },
+      {
+        "id": "FJ3362",
+        "name": "Right clavicle",
+        "muscle": null,
+        "vertexCount": 420,
+        "indexCount": 2460,
+        "positions": 13896800,
+        "normals": 13901840,
+        "indices": 13904360
+      },
+      {
+        "id": "FJ3364",
+        "name": "Right cuboid bone",
+        "muscle": null,
+        "vertexCount": 488,
+        "indexCount": 2466,
+        "positions": 13914200,
+        "normals": 13920056,
+        "indices": 13922984
+      },
+      {
+        "id": "FJ3365",
+        "name": "Right femur",
+        "muscle": null,
+        "vertexCount": 480,
+        "indexCount": 2790,
+        "positions": 13932848,
+        "normals": 13938608,
+        "indices": 13941488
+      },
+      {
+        "id": "FJ3366",
+        "name": "Right fibula",
+        "muscle": null,
+        "vertexCount": 162,
+        "indexCount": 894,
+        "positions": 13952648,
+        "normals": 13954592,
+        "indices": 13955564
+      },
+      {
+        "id": "FJ3367",
+        "name": "Right hamate",
+        "muscle": null,
+        "vertexCount": 316,
+        "indexCount": 1470,
+        "positions": 13959140,
+        "normals": 13962932,
+        "indices": 13964828
+      },
+      {
+        "id": "FJ3368",
+        "name": "Right humerus",
+        "muscle": null,
+        "vertexCount": 794,
+        "indexCount": 3210,
+        "positions": 13970708,
+        "normals": 13980236,
+        "indices": 13985000
+      },
+      {
+        "id": "FJ3370",
+        "name": "Right intermediate cuneiform bone",
+        "muscle": null,
+        "vertexCount": 278,
+        "indexCount": 1290,
+        "positions": 13997840,
+        "normals": 14001176,
+        "indices": 14002844
+      },
+      {
+        "id": "FJ3372",
+        "name": "Sesamoid bone of right foot",
+        "muscle": null,
+        "vertexCount": 73,
+        "indexCount": 240,
+        "positions": 14008004,
+        "normals": 14008880,
+        "indices": 14009320
+      },
+      {
+        "id": "FJ3373",
+        "name": "Right lateral cuneiform bone",
+        "muscle": null,
+        "vertexCount": 380,
+        "indexCount": 1800,
+        "positions": 14010280,
+        "normals": 14014840,
+        "indices": 14017120
+      },
+      {
+        "id": "FJ3374",
+        "name": "Right lunate",
+        "muscle": null,
+        "vertexCount": 191,
+        "indexCount": 972,
+        "positions": 14024320,
+        "normals": 14026612,
+        "indices": 14027760
+      },
+      {
+        "id": "FJ3375",
+        "name": "Right maxilla",
+        "muscle": null,
+        "vertexCount": 2591,
+        "indexCount": 10980,
+        "positions": 14031648,
+        "normals": 14062740,
+        "indices": 14078288
+      },
+      {
+        "id": "FJ3376",
+        "name": "Sesamoid bone of right foot",
+        "muscle": null,
+        "vertexCount": 103,
+        "indexCount": 468,
+        "positions": 14122208,
+        "normals": 14123444,
+        "indices": 14124064
+      },
+      {
+        "id": "FJ3377",
+        "name": "Right medial cuneiform bone",
+        "muscle": null,
+        "vertexCount": 553,
+        "indexCount": 2514,
+        "positions": 14125936,
+        "normals": 14132572,
+        "indices": 14135892
+      },
+      {
+        "id": "FJ3378",
+        "name": "Right nasal bone",
+        "muscle": null,
+        "vertexCount": 253,
+        "indexCount": 1176,
+        "positions": 14145948,
+        "normals": 14148984,
+        "indices": 14150504
+      },
+      {
+        "id": "FJ3379",
+        "name": "Right palatine bone",
+        "muscle": null,
+        "vertexCount": 994,
+        "indexCount": 4458,
+        "positions": 14155208,
+        "normals": 14167136,
+        "indices": 14173100
+      },
+      {
+        "id": "FJ3380",
+        "name": "Right parietal bone",
+        "muscle": null,
+        "vertexCount": 2734,
+        "indexCount": 11082,
+        "positions": 14190932,
+        "normals": 14223740,
+        "indices": 14240144
+      },
+      {
+        "id": "FJ3381",
+        "name": "Right patella",
+        "muscle": null,
+        "vertexCount": 176,
+        "indexCount": 912,
+        "positions": 14284472,
+        "normals": 14286584,
+        "indices": 14287640
+      },
+      {
+        "id": "FJ3382",
+        "name": "Right pisiform",
+        "muscle": null,
+        "vertexCount": 110,
+        "indexCount": 570,
+        "positions": 14291288,
+        "normals": 14292608,
+        "indices": 14293268
+      },
+      {
+        "id": "FJ3383",
+        "name": "Right scaphoid",
+        "muscle": null,
+        "vertexCount": 185,
+        "indexCount": 906,
+        "positions": 14295548,
+        "normals": 14297768,
+        "indices": 14298880
+      },
+      {
+        "id": "FJ3384",
+        "name": "Right scapula",
+        "muscle": null,
+        "vertexCount": 2896,
+        "indexCount": 17268,
+        "positions": 14302504,
+        "normals": 14337256,
+        "indices": 14354632
+      },
+      {
+        "id": "FJ3385",
+        "name": "Right talus",
+        "muscle": null,
+        "vertexCount": 709,
+        "indexCount": 3552,
+        "positions": 14423704,
+        "normals": 14432212,
+        "indices": 14436468
+      },
+      {
+        "id": "FJ3386",
+        "name": "Right temporal bone",
+        "muscle": null,
+        "vertexCount": 1976,
+        "indexCount": 8718,
+        "positions": 14450676,
+        "normals": 14474388,
+        "indices": 14486244
+      },
+      {
+        "id": "FJ3387",
+        "name": "Right tibia",
+        "muscle": null,
+        "vertexCount": 334,
+        "indexCount": 1902,
+        "positions": 14521116,
+        "normals": 14525124,
+        "indices": 14527128
+      },
+      {
+        "id": "FJ3388",
+        "name": "Right trapezium",
+        "muscle": null,
+        "vertexCount": 272,
+        "indexCount": 1272,
+        "positions": 14534736,
+        "normals": 14538000,
+        "indices": 14539632
+      },
+      {
+        "id": "FJ3389",
+        "name": "Right trapezoid",
+        "muscle": null,
+        "vertexCount": 267,
+        "indexCount": 1062,
+        "positions": 14544720,
+        "normals": 14547924,
+        "indices": 14549528
+      },
+      {
+        "id": "FJ3390",
+        "name": "Right triquetral",
+        "muscle": null,
+        "vertexCount": 139,
+        "indexCount": 510,
+        "positions": 14553776,
+        "normals": 14555444,
+        "indices": 14556280
+      },
+      {
+        "id": "FJ3391",
+        "name": "Right ulna",
+        "muscle": null,
+        "vertexCount": 305,
+        "indexCount": 1446,
+        "positions": 14558320,
+        "normals": 14561980,
+        "indices": 14563812
+      },
+      {
+        "id": "FJ3392",
+        "name": "Right zygomatic bone",
+        "muscle": null,
+        "vertexCount": 717,
+        "indexCount": 3438,
+        "positions": 14569596,
+        "normals": 14578200,
+        "indices": 14582504
+      },
+      {
+        "id": "FJ3393",
+        "name": "Sacrum",
+        "muscle": null,
+        "vertexCount": 2771,
+        "indexCount": 15174,
+        "positions": 14596256,
+        "normals": 14629508,
+        "indices": 14646136
+      },
+      {
+        "id": "FJ3394",
+        "name": "Sphenoid bone",
+        "muscle": null,
+        "vertexCount": 2791,
+        "indexCount": 12714,
+        "positions": 14706832,
+        "normals": 14740324,
+        "indices": 14757072
+      },
+      {
+        "id": "FJ3395",
+        "name": "Vomer",
+        "muscle": null,
+        "vertexCount": 820,
+        "indexCount": 4758,
+        "positions": 14807928,
+        "normals": 14817768,
+        "indices": 14822688
+      }
+    ]
+  },
+  "superficie": {
+    "url": "models/superficie-v1.bin.gz",
+    "bytes": 949164,
+    "gzipBytes": 587571,
+    "parts": [
+      {
+        "id": "FJ2810",
+        "name": "Skin",
+        "muscle": null,
+        "vertexCount": 22902,
+        "indexCount": 134232,
+        "positions": 0,
+        "normals": 274824,
+        "indices": 412236
+      }
+    ]
+  },
+  "correspondencias": [
+    {
+      "id": "esternocleidomastoideo",
+      "parts": [
+        "FJ1573",
+        "FJ1595"
+      ]
+    },
+    {
+      "id": "trapezio-superior",
+      "parts": [
+        "FJ1521",
+        "FJ1521M"
+      ]
+    },
+    {
+      "id": "trapezio-medio",
+      "parts": [
+        "FJ1554",
+        "FJ1554M"
+      ]
+    },
+    {
+      "id": "trapezio-inferior",
+      "parts": [
+        "FJ1520",
+        "FJ1520M"
+      ]
+    },
+    {
+      "id": "deltoide-anterior",
+      "parts": [
+        "FJ1468",
+        "FJ1468M"
+      ]
+    },
+    {
+      "id": "deltoide-medial",
+      "parts": [
+        "FJ1467",
+        "FJ1467M"
+      ]
+    },
+    {
+      "id": "deltoide-posterior",
+      "parts": [
+        "FJ1513",
+        "FJ1513M"
+      ]
+    },
+    {
+      "id": "peitoral-maior-clavicular",
+      "parts": [
+        "FJ1447",
+        "FJ1447M"
+      ]
+    },
+    {
+      "id": "peitoral-maior-esternal",
+      "parts": [
+        "FJ1446",
+        "FJ1446M",
+        "FJ1464",
+        "FJ1464M"
+      ]
+    },
+    {
+      "id": "serratil-anterior",
+      "parts": [
+        "FJ1459",
+        "FJ1459M"
+      ]
+    },
+    {
+      "id": "reto-abdominal",
+      "parts": []
+    },
+    {
+      "id": "obliquo-externo",
+      "parts": [
+        "FJ1452",
+        "FJ1452M"
+      ]
+    },
+    {
+      "id": "eretores-da-espinha",
+      "parts": [
+        "FJ1526",
+        "FJ1526M",
+        "FJ1527",
+        "FJ1527M",
+        "FJ1528",
+        "FJ1528M",
+        "FJ1533",
+        "FJ1533M",
+        "FJ1534",
+        "FJ1534M",
+        "FJ1535",
+        "FJ1535M",
+        "FJ1543",
+        "FJ1543M",
+        "FJ1544",
+        "FJ1544M"
+      ]
+    },
+    {
+      "id": "grande-dorsal",
+      "parts": []
+    },
+    {
+      "id": "infraespinhoso",
+      "parts": [
+        "FJ1500",
+        "FJ1500M"
+      ]
+    },
+    {
+      "id": "redondo-maior",
+      "parts": [
+        "FJ1507",
+        "FJ1507M"
+      ]
+    },
+    {
+      "id": "biceps-braquial",
+      "parts": [
+        "FJ1478",
+        "FJ1478M",
+        "FJ1512",
+        "FJ1512M"
+      ]
+    },
+    {
+      "id": "triceps-cabeca-longa",
+      "parts": [
+        "FJ1479",
+        "FJ1479M"
+      ]
+    },
+    {
+      "id": "triceps-cabeca-lateral",
+      "parts": [
+        "FJ1477",
+        "FJ1477M"
+      ]
+    },
+    {
+      "id": "triceps-cabeca-medial",
+      "parts": [
+        "FJ1480",
+        "FJ1480M"
+      ]
+    },
+    {
+      "id": "braquiorradial",
+      "parts": [
+        "FJ1487",
+        "FJ1487M"
+      ]
+    },
+    {
+      "id": "flexores-antebraco",
+      "parts": [
+        "FJ1473",
+        "FJ1473M",
+        "FJ1475",
+        "FJ1475M",
+        "FJ1496",
+        "FJ1496M",
+        "FJ1497",
+        "FJ1497M",
+        "FJ1498",
+        "FJ1498M",
+        "FJ1499",
+        "FJ1499M",
+        "FJ1502",
+        "FJ1502M",
+        "FJ1518",
+        "FJ1518M"
+      ]
+    },
+    {
+      "id": "extensores-antebraco",
+      "parts": [
+        "FJ1472",
+        "FJ1472M",
+        "FJ1489",
+        "FJ1489M",
+        "FJ1490",
+        "FJ1490M",
+        "FJ1491",
+        "FJ1491M",
+        "FJ1492",
+        "FJ1492M",
+        "FJ1493",
+        "FJ1493M",
+        "FJ1494",
+        "FJ1494M",
+        "FJ1495",
+        "FJ1495M",
+        "FJ1517",
+        "FJ1517M"
+      ]
+    },
+    {
+      "id": "gluteo-maximo",
+      "parts": [
+        "FJ1418",
+        "FJ1418M"
+      ]
+    },
+    {
+      "id": "gluteo-medio",
+      "parts": [
+        "FJ1419",
+        "FJ1419M"
+      ]
+    },
+    {
+      "id": "biceps-femoral",
+      "parts": [
+        "FJ1395",
+        "FJ1395M",
+        "FJ1444",
+        "FJ1444M"
+      ]
+    },
+    {
+      "id": "semitendinoso",
+      "parts": [
+        "FJ1436",
+        "FJ1436M"
+      ]
+    },
+    {
+      "id": "semimembranoso",
+      "parts": [
+        "FJ1435",
+        "FJ1435M"
+      ]
+    },
+    {
+      "id": "reto-femoral",
+      "parts": [
+        "FJ1433",
+        "FJ1433M"
+      ]
+    },
+    {
+      "id": "vasto-lateral",
+      "parts": [
+        "FJ1442",
+        "FJ1442M"
+      ]
+    },
+    {
+      "id": "vasto-medial",
+      "parts": [
+        "FJ1443",
+        "FJ1443M"
+      ]
+    },
+    {
+      "id": "sartorio",
+      "parts": [
+        "FJ1434",
+        "FJ1434M"
+      ]
+    },
+    {
+      "id": "adutores",
+      "parts": [
+        "FJ1401",
+        "FJ1401M",
+        "FJ1402",
+        "FJ1402M",
+        "FJ1403",
+        "FJ1403M",
+        "FJ1404",
+        "FJ1404M",
+        "FJ1421",
+        "FJ1421M",
+        "FJ1427",
+        "FJ1427M"
+      ]
+    },
+    {
+      "id": "tensor-fascia-lata",
+      "parts": [
+        "FJ1438",
+        "FJ1438M"
+      ]
+    },
+    {
+      "id": "tibial-anterior",
+      "parts": [
+        "FJ1439",
+        "FJ1439M"
+      ]
+    },
+    {
+      "id": "gastrocnemio-medial",
+      "parts": [
+        "FJ1397",
+        "FJ1397M"
+      ]
+    },
+    {
+      "id": "gastrocnemio-lateral",
+      "parts": [
+        "FJ1394",
+        "FJ1394M"
+      ]
+    },
+    {
+      "id": "soleo",
+      "parts": [
+        "FJ1437",
+        "FJ1437M"
+      ]
+    },
+    {
+      "id": "peitoral-menor",
+      "parts": [
+        "FJ1456",
+        "FJ1456M"
+      ]
+    },
+    {
+      "id": "subescapular",
+      "parts": [
+        "FJ1504",
+        "FJ1504M"
+      ]
+    },
+    {
+      "id": "supraespinhoso",
+      "parts": [
+        "FJ1506",
+        "FJ1506M"
+      ]
+    },
+    {
+      "id": "redondo-menor",
+      "parts": [
+        "FJ1508",
+        "FJ1508M"
+      ]
+    },
+    {
+      "id": "romboides",
+      "parts": [
+        "FJ1536",
+        "FJ1536M",
+        "FJ1537",
+        "FJ1537M"
+      ]
+    },
+    {
+      "id": "elevador-da-escapula",
+      "parts": [
+        "FJ1532",
+        "FJ1532M"
+      ]
+    },
+    {
+      "id": "transverso-do-abdomen",
+      "parts": []
+    },
+    {
+      "id": "multifidos",
+      "parts": []
+    },
+    {
+      "id": "quadrado-lombar",
+      "parts": []
+    },
+    {
+      "id": "psoas-iliaco",
+      "parts": [
+        "FJ1422",
+        "FJ1422M",
+        "FJ1431",
+        "FJ1431M"
+      ]
+    },
+    {
+      "id": "piriforme",
+      "parts": [
+        "FJ1428",
+        "FJ1428M"
+      ]
+    },
+    {
+      "id": "gluteo-minimo",
+      "parts": [
+        "FJ1420",
+        "FJ1420M"
+      ]
+    }
+  ]
+}

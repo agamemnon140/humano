@@ -1,0 +1,195 @@
+// Browser acceptance checks, screenshots and offline verification.
+import { spawn } from 'node:child_process'
+import { existsSync, mkdirSync, readFileSync } from 'node:fs'
+import puppeteer from 'puppeteer-core'
+import assert from 'node:assert/strict'
+
+const chrome = [process.env.CHROME_PATH, 'C:/Program Files/Google/Chrome/Application/chrome.exe', 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe', '/usr/bin/google-chrome', '/usr/bin/chromium'].filter(Boolean).find(existsSync)
+if (!chrome) throw new Error('Defina CHROME_PATH')
+const base = 'http://localhost:4185/humano/'
+const servidor = spawn(process.execPath, ['node_modules/vite/bin/vite.js', 'preview', '--port', '4185', '--strictPort'], { stdio: 'ignore' })
+let browser, page
+const esperar = ms => new Promise(r => setTimeout(r, ms))
+mkdirSync('artifacts', { recursive: true })
+try {
+  for (let i = 0; i < 50; i++) { try { if ((await fetch(base)).ok) break } catch {} await esperar(200) }
+  browser = await puppeteer.launch({ executablePath: chrome, headless: true, args: ['--no-sandbox', '--enable-unsafe-swiftshader'] })
+  page = await browser.newPage()
+  const erros = []
+  page.on('pageerror', e => erros.push(e.message))
+  page.on('console', msg => { if (msg.type() === 'error') console.log('browser:', msg.text()) })
+  page.on('requestfailed', req => console.log('request:', req.url(), req.failure()))
+  await page.setViewport({ width: 1440, height: 1000, deviceScaleFactor: 1 })
+  await page.goto(base, { waitUntil: 'networkidle0' })
+  assert.equal(await page.$eval('h1', el => el.textContent), 'Meu treino', 'Início orientado à escolha de exercícios')
+  await page.screenshot({ path: 'artifacts/treino-inicio.png' })
+  await page.goto(`${base}#/mapa`, { waitUntil: 'networkidle0' })
+  await page.screenshot({ path: 'artifacts/inicial.png' })
+  await page.waitForSelector('.cena-corpo[data-estado="pronto"]', { timeout: 60000 })
+  await page.screenshot({ path: 'artifacts/atlas-desktop.png' })
+  const clickTexto = async (texto) => {
+    const clicou = await page.evaluate(texto => {
+      const b = [...document.querySelectorAll('button')].find(b => {
+        const copy = b.cloneNode(true)
+        copy.querySelectorAll('[aria-hidden]').forEach(el => el.remove())
+        return copy.textContent.trim() === texto
+      })
+      if (!b) return false
+      b.click(); return true
+    }, texto)
+    assert.ok(clicou, `Botão: ${texto}`)
+  }
+  const box = await page.$eval('.cena-corpo canvas', el => { const r = el.getBoundingClientRect(); return { x: r.x, y: r.y, width: r.width, height: r.height } })
+  // Locate an actual projected muscle by hovering over the rendered geometry.
+  let achou = null
+  for (let y = .25; y < .8 && !achou; y += .08) {
+    for (let x = .37; x <= .65 && !achou; x += .04) {
+      const px = box.x + box.width * x, py = box.y + box.height * y
+      await page.mouse.move(px, py)
+      await esperar(25)
+      const nome = await page.$eval('p[aria-live="polite"]', el => el.textContent)
+      if (!nome.includes('Toque ou passe') && nome.trim()) achou = { x: px, y: py, nome }
+    }
+  }
+  assert.ok(achou, 'Hover identifica músculo 3D')
+  await page.mouse.click(achou.x, achou.y)
+  await page.waitForSelector('[role="dialog"]')
+  const musculos = JSON.parse(readFileSync('src/data/musculos.json', 'utf8'))
+  const esperado = musculos.find(m => m.nomeCurto === achou.nome.trim())
+  assert.ok(esperado)
+  assert.ok(await page.$eval('[role="dialog"]', (el, nome) => el.textContent.includes(nome), esperado.nome), 'Clique abre músculo sob o cursor')
+  await page.keyboard.press('Escape')
+  await page.waitForSelector('[role="dialog"]', { hidden: true })
+  await page.mouse.move(box.x + box.width / 2, box.y + box.height / 2)
+  await page.mouse.down()
+  await page.mouse.move(box.x + box.width / 2 + 80, box.y + box.height / 2 + 20, { steps: 10 })
+  await page.mouse.up()
+  assert.equal(await page.$('[role="dialog"]'), null, 'Arrastar não abre ficha')
+  await clickTexto('Profunda')
+  await page.screenshot({ path: 'artifacts/atlas-profundo.png' })
+  await clickTexto('Superficial')
+  await clickTexto('Meu treino')
+  await page.waitForSelector('.painel-conteudo')
+  await page.click('.adicionar-exercicio')
+  assert.equal(await page.$('[role="dialog"]'), null, 'Adicionar não abre ficha')
+  assert.equal(await page.$eval('.adicionar-exercicio', el => el.textContent), '✓ Adicionado')
+  assert.ok(await page.$eval('.treino-continuar', el => el.textContent.includes('1 exercício selecionado')))
+  await page.select('.filtros-principais select', 'pernas')
+  assert.ok(await page.$eval('.treino-continuar', el => el.textContent.includes('1 exercício selecionado')), 'Filtros preservam seleção')
+  await clickTexto('Limpar filtros')
+  await page.click('.revisar-selecionados')
+  assert.ok(await page.$eval('.treino-revisao', el => el.open && el.textContent.includes('Supino reto com barra')), 'Selecionados podem ser revisados na mesma tela')
+  await page.click('.detalhes-exercicio')
+  await page.waitForSelector('[role="dialog"]')
+  await page.keyboard.press('Escape')
+  await page.waitForSelector('[role="dialog"]', { hidden: true })
+  await page.$eval('.treino-revisao', el => { el.open = false })
+  await page.screenshot({ path: 'artifacts/exercicios-desktop.png' })
+  await page.click('.treino-continuar .botao')
+  await page.waitForSelector('.composicao-layout')
+  assert.ok(await page.$eval('.focos-treino', el => el.textContent.includes('Supino reto com barra')), 'Composição importa exercícios da sessão')
+  await clickTexto('Preencher exemplo: 80 kg · 25%')
+  await page.waitForSelector('.cena-corpo[data-estado="pronto"]', { timeout: 60000 })
+  assert.ok(await page.$eval('.resultado-peso', el => el.textContent.includes('70,6')), 'Exemplo calcula 70,6 kg')
+  await page.screenshot({ path: 'artifacts/composicao-desktop.png', fullPage: true })
+  assert.equal(await page.$$eval('.comparacao-dupla canvas', els => els.length), 2, 'Comparação lado a lado no computador')
+  await page.waitForFunction(() => document.querySelectorAll('.comparacao-dupla .cena-corpo[data-estado="pronto"]').length === 2)
+  const direita = await page.$('[data-comparacao="cenario"] canvas')
+  const antesDaRotacao = await direita.screenshot()
+  const esquerda = await page.$('[data-comparacao="atual"] canvas')
+  const e = await esquerda.boundingBox()
+  await page.mouse.move(e.x + e.width / 2, e.y + e.height / 2)
+  await page.mouse.down()
+  await page.mouse.move(e.x + e.width / 2 + 60, e.y + e.height / 2, { steps: 12 })
+  await page.mouse.up()
+  await page.evaluate(() => new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r))))
+  assert.ok(!Buffer.from(antesDaRotacao).equals(Buffer.from(await direita.screenshot())), 'Girar corpo atual também gira o cenário')
+  await page.screenshot({ path: 'artifacts/comparacao-sincronizada.png' })
+  await clickTexto('Costas')
+  await page.screenshot({ path: 'artifacts/composicao-atual.png', fullPage: true })
+  await clickTexto('Frente')
+  await page.reload({ waitUntil: 'networkidle0' })
+  await page.waitForSelector('.resultado-peso')
+  assert.ok(await page.$eval('.resultado-peso', el => el.textContent.includes('70,6')), 'Cenário persiste após recarregar')
+  await page.$eval('#composicao-peso', el => { const setter = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set; setter.call(el, ''); el.dispatchEvent(new Event('input', { bubbles: true })) })
+  await page.waitForSelector('.erro-campos')
+  assert.equal(await page.$('.resultado-peso'), null, 'Entrada inválida não mantém resultado anterior')
+  await clickTexto('Preencher exemplo: 80 kg · 25%')
+  await page.setViewport({ width: 390, height: 844, deviceScaleFactor: 1, hasTouch: true })
+  await clickTexto('Visualizar')
+  await esperar(300)
+  assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'Sem overflow horizontal no celular')
+  await page.screenshot({ path: 'artifacts/composicao-mobile.png', fullPage: true })
+  await clickTexto('Meu treino')
+  await page.waitForSelector('.catalogo-treino')
+  await page.screenshot({ path: 'artifacts/treino-mobile.png' })
+  const footer = await page.$eval('.treino-continuar', el => { const r = el.getBoundingClientRect(); return { top: r.top, bottom: r.bottom } })
+  const nav = await page.$eval('nav', el => el.getBoundingClientRect().top)
+  assert.ok(footer.top > 0 && footer.bottom <= nav, 'Próximo passo visível sem cobrir navegação')
+  await page.goto(`${base}#/sessao`, { waitUntil: 'networkidle0' })
+  assert.equal(await page.$eval('h1', el => el.textContent), 'Meu treino', 'Link antigo da sessão continua funcionando')
+  await clickTexto('Corpo')
+  await page.waitForSelector('.cena-corpo[data-estado="pronto"]', { timeout: 60000 })
+  await page.screenshot({ path: 'artifacts/atlas-mobile.png', fullPage: true })
+  // Missing source anatomy must stay selectable via the complete SVG map.
+  const lista = await page.$$('button')
+  for (const b of lista) { if ((await b.evaluate(el => el.textContent)).includes('Lista de músculos')) { await b.click(); break } }
+  await clickTexto('Reto abdominal')
+  await page.waitForSelector('.corpo .musculos')
+  assert.ok(await page.$eval('.nota-modelo', el => el.textContent.includes('não está no modelo 3D')), 'Músculo ausente tem fallback explícito')
+  await page.keyboard.press('Escape')
+  // Reload clears transient selection but preserves scenario/session and preferred renderer.
+  await page.reload({ waitUntil: 'networkidle0' })
+  await page.waitForSelector('.cena-corpo[data-estado="pronto"]')
+  for (const [width, height] of [[320, 568], [844, 390]]) {
+    await page.setViewport({ width, height, deviceScaleFactor: 1, hasTouch: true })
+    await esperar(150)
+    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `Sem overflow em ${width}×${height}`)
+  }
+  await page.setViewport({ width: 390, height: 844, deviceScaleFactor: 1, hasTouch: true })
+  await page.evaluate(async () => { await navigator.serviceWorker.ready })
+  await page.waitForFunction(async () => {
+    const cache = await caches.open('humano-modelos-v1')
+    return (await cache.keys()).length === 2
+  }, { timeout: 15000 })
+  await page.setOfflineMode(true)
+  await page.reload({ waitUntil: 'networkidle0' })
+  await page.waitForSelector('.cena-corpo[data-estado="pronto"]', { timeout: 15000 })
+  await clickTexto('Meu cenário')
+  await page.waitForSelector('.cena-corpo[data-estado="pronto"]', { timeout: 15000 })
+  assert.ok(await page.$eval('.resultado-peso', el => el.textContent.includes('70,6')), 'Composição e modelos funcionam offline')
+  assert.deepEqual(erros, [], 'Sem erros de JavaScript')
+  await page.setOfflineMode(false)
+  await clickTexto('Meu treino')
+  await clickTexto('Cardio')
+  await page.waitForSelector('[data-atividade="caminhada"]')
+  assert.equal(await page.$('[data-atividade="supino-com-barra"]'), null, 'Modalidade Cardio facilita encontrar caminhada')
+  await page.$eval('[data-atividade="caminhada"] .adicionar-exercicio', el => el.scrollIntoView({ block: 'center' }))
+  await page.click('[data-atividade="caminhada"] .adicionar-exercicio')
+  await clickTexto('Todas')
+  await page.type('input[aria-label="Buscar exercícios"]', 'nado peito')
+  await page.waitForSelector('[data-atividade="natacao-peito"]')
+  await page.$eval('[data-atividade="natacao-peito"] .adicionar-exercicio', el => el.scrollIntoView({ block: 'center' }))
+  await page.click('[data-atividade="natacao-peito"] .adicionar-exercicio')
+  await page.screenshot({ path: 'artifacts/nado-peito-mobile.png' })
+  await page.click('.treino-continuar .botao')
+  await page.waitForSelector('.focos-treino')
+  assert.ok(await page.$eval('.focos-treino', el => el.textContent.includes('Caminhada') && el.textContent.includes('Natação, nado peito')), 'Cenário inclui cardio e esportes, além de força')
+  assert.deepEqual(erros, [], 'Novas modalidades não geram erros no navegador')
+  const context = await browser.createBrowserContext()
+  const falha = await context.newPage()
+  await falha.setBypassServiceWorker(true)
+  const errosFallback = []
+  falha.on('pageerror', e => errosFallback.push(e.message))
+  await falha.setRequestInterception(true)
+  falha.on('request', req => req.url().includes('/models/') ? req.abort() : req.continue())
+  await falha.goto(`${base}#/mapa`, { waitUntil: 'networkidle0' })
+  await falha.waitForSelector('.corpo .musculos')
+  assert.ok(await falha.$eval('.nota-modelo', el => el.textContent.includes('não carregou')), 'Falha no download mantém mapa utilizável')
+  assert.deepEqual(errosFallback, [], 'Falha de rede não derruba aplicativo')
+  await context.close()
+  console.log('OK: seleção e revisão de treino, filtros, detalhes, próximo passo, rotas antigas, comparação sincronizada, 3D, mobile, persistência, validação e offline. Screenshots em artifacts/.')
+} catch (e) {
+  if (page) { await page.screenshot({ path: 'artifacts/falha.png', fullPage: true }); console.log((await page.$eval('body', el => el.innerText)).slice(0, 1600)) }
+  throw e
+} finally { await browser?.close(); servidor.kill() }

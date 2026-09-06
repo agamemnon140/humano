@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { atividadePorId, catalogo, lesaoPorId, musculoPorId } from './data'
 import { useAbaHash, ROTULO_ABA } from './hooks/useAbaHash'
 import { useArmazenado } from './hooks/useArmazenado'
@@ -10,15 +10,17 @@ import { Legenda } from './components/corpo/Legenda'
 import { SeletorVista } from './components/corpo/SeletorVista'
 import { MapaAba } from './components/mapa/MapaAba'
 import { FichaMusculo } from './components/mapa/FichaMusculo'
-import { ExerciciosAba } from './components/exercicios/ExerciciosAba'
 import { FichaAtividade } from './components/exercicios/FichaAtividade'
 import { FichaLesao, LesoesAba } from './components/lesoes/LesoesAba'
-import { SessaoAba } from './components/sessao/SessaoAba'
+import { TreinoAba } from './components/sessao/TreinoAba'
 import { BarraAbas } from './components/shell/BarraAbas'
 import { FaixaRealce } from './components/shell/Comuns'
+import { ComposicaoAba } from './components/composicao/ComposicaoAba'
 
 export default function App() {
   const [aba, navegar] = useAbaHash()
+  const conteudo = useRef<HTMLElement>(null)
+  useEffect(() => { conteudo.current?.scrollTo({ top: 0 }) }, [aba])
   const [vista, setVista] = useState<Vista>('frente')
   const [camada, setCamada] = useState<Camada>('superficial')
 
@@ -37,7 +39,10 @@ export default function App() {
   const [lesoesAtivas, setLesoesAtivas] = useArmazenado<LesaoId[]>('humano.lesoes', [])
 
   const alternarSessao = useCallback(
-    (id: AtividadeId) => setSessao((s) => (s.includes(id) ? s.filter((x) => x !== id) : [...s, id])),
+    (id: AtividadeId) => {
+      setSessao((s) => (s.includes(id) ? s.filter((x) => x !== id) : [...s, id]))
+      setAtividadeRealcada(null); setLesaoRealcada(null); setMusculoRealcado(null)
+    },
     [setSessao],
   )
   const alternarLesao = useCallback(
@@ -68,7 +73,7 @@ export default function App() {
     }
     if (sessao.length > 0) {
       return {
-        rotulo: 'Cobertura da sessão',
+        rotulo: 'Músculos do meu treino',
         detalhe: `${sessao.length} ${sessao.length === 1 ? 'exercício' : 'exercícios'}`,
         mapa: realceDeSessao(resultado),
       }
@@ -140,12 +145,12 @@ export default function App() {
 
   // Fora da aba do mapa, o corpo continua visivel como painel de contexto —
   // e o que faz a coloracao por exercicio e por sessao ser util.
-  const painelCorpo = aba !== 'mapa' && (
-    <div className="mb-4 flex flex-col gap-2">
+  const painelCorpo = aba !== 'mapa' && aba !== 'composicao' && (
+    <div className="painel-corpo mb-4 flex flex-col gap-2">
       {narrativa && (
         <FaixaRealce rotulo={narrativa.rotulo} detalhe={narrativa.detalhe} onLimpar={limparRealce} />
       )}
-      <div className="h-64 md:h-80">
+      <div className="painel-corpo-modelo">
         <CorpoComLeitura
           vista={vista}
           camada={camada}
@@ -163,14 +168,17 @@ export default function App() {
     <div className="flex h-full flex-col md:flex-row">
       <BarraAbas aba={aba} onAba={navegar} contagemSessao={sessao.length} />
 
-      <main className="min-h-0 min-w-0 flex-1 overflow-y-auto pb-16 md:pb-0">
-        <div className="mx-auto max-w-5xl p-3 md:p-6">
-          <header className="mb-3 flex items-baseline justify-between md:hidden">
-            <h1 className="text-lg font-bold">{ROTULO_ABA[aba]}</h1>
+      <main ref={conteudo} className="min-h-0 min-w-0 flex-1 overflow-y-auto pb-16 md:pb-0">
+        <div className="app-conteudo" data-aba={aba}>
+          <header className="app-cabecalho">
+            <div><p className="eyebrow">Humano / explore seu movimento</p><h1>{ROTULO_ABA[aba]}</h1></div>
+            <span className="cabecalho-nota">{aba === 'composicao' ? 'Explore possibilidades' : 'Conheça o corpo. Entenda seu treino.'}</span>
           </header>
 
+          <div className={aba === 'queixas' ? 'workspace-treino' : ''}>
+
           {aba === 'mapa' && (
-            <div className="h-[calc(100dvh-9rem)] md:h-[calc(100dvh-6rem)]">
+            <div className="mapa-principal">
               <MapaAba
                 vista={vista}
                 camada={camada}
@@ -192,32 +200,31 @@ export default function App() {
             </div>
           )}
 
-          {painelCorpo}
+          {aba === 'queixas' && painelCorpo}
 
-          {aba === 'exercicios' && (
-            <ExerciciosAba
-              realcada={atividadeRealcada}
-              sessao={sessao}
-              onSelecionar={abrirAtividade}
-              onAlternarSessao={alternarSessao}
-            />
-          )}
+          <div className={aba === 'queixas' || aba === 'treino' ? 'painel-conteudo' : ''}>
 
           {aba === 'queixas' && (
             <LesoesAba ativas={lesoesAtivas} onSelecionar={abrirLesao} onAlternarAtiva={alternarLesao} />
           )}
 
-          {aba === 'sessao' && (
-            <SessaoAba
+          {aba === 'treino' && (
+            <TreinoAba
               sessao={sessao}
               resultado={resultado}
               lesoesAtivas={lesoesAtivas}
               onAbrirAtividade={abrirAtividade}
               onAbrirMusculo={abrirMusculo}
-              onRemover={alternarSessao}
+              realcada={atividadeRealcada}
+              onAlternar={alternarSessao}
+              onCenario={() => navegar('composicao')}
+              corpo={painelCorpo}
               onLimpar={() => setSessao([])}
             />
           )}
+          {aba === 'composicao' && <ComposicaoAba sessao={sessao} onExercicios={() => navegar('treino')} />}
+          </div>
+          </div>
         </div>
       </main>
 

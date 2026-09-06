@@ -19,6 +19,15 @@ export default defineConfig({
       workbox: {
         navigateFallback: `${BASE}index.html`,
         globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
+        runtimeCaching: [{
+          urlPattern: /\/models\/(anatomia|superficie)-v\d+\.bin\.gz$/,
+          handler: 'CacheFirst',
+          options: {
+            cacheName: 'humano-modelos-v1',
+            expiration: { maxEntries: 4, maxAgeSeconds: 60 * 60 * 24 * 90 },
+            cacheableResponse: { statuses: [200] },
+          },
+        }],
       },
       manifest: {
         name: 'humano — decisoes de exercicio',

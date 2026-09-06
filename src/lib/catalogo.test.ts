@@ -180,6 +180,8 @@ describe('cobertura editorial do catalogo', () => {
       'corrida', 'natacao-crawl', 'pilates-solo', 'caminhada', 'ficar-sentado',
       'agachamento-bulgaro', 'agachamento-livre', 'levantamento-terra',
       'desenvolvimento-com-barra', 'supino-com-barra',
+      'natacao-peito', 'natacao-borboleta', 'caminhada-rapida',
+      'hidroginastica', 'eliptico', 'remo-ergometrico',
     ]
     const emFalta = pedidos.filter((id) => !atividadePorId.has(id))
     expect(emFalta).toEqual([])
