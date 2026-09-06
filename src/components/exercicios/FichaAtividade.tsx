@@ -100,7 +100,7 @@ export function FichaAtividade({
         onClick={() => onAlternarSessao(atividade.id)}
         className={naSessao ? 'botao-2 w-full' : 'botao w-full'}
       >
-        {naSessao ? '− Remover da sessão' : '+ Adicionar à sessão'}
+        {naSessao ? 'Remover do treino' : 'Adicionar ao treino'}
       </button>
 
       <p className="mt-4 text-sm leading-relaxed text-ink2">{atividade.descricao}</p>

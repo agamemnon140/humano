@@ -34,7 +34,7 @@ export function BarraAbas({
           >
             <span aria-hidden className="relative text-base leading-none md:w-5 md:text-center">
               {ICONE_ABA[id]}
-              {id === 'sessao' && contagemSessao > 0 && (
+              {id === 'treino' && contagemSessao > 0 && (
                 <span className="absolute -top-1.5 -right-2 rounded-full bg-accent px-1 text-[9px] leading-tight font-bold text-white">
                   {contagemSessao}
                 </span>

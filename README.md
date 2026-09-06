@@ -4,13 +4,82 @@ App para **decidir** o que treinar, não só consultar. Mapa muscular interativo
 exercícios e atividades do cotidiano, queixas comuns, e um construtor de sessão que soma a
 cobertura de vários exercícios sobre o mesmo corpo.
 
+Inclui anatomia 3D baseada no Human Atlas e cenários ilustrativos de composição corporal.
+No computador, o corpo acompanha o catálogo em um painel persistente; no celular, a
+composição alterna entre ajustar valores e visualizar o resultado.
+
+## Fluxo principal
+
+O aplicativo abre em **Meu treino**. Cada cartão separa **Adicionar ao treino** de
+**Ver execução e detalhes**. Modalidade, região e equipamento ficam ao lado da busca;
+padrão de movimento fica nos filtros adicionais. A seleção permanece intacta ao filtrar.
+
+O catálogo tem 74 atividades, incluindo caminhada, caminhada rápida, os quatro nados
+(crawl, costas, peito e borboleta), hidroginástica, bicicleta, corrida, elíptico e remo
+ergométrico. O cenário mostra todas as atividades escolhidas, incluindo cardio e esportes.
+As fichas novas registram fontes de técnica e contexto (Swim England, U.S. Masters Swimming,
+NHS, Concept2 e Precor). Os mapas musculares são interpretações qualitativas do movimento,
+não medidas de ativação extraídas dessas fontes. Em atividades variáveis, como hidroginástica,
+a descrição informa qual sequência está representada.
+
+**Selecionados** permite revisar e remover exercícios na mesma tela. A barra inferior
+mantém a contagem e o próximo passo, **Ver meu cenário**, acessíveis durante a rolagem.
+A prévia muscular é compacta no computador e recolhível no celular.
+
+Em **Meu cenário**, a hipótese inicial é manter massa livre de gordura. O ajuste em kg
+fica sob demanda e mantém eventuais valores já salvos. Em telas a partir de 1200 px,
+atual e cenário aparecem lado a lado com rotação e zoom sincronizados; em telas menores,
+um alternador mantém a mesma câmera ao trocar entre os dois.
+
+A navegação contém Meu treino, Meu cenário, Corpo e Queixas. Links antigos `#/exercicios`
+e `#/sessao` continuam abrindo Meu treino; os dados de sessão existentes são preservados.
+
+## Atlas 3D e composição
+
+- **Corpo:** rotação, zoom, seleção por toque, frente/costas e camada profunda. O seletor
+  2D/3D mantém o SVG como alternativa leve e como cobertura das lacunas do Atlas.
+- **Mapeamento:** 45 dos 50 músculos têm geometria identificada. Reto abdominal, grande
+  dorsal, transverso do abdômen, multífidos e quadrado lombar continuam disponíveis em 2D.
+  O 3D informa quando um realce inclui esses músculos; selecioná-los abre o mapa 2D.
+  Agrupamentos de antebraço, adutores e eretores reúnem várias peças. Peitoral esternal
+  inclui as partes esternocostal e abdominal. A camada profunda oculta os superficiais;
+  profundos podem aparecer por espaços entre os superficiais na vista normal.
+- **Composição:** peso e gordura atuais, gordura alvo e variação assumida de massa livre
+  de gordura. 80 kg / 25% → 15%, mantendo massa livre, resulta em 70,6 kg. Entradas inválidas
+  não mostram resultados antigos. Todas as atividades da sessão aparecem como contexto;
+  não são convertidos em quilos de músculo.
+- **Silhueta:** a pele do BodyParts3D é uma referência masculina genérica, sem percentual
+  de gordura medido. Não reproduz o corpo atual do usuário. Deformações geométricas suaves,
+  simétricas e limitadas ilustram diferenças de massa. Não é um modelo fisiológico nem uma
+  previsão de aparência ou prazo. Altura, medidas regionais e outras bases não estão modeladas.
+- **Armazenamento:** preferências e cenário ficam no navegador. Anatomia (8,4 MB comprimidos)
+  e pele (0,6 MB) carregam sob demanda e ficam disponíveis offline quando o navegador permite.
+  O JS do renderizador é separado do aplicativo e pré-carregado pelo service worker para
+  navegação offline. O 2D funciona sem WebGL; cálculos funcionam mesmo sem a silhueta.
+
+Arquivos: `public/models`; correspondências e offsets: `src/data/atlas-manifest.json`.
+Para reproduzir a extração de um checkout do Human Atlas:
+
+```bash
+node scripts/preparar-atlas.mjs /caminho/para/human-atlas
+```
+
+O script preserva IDs de origem, extrai músculos mapeados, esqueleto e pele, e reempacota
+buffers. Os testes verificam correspondências, índices, leitura dos buffers, tamanhos e
+coordenadas finitas. O decodificador aceita gzip bruto e respostas já descomprimidas pelo host.
+
+Geometria: BodyParts3D, © The Database Center for Life Science, CC BY 4.0.
+Código adaptado e referência: [Human Atlas](https://github.com/ashemag/human-atlas), MIT.
+Fontes, licenças e adaptações: [public/atlas-creditos.txt](public/atlas-creditos.txt).
+
 ```bash
 npm install
 npm run dev        # localhost:5173/humano/
-npm test           # 107 testes, todos de lógica pura
+npm test           # lógica, composição e integridade dos modelos
 npm run lint       # oxlint
 npm run build      # tsc -b && vite build
 npm run toque      # dirige a app num Chrome real (precisa de build feito)
+npm run atlas      # interação 3D, composição, mobile e offline; screenshots em artifacts/
 npm run preview    # serve dist/ — é aqui que se testa PWA e offline, nunca em dev
 npm run icones     # regenera os PNGs a partir de public/icon.svg
 ```
@@ -24,9 +93,9 @@ precisa ser validado numa app mobile-first com músculos pequenos.
 | | |
 |---|---|
 | **Corpo** | Frente e costas, camada superficial e profunda. O cursor sobre um músculo nomeia-o na hora, com o nível se ele estiver pintado; o toque abre a ficha com os melhores exercícios para ele, em três seções separadas. |
-| **Exercícios** | 68 atividades com filtro por tipo, padrão de movimento e equipamento. Busca aceita português, inglês e sinônimos. Selecionar um exercício pinta o corpo. |
+| **Meu treino** | Catálogo com filtros, seleção explícita e revisão recolhível. Busca aceita português, inglês e sinônimos. Adicionar atualiza a cobertura muscular sem abrir uma ficha. |
 | **Queixas** | 9 queixas comuns com sinais de alarme, músculos a fortalecer, o que evitar na fase aguda, e um selo de força de evidência por afirmação. |
-| **Sessão** | Monte uma lista e o corpo acende com a cobertura somada: lacunas por região, músculos sobrecarregados e conflitos com uma queixa marcada como ativa. |
+| **Meu cenário** | Gordura alvo e hipótese de massa livre, composição calculada e comparação ilustrativa do corpo. O treino informa foco muscular e não é convertido em crescimento previsto. |
 
 ## Decisões que estruturam o código
 
@@ -72,8 +141,9 @@ pontos das duas vistas.
 
 **A camada de dados não conhece o renderizador.** Toda a lógica produz `MapaDeRealce`
 (`Map<MusculoId, EstadoRealce>`) com tons *semânticos* — sem cores, sem coordenadas, sem
-geometria. As cores vivem em CSS, seletores `.musculo[data-tom=...]`. Trocar o mapa 2D por
-um modelo 3D é substituir uma linha em [src/components/corpo/index.ts](src/components/corpo/index.ts).
+geometria. As cores vivem em CSS; o SVG usa seletores e o 3D lê as mesmas variáveis.
+[src/components/corpo/index.ts](src/components/corpo/index.ts) exporta o adaptador que
+escolhe o renderizador e trata as ausências de geometria.
 A única concessão ao 2D é `vista: 'frente' | 'costas'`, documentada como *dica de câmara*:
 o SVG troca de arquivo de geometria, um render 3D animaria o azimute.
 
@@ -139,9 +209,11 @@ src/
   data/                    JSON curado + index.ts (Maps e índices no carregamento do módulo)
   lib/                     lógica pura, testes colocados ao lado
   hooks/                   useAbaHash, useArmazenado
-  components/corpo/        renderizador + index.ts ← ponto único de troca 2D→3D
-  components/{mapa,exercicios,lesoes,sessao,shell}/
+  components/corpo/        SVG, Three.js, adaptador e tratamento de falhas
+  components/{mapa,exercicios,lesoes,sessao,composicao,shell}/
 scripts/toque.mjs          verificação da interação num Chrome real
+scripts/verificar-atlas.mjs interação 3D, composição, persistência e offline
+scripts/preparar-atlas.mjs extração reproduzível dos modelos
 ```
 
 `CorpoComLeitura` envolve `Corpo` (nunca `CorpoSVG`) e acrescenta a linha que nomeia o músculo
@@ -165,7 +237,7 @@ JavaScript. Usa o Chrome instalado via `puppeteer-core`, sem descarregar navegad
 proximidade em anéis só alcança espaço vazio (a borda do corpo, o pescoço, o vão entre as
 pernas), porque conter ganha primeiro; entre dois músculos vizinhos o toque continua a ter de
 ser certeiro. A lista de músculos é o caminho preciso e existe para isso. A correção de fundo
-é zoom e arrasto no mapa, que ainda não existe.
+é zoom e rotação, disponíveis no 3D; o SVG conserva a lista alternativa.
 
-Fora do alcance do `npm run toque`: proporção e legibilidade num telefone físico, e o PWA
-offline, que só se testa em `preview` com modo avião — nunca em `dev`.
+`npm run atlas` verifica o PWA offline em `preview` e emula viewports de celular. Proporção,
+legibilidade, desempenho e gestos em telefone físico ainda precisam de avaliação no aparelho.

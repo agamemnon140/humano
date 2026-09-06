@@ -1,26 +1,27 @@
 import { useCallback, useEffect, useState } from 'react'
 
-export type AbaId = 'mapa' | 'exercicios' | 'queixas' | 'sessao'
+export type AbaId = 'mapa' | 'treino' | 'queixas' | 'composicao'
 
-export const ABAS: AbaId[] = ['mapa', 'exercicios', 'queixas', 'sessao']
+export const ABAS: AbaId[] = ['treino', 'composicao', 'mapa', 'queixas']
 
 export const ROTULO_ABA: Record<AbaId, string> = {
   mapa: 'Corpo',
-  exercicios: 'Exercícios',
+  treino: 'Meu treino',
   queixas: 'Queixas',
-  sessao: 'Sessão',
+  composicao: 'Meu cenário',
 }
 
 export const ICONE_ABA: Record<AbaId, string> = {
   mapa: '◍',
-  exercicios: '▤',
+  treino: '▤',
   queixas: '⚑',
-  sessao: '◎',
+  composicao: '◒',
 }
 
 function abaDoHash(): AbaId {
   const bruto = window.location.hash.replace(/^#\/?/, '')
-  return (ABAS as string[]).includes(bruto) ? (bruto as AbaId) : 'mapa'
+  if (bruto === 'exercicios' || bruto === 'sessao') return 'treino'
+  return (ABAS as string[]).includes(bruto) ? (bruto as AbaId) : 'treino'
 }
 
 export function useAbaHash(): [AbaId, (aba: AbaId) => void] {

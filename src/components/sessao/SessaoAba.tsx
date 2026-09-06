@@ -23,7 +23,7 @@ export function SessaoAba({
   if (sessao.length === 0) {
     return (
       <Vazio>
-        Sessão vazia. Adicione exercícios pela aba <strong>Exercícios</strong> e o corpo acende com a
+        Treino vazio. Use <strong>Adicionar ao treino</strong> no catálogo e o corpo acende com a
         cobertura somada — mostrando o que ficou de fora, o que está sobrecarregado e o que conflita
         com uma queixa ativa.
       </Vazio>
@@ -84,7 +84,7 @@ export function SessaoAba({
                   aria-label={`Remover ${a.nome}`}
                   className="shrink-0 border-l border-hairline px-4 text-lg text-muted hover:text-ink"
                 >
-                  −
+                  Remover
                 </button>
               </div>
             </li>
@@ -120,7 +120,7 @@ export function SessaoAba({
 
       {/* O ecrã não pode só dizer não. */}
       {sugestoes.length > 0 && (
-        <Secao titulo="A queixa recomenda, e não está na sessão">
+        <Secao titulo="A queixa recomenda, e não está no treino">
           {sugestoes.map((s) =>
             s.tipo === 'sugestao-da-lesao' ? (
               <div key={s.lesaoId} className="flex flex-wrap gap-1.5">
@@ -190,7 +190,7 @@ export function SessaoAba({
       )}
 
       {resultado.encurtados.length > 0 && (
-        <Secao titulo="Tendem a encurtar com esta sessão">
+        <Secao titulo="Tendem a encurtar com este treino">
           <div className="flex flex-wrap gap-1.5">
             {resultado.encurtados.map((id) => (
               <button key={id} type="button" onClick={() => onAbrirMusculo(id)} className="chip hover:border-accent">

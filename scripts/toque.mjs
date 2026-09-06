@@ -59,11 +59,13 @@ for (let tentativa = 0; tentativa < 40; tentativa++) {
 
 const navegador = await puppeteer.launch({ executablePath: chrome, headless: 'shell', args: ['--no-sandbox'] })
 const pagina = await navegador.newPage()
+// This suite checks SVG hit testing; the independent atlas suite checks 3D.
+await pagina.evaluateOnNewDocument(() => localStorage.setItem('humano.visual', JSON.stringify('2d')))
 // Tamanho de telemovel: e onde os musculos pequenos sao dificeis de acertar.
 await pagina.setViewport({ width: 390, height: 844, deviceScaleFactor: 2, hasTouch: true })
 const errosDaPagina = []
 pagina.on('pageerror', (e) => errosDaPagina.push(e.message))
-await pagina.goto(BASE, { waitUntil: 'networkidle2' })
+await pagina.goto(`${BASE}#/mapa`, { waitUntil: 'networkidle2' })
 await pagina.waitForSelector('.corpo .musculos')
 
 const falhas = []
