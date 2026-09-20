@@ -11,6 +11,7 @@
     "test": "vitest run",
     "toque": "node scripts/toque.mjs",
     "atlas": "node scripts/verificar-atlas.mjs",
+    "publicacao": "node scripts/verificar-publicacao.mjs",
     "icones": "node scripts/gerar-icones.mjs"
   },
   "dependencies": {
